@@ -30,12 +30,6 @@ html {
   font-size: 62.5%;
 }
 
-@media only screen and (max-width: 68.75em) {
-  html {
-    font-size: 50%;
-  }
-}
-
 body {
   font-family: 'Chakra Petch', sans-serif;
   font-weight: 400;
@@ -46,5 +40,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 5rem 3rem;
+  background-color: var(--color-grey-light-1);
+  -webkit-box-shadow: var(--shadow-dark);
+          box-shadow: var(--shadow-dark);
+  min-height: 50rem;
 }
 /*# sourceMappingURL=main.css.map */
