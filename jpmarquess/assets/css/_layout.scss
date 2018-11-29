@@ -1,0 +1,38 @@
+header {
+    border-bottom: 5px solid var(--color-primary);
+}
+
+nav {
+    width: 65%;
+    margin: 0 auto;
+    padding: 70px 0;
+    
+    .navbar-flag {
+        float: left;
+        margin-top: -30px;
+    }
+
+    .navbar-nav {
+        float: right;
+        margin-top: -15px;
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 30px;
+
+            a {
+                text-decoration: none;
+                color: var(--color-primary);
+                padding: 10px 0;
+                font-size: 1.25rem;
+                font-weight: 600;
+                letter-spacing: 0.7px;
+
+                &:hover {
+                    border-bottom: 5px solid var(--color-primary);
+                }
+            }
+        }
+    }
+}

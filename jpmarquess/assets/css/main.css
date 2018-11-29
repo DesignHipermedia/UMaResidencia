@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,600,700");
+:root {
+  --color-primary: #006aa7;
+  --color-secondary: #FFCD00;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+html,
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--color-grey-light-3);
+}
+
+header {
+  border-bottom: 5px solid var(--color-primary);
+}
+
+nav {
+  width: 65%;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+nav .navbar-flag {
+  float: left;
+  margin-top: -30px;
+}
+
+nav .navbar-nav {
+  float: right;
+  margin-top: -15px;
+}
+
+nav .navbar-nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav .navbar-nav li a {
+  text-decoration: none;
+  color: var(--color-primary);
+  padding: 10px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+nav .navbar-nav li a:hover {
+  border-bottom: 5px solid var(--color-primary);
+}
+/*# sourceMappingURL=main.css.map */
