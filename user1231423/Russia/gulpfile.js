@@ -12,7 +12,7 @@ gulp.task('check-server', function () {
     server: "dist"
   });
   gulp.watch(['src/sass/*.scss'], ['compile-sass']).on('change', browserSync.reload);
-  gulp.watch('src/views/*.mustache', ['compile-mustache']).on('change', browserSync.reload);
+  gulp.watch('src/views/**/*.mustache', ['compile-mustache']).on('change', browserSync.reload);
 });
 
 //Compile scss into css
@@ -33,7 +33,7 @@ gulp.task('compile-mustache', function () {
         // We have an error
         console.log(error);
       })
-    .pipe(gulp.dest('dist/')); //sent to dist root
+    .pipe(gulp.dest('dist/')); //sent to root
 });
 
 //Remove all unused css
