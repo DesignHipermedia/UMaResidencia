@@ -63,13 +63,16 @@ body {
     .topnav.responsive {
         position: relative;
     }
+    .topnav a:nth-child(2) {
+        margin-top: 70px;
+    }
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
       top: 0;
     }
     .active {
-        background-color: $color__secondary_2;
+        background-color: $color__primary_2;
         width: 100%;
     }
     .topnav.responsive a {

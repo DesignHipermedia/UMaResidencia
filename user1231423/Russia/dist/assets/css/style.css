@@ -50,12 +50,14 @@ body {
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative; }
+  .topnav a:nth-child(2) {
+    margin-top: 70px; }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0; }
   .active {
-    background-color: #FFFFFF;
+    background-color: #EFEFEF;
     width: 100%; }
   .topnav.responsive a {
     float: none;
