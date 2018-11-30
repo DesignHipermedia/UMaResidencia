@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Head-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Russia</title>
+    <link rel="icon" type="image/png" href="assets/favicon/Russia_flag.png">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"></head>
+
+<body>
+    <!--Nav bar-->
+    <div class="topnav" id="nav_top">
+        <a class="img" href="index.html">
+            <img class="logo" src="assets/logo/Russia_flag.png"> 
+        </a>
+        <a href="#">Location</a>
+        <a href="#">Celebrities</a>
+        <a href="#">Governaments</a>
+        <a href="/monuments.html">Monuments</a>
+        <a href="/index.html">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="menu_icon fas fa-bars"></i>
+        </a>
+    </div>
+    <!--Slideshow-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://www.wallpaperup.com/uploads/wallpapers/2014/11/06/508580/5825a05b5f9142d5606a6fd03483f82d-700.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="http://www.ggconsultant.com/images/uni-russia.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://static.brusselsairlines.com/_img/destinationPage2/Russia/Moscow/Moscow_kremlin.jpg">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <div class="img_cards">
+        <div class="card">
+            <img src="http://img.bistekonline.com.br/Imagens/produtos/41/987441/987441_Detalhes.jpg" alt="5 Terre">
+            <div class="text_container">
+                <p>Vodka</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://logodownload.org/wp-content/uploads/2014/09/counter-strike-global-offensive-cs-go-logo.png" alt="Norther Lights">
+            <div class="text_container">
+                <p>CS GO</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.bigcartel.com/product_images/217981699/CYKA+BLYAT+PVC+PATCH+FRONT+BLK+RFL+DIV.jpg" alt="Norther Lights">
+            <div class="text_container">
+                <p>C##### ####</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <!--Footer-->
+    <div class="footer">
+        <div class="social_media">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2018 Russia</p>
+        </div>
+     </div>
+    <!--Scripts-->
+    <script>
+        var slideIndex = 1;
+            showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("nav_top");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+
+</html>
