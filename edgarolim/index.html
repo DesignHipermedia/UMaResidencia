@@ -1,15 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mexico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 </head>
 
 <body>
-    Projeto UmaResidencia
+    <div class="container">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/2000px-Flag_of_Mexico.svg.png" alt="logo" class="logo">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Pesquisar">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="symbol-defs.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="symbol-defs.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="symbol-defs.svg#icon-bubble"></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="http://www.esek.org.gr/images/ESET/eset_user.png" alt="User photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Anónimo</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-home"></use>
+                            </svg>
+                            <span>Cultura</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-store-front"></use>
+                            </svg>
+                            <span>Comidas típicas</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-bowl"></use>
+                            </svg>
+                            <span>Monumentos</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-game-controller"></use>
+                            </svg>
+                            <span>Festas</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    Copyright &copy; UNIVERSIDADE da MADEIRA
+                </div>
+            </nav>
+            <main>
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="http://residencia.sasuma.pt/img/QUARTOS/QUARTO1.jpg" alt="quarto da residência" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="http://residencia.sasuma.pt/img/QUARTOS/QUARTO2.jpg" alt="quartos da residência"
+                            class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="http://residencia.sasuma.pt/img/RECEPCAO/recepcao.jpg" alt="rececao" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="http://residencia.sasuma.pt/img/BAR/bar.jpg" alt="bar" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="http://residencia.sasuma.pt/img/ESPACOS/SALA.jpg" alt="espaços comuns" class="gallery__photo">
+                    </figure>
+                </div>
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        História:
+                    </h1>
+                    <div class="overview__location">
+                        <svg class="overview__icon-location">
+                            <use xlink:href="symbol-defs.svg#icon-location2"></use>
+                        </svg>
+                        <a class="btn-inline" href="https://goo.gl/maps/o3dQW7KuKDS2">México</a>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="description">
+                        <div>
+                            <p class="paragraph">
+                            O México é um país com uma história bastante complexa, há indícios de povos que habitavam a região há mais de 20.000 anos. Durante a época pré-hispânica, houve o apogeu das civilizações olmeca, azteca, teotihuan, zapoteca e maya, que durou aproximadamente 4.000 anos antes dos habitantes nativos entrarem em contato com a civilização européia. Os primeiros habitantes da região que hoje conhecemos como México, construíram observatórios, desenvolveram um calendário com 365 dias, construíam aquedutos, utilizavam hieróglifos para escrever, fizeram avanços em matemática e conheciam a álgebra.
+                            </p>
+                            <p class="paragraph">Em 1519, o espanhol Hernán Cortez chegou à ilha de Cozumel e, de lá, se deu a invasão do atual território mexicano. Tenochtitlán, capital do império azteca, foi destruída a partir de 1520, sobre suas ruínas foi construída a atual capital do México, Cidade do México. Junto dos militares espanhóis, chegaram, em 1524, também missionários (frades franciscanos) que convertiam os indígenas à fé católica.
+                            
+                            A colônia não desejava mais enviar riquezas para Espanha, este foi o maior motivo para a declaração da independência mexicana. Foram feitos movimentos e levantes que logo foram abafados. Na madrugada de 16 de setembro de 1810, o padre Miguel Hidalgo y Costilla, prendeu as autoridades locais na cadeia e pôs os presos nas ruas. Depois, durante uma missa, conclamou a população a derrubar o governo, fato que foi denominado grito da independência, realizado em um povoado chamado Dolores. A república foi proclamada em 1824.
+                            </p>
+                            <p class="paragraph">
+                            Entre 1846 e 1848, durante a guerra com os Estados Unidos o México perdeu uma série de territórios localizados no norte do país: áreas que, hoje, comprendem os estados do Texas, Nevada California, Utah e Novo Mexico.
+                            Durante o Porfiriato, período de 31 anos (1876-1911) de governo do general Porfirio Díaz (interrompido apenas entre 1880 e 1884 quando Manuel González ascendeu ao poder), foram construídos 19.000 km de vias férreas, deu-se a integração mexicana através dos telégrafos, foram realizados investimentos estrangeiros e a industria nacional foi impulsionada. A revolução mexicana, responsável pelo fim do porfiriato, foi liderada por Zapata e Villas, ocorreu em 1910 e custou a vida de 10% da população daquela época.    
+                            </p>
+                            <p class="paragraph">
+                            O Partido revolucionário institucional (PRI) dominou a cena política mexicana entre 1929 e 2000, todos os presidentes eleitos neste período pertenciam ao PRI, até que, em 2000, Vicente Fox Quesada foi eleito pelo Partido da Ação Nacional do México. O México passou por uma séria crise econômica, em 1994, devida à falta de competitividade das empresas mexicanas face à instalação de empresas norte-americanas, pertencentes ao NAFTA, que se instalaram no país. Cerca de 200 mil mexicanos perderam seus empregos. O México precisou de ajuda externa e os EUA fizeram um empréstimo a aquele país de 29 bilhões de dólares. No final da década de 90, o México foi o país que mais cresceu na América Latina. Arquivado em: História, História da América Espanhola, México
+                            </p>
+                        </div>
+                        <br>
+                        <h3>Estados:</h3>
+                        <ul class="list">
+                            <li class="list__item">Estado do México</li>
+                            <li class="list__item">Distrito Federal</li>
+                            <li class="list__item">Veracruz</li>
+                            <li class="list__item">Jalisco</li>
+                            <li class="list__item">Puebla</li>
+                            <li class="list__item">Guanajuato</li>
+                            <li class="list__item">Chiapas</li>
+                            <li class="list__item">Nuevo León</li>
+                            <li class="list__item">Michoacán</li>
+                            <li class="list__item">Oaxaca</li>
+                            <li class="list__item">Chihuahua</li>
+                            <li class="list__item">Guerrero</li>
+                            <li class="list__item">Tamaulipas</li>
+                            <li class="list__item">Baja California</li>
+                            <li class="list__item">Sinaloa</li>
+                            <li class="list__item">Coahhuila</li>
+                            <li class="list__item">Hidalgo</li>
+                            <li class="list__item">Sonora</li>
+                            <li class="list__item">San Luis Potosí</li>
+                            <li class="list__item">Tabasco</li>
+                            <li class="list__item">Iucatã</li>
+                            <li class="list__item">Queretaro</li>
+                            <li class="list__item">Morelos</li>
+                            <li class="list__item">Durango</li>
+                            <li class="list__item">Zacatecas</li>
+                            <li class="list__item">Quintana Roo</li>
+                            <li class="list__item">Aguascalientes</li>
+                            <li class="list__item">Tlaxcala</li>
+                            <li class="list__item">Nayarit</li>
+                            <li class="list__item">Campeche</li>
+                            <li class="list__item">Colima</li>
+                            <li class="list__item">Baja California Sur</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                Anónimo e outros 3 estudantes recomendam esta residência.
+                            </p>
+                            <div class="recommend__friends">
+                                <img src="https://avatars3.githubusercontent.com/u/44034816?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825239?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825290?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825275?s=88&v=4" alt="foto" class="recommend__photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint libero quod
+                                officiis vel?
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars3.githubusercontent.com/u/44034816?s=88&v=4" alt="foto" class="review__photo">
+
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Anónimo</p>
+                                    <p class="review__user-country">Venezuela</p>
+                                </div>
+                                <div class="review__rating">7.8</div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, natus!
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars3.githubusercontent.com/u/43825275?s=88&v=4" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Anónimo</p>
+                                    <p class="review__user-country">Marrocos</p>
+                                </div>
+                                <div class="review__rating">8.1</div>
+                            </figcaption>
+                        </figure>
+                        <button class="btn-inline"> Mostrar todos<span></span>&rarr;</span></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
 </body>
 
 </html>
