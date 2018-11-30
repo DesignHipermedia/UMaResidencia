@@ -7,7 +7,7 @@ Em termos técnicos, pretende-se que sejam concretizados os seguintes items:
 
 (5 valores) – Estrutura de navegação funcional (mínimo de 5 páginas);
 
-(2 valores) – Tratamento de pelo menos 20 imagens a incluir numa galeria e/ou páginas do site;
+(2 valores) –  Tratamento de pelo menos 20 imagens a incluir numa galeria e/ou páginas do site;
 
 (5 valores) – Inclusão de um elementos programados (Javascript, sass, etc);
 
@@ -17,4 +17,4 @@ Em termos técnicos, pretende-se que sejam concretizados os seguintes items:
 
 
 
-*Neste projeto não poderam ser usadas frameworks de CSS (como por exemplo o Bootstrap)
+*Neste projeto não poderão ser usadas frameworks de CSS (como por exemplo o Bootstrap)
