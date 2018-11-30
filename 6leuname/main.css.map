@@ -2,8 +2,9 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "custom.scss"
+        "main.scss",
+        "_layout.scss"
     ],
     "names": [],
-    "file": "custom.css"
+    "file": "main.css"
 }
