@@ -127,15 +127,16 @@ body {
 
 .footer {
   background-color: #EFEFEF;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 5rem; }
+  height: 6rem; }
 
 .social_media {
   text-align: center;
-  margin: 15px; }
+  margin: 30px;
+  padding-top: 20px; }
 
 .social_media > i {
   font-size: 25px;
@@ -201,3 +202,44 @@ i:hover {
     font-size: 25px;
     padding-right: 10px;
     padding-left: 10px; } }
+
+.monument_cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.monument {
+  cursor: pointer;
+  width: 16rem;
+  margin: 1.5rem;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.monument:hover {
+  transform: scale(1.01); }
+
+.monument > img {
+  height: 22rem;
+  width: 16rem;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.monument_text_container {
+  position: absolute;
+  height: 5rem;
+  width: 16rem;
+  margin-top: -4rem;
+  margin-right: -3px;
+  margin-left: -3px;
+  font-size: 20px;
+  background-color: #F8F7F7;
+  border-radius: 30px;
+  border: 3px #FF0027;
+  border-style: solid;
+  color: #0F0E0E;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }

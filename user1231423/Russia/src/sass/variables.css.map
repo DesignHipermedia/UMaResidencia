@@ -2,9 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "main.scss",
-        "_layout.scss"
+        "variables.scss"
     ],
     "names": [],
-    "file": "main.css"
+    "file": "variables.css"
 }
