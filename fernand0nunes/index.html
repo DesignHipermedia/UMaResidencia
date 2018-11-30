@@ -12,41 +12,44 @@
 <body>
     <div class="container">
         <header>
-            <nav>
-                <input type="checkbox" id="nav" class="hidden">
-                <label for="nav" class="nav-btn">
-
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </label>
-                <div class="logo">
-                    <img src="marrocos.png" alt="">
-                </div>
-                <div class="nav-wrapper">
-                    <ul>
-                        <li>
-                            <a href="#">Home</ahref>
-                        </li>
-                        <li>
-                            <a href="#">About</ahref>
-                        </li>
-                        <li>
-                            <a href="#">Culture</ahref>
-                        </li>
-                        <li>
-                            <a href="#">Spaces</ahref>
-                        </li>
-                        <li>
-                            <a href="#">Food</ahref>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <header>
+                <nav>
+                    <div class="logo">
+                        <img src="marrocos.png" alt="">
+                    </div>
+                    <div class="nav-wrapper">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Culture</a>
+                            </li>
+                            <li>
+                                <a href="#">Spaces</a>
+                            </li>
+                            <li>
+                                <a href="#">Food</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
         </header>
         <section>
 
         </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(window).scroll(function(){
+            var scroll_position = $(window).scroll();
+            $('section').css({
+                'background-position-x' : - scroll_position + 'px';
+            })
+        })
+        </script>
     </div>
 </body>
 
