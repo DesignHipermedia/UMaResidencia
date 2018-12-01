@@ -295,3 +295,101 @@ i:hover{
     font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.monument_text_container > p {
+    margin-top: 1.9rem;
+}
+
+//Celebrities page
+.celeb > a{
+    text-decoration: none;
+    &__:hover{
+        cursor: pointer;
+    }
+    color: $color__secondary_2;
+}
+
+.celeb_cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.celeb {
+    width: 18rem;
+    height: 28rem;
+    margin: 3rem;
+    border-radius: $border;
+    background-color: $color__secondary_2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.celeb_name{
+    position: absolute;
+    height: 0px;
+    width: 18rem;
+    font-size: 20px;
+    background-color: $color__secondary_2;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.celeb_background_img{
+    background-color: $color__primary_2;
+}
+
+.celeb_background_img > img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 13rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.celeb_age_container{
+    margin-top: -12rem;
+    margin-left: 10px;
+}
+
+.celeb_height_container{
+    margin-left: 10px;
+}
+
+.celeb_comp_container{
+    margin-left: 10px;
+}
+
+.celeb_btn_container {
+    position: absolute;
+    height: 4rem;
+    width: 18rem;
+    font-size: 20px;
+    background-color: $color__primary_3;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.celeb_name > p{
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .celeb_btn_container {
+        position: absolute;
+        height: 4rem;
+        width: 17.5rem;
+        font-size: 20px;
+        background-color: $color__primary_3;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
