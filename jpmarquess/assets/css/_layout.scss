@@ -1,15 +1,28 @@
 header {
-    border-bottom: 5px solid var(--color-primary);
+    border-bottom: 5px solid rgb(0, 73, 135);
+    background-color: #f2f3f2;
+    opacity: .85;
+    position: relative;
 }
 
 nav {
     width: 65%;
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 40px 0;
+    transition: width .3s ease-in-out;
+
+    @media screen and (max-width: 1200px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 950px) {
+        width: 100%;
+        padding: 50px 15px;
+    }
     
     .navbar-flag {
         float: left;
-        margin-top: -30px;
+        margin-top: -35px;
     }
 
     .navbar-nav {
@@ -23,15 +36,103 @@ nav {
 
             a {
                 text-decoration: none;
-                color: var(--color-primary);
+                color: rgb(0, 73, 135);
                 padding: 10px 0;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 font-weight: 600;
-                letter-spacing: 0.7px;
+                letter-spacing: 1px;
 
                 &:hover {
                     border-bottom: 5px solid var(--color-primary);
                 }
+            }
+        }
+    }
+}
+
+main {
+    background-image: url("../img/bg-index.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -85px;
+
+    @media screen and (max-width: 950px) {
+        margin-top: -105px;
+    }
+
+    h1 {
+        color: #fff;
+        text-align: left;
+        font-size: 4.2rem;
+        letter-spacing: 2px;
+        position: absolute;
+        // bottom: 250px;
+        bottom: calc(50% - 200px);
+        left: 200px;
+        text-shadow: 1px 1px 2px #000;
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+
+            i {
+                position: relative;
+                top: 0px;
+                font-size: 2.2rem;
+                margin-left: 5px;
+                cursor: pointer;
+                transition: top .1s ease-in-out;
+                
+                &:hover {
+                    top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.plan {
+    width: 65%;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    h1 {
+        color: #000;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    // hr {
+    //     border: 2px solid #000;
+    //     width: 50px;
+    //     margin-bottom: 50px;
+    // }
+
+    .card {
+        width: 100%;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+        }
+        
+        figure {
+            display: inline-block;
+            width: 25%;
+            margin: 0 20px;
+
+            img {
+                width: 100%;
+            }
+
+            figcaption  {
+                margin-top: -2px;
+                padding: 15px 0;
+                color: #fff;
+                background-color: #000;
             }
         }
     }

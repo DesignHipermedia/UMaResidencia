@@ -1,38 +1,69 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,600,700");
 :root {
-  --color-primary: #006aa7;
-  --color-secondary: #FFCD00;
+  --color-primary:      rgb(0, 73, 135);
+  --color-secondary:    #ffcd00;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
   --color-grey-light-4: #ccc;
-  --color-grey-dark-1: #333;
-  --color-grey-dark-2: #777;
-  --color-grey-dark-3: #999;
+  --color-grey-dark-1:  #333;
+  --color-grey-dark-2:  #777;
+  --color-grey-dark-3:  #999;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
   --line: 1px solid var(--color-grey-light-2);
 }
 
+::-moz-selection {
+  background-color: var(--color-secondary);
+}
+
+::selection {
+  background-color: var(--color-secondary);
+}
+
+html {
+  overflow-x: hidden;
+}
+
 html,
 body {
   font-family: 'Oswald', sans-serif;
-  background-color: var(--color-grey-light-3);
+  background-color: #f2f3f2;
+  width: 100%;
 }
 
 header {
-  border-bottom: 5px solid var(--color-primary);
+  border-bottom: 5px solid #004987;
+  background-color: #f2f3f2;
+  opacity: .85;
+  position: relative;
 }
 
 nav {
   width: 65%;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 40px 0;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  nav {
+    width: 100%;
+    padding: 50px 15px;
+  }
 }
 
 nav .navbar-flag {
   float: left;
-  margin-top: -30px;
+  margin-top: -35px;
 }
 
 nav .navbar-nav {
@@ -48,14 +79,98 @@ nav .navbar-nav li {
 
 nav .navbar-nav li a {
   text-decoration: none;
-  color: var(--color-primary);
+  color: #004987;
   padding: 10px 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  letter-spacing: 0.7px;
+  letter-spacing: 1px;
 }
 
 nav .navbar-nav li a:hover {
   border-bottom: 5px solid var(--color-primary);
+}
+
+main {
+  background-image: url("../img/bg-index.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -85px;
+}
+
+@media screen and (max-width: 950px) {
+  main {
+    margin-top: -105px;
+  }
+}
+
+main h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 4.2rem;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: calc(50% - 200px);
+  left: 200px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+main h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main h1 a i {
+  position: relative;
+  top: 0px;
+  font-size: 2.2rem;
+  margin-left: 5px;
+  cursor: pointer;
+  -webkit-transition: top .1s ease-in-out;
+  transition: top .1s ease-in-out;
+}
+
+main h1 a i:hover {
+  top: 5px;
+}
+
+.plan {
+  width: 65%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.plan h1 {
+  color: #000;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.plan .card {
+  width: 100%;
+  text-align: center;
+}
+
+.plan .card a {
+  text-decoration: none;
+}
+
+.plan .card figure {
+  display: inline-block;
+  width: 25%;
+  margin: 0 20px;
+}
+
+.plan .card figure img {
+  width: 100%;
+}
+
+.plan .card figure figcaption {
+  margin-top: -2px;
+  padding: 15px 0;
+  color: #fff;
+  background-color: #000;
 }
 /*# sourceMappingURL=main.css.map */
