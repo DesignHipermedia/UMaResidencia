@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <header>
+        <section>
             <header>
                 <nav>
                     <div class="logo">
@@ -37,18 +37,20 @@
                         </ul>
                     </div>
                 </nav>
-        </header>
-        <section>
+            </header>
+
 
         </section>
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
         <script type="text/javascript">
-        $(window).scroll(function(){
-            var scroll_position = $(window).scroll();
-            $('section').css({
-                'background-position-x' : - scroll_position + 'px';
+            $(window).scroll(function () {
+                var scroll_position = $(window).scrollTop();
+                $('section').css({
+                    'background-position-x': - scroll_position + 'px',
+                })
             })
-        })
         </script>
     </div>
 </body>
