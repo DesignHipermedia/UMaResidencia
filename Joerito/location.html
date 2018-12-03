@@ -19,10 +19,10 @@
                     <button class="search__button"></button>
                 </form>
                 <a href="index.html">
-                    <li class="navbar__item navbar__item__active">Home</li>
+                    <li class="navbar__item">Home</li>
                 </a>
                 <a href="location.html">
-                    <li class="navbar__item">Location</li>
+                    <li class="navbar__item navbar__item__active">Location</li>
                 </a>
                 <a href="history.html">
                     <li class="navbar__item">History</li>
@@ -38,39 +38,15 @@
     </header>
 
     <main>
-        <div class="bgimage"></div>
-
         <section class="main-section">
             <div class="main-section__content">
-                <div class="main-section__title">虛</div>
+                <div class="main-section__title">Location</div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore reprehenderit aut odit similique
                     nam, facilis itaque tenetur sint laudantium ab excepturi a, debitis dolores obcaecati voluptates expedita impedit.
                 </p>
             </div>
-            <img src="https://i.pinimg.com/originals/1e/45/f0/1e45f0ec1292d364e5ad6d1fb04c9cb9.jpg" class="main-section__image">
-        </section>
-    
-        <section class="main-section">
-            <img src="https://www.valuewalk.com/wp-content/uploads/2018/04/china_1523153620.jpg" class="main-section__image">
-            <div class="main-section__content">
-                <div class="main-section__title">鬱</div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic impedit nemo perferendis. Nobis unde aliquam,
-                    recusandae facere, dolor minus laborum ullam sit sunt maiores nam eos voluptates optio non.
-                </p>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <div class="main-section__content">
-                <div class="main-section__title">死</div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sapiente repellendus asperiores porro dolor
-                    consectetur dolore mollitia, facere maxime vel eum quae corrupti eius corporis libero hic rerum aut aliquid.
-                </p>
-            </div>
-            <img src="https://c1.staticflickr.com/9/8642/27982227080_6bc0a58ee1_b.jpg" class="main-section__image">
+            <div class="main-section__map" id="map"></div>
         </section>
     </main>
 
@@ -86,3 +62,12 @@
 
 </body>
 </html>
+
+<script>
+    function initMap() {
+        var china = {lat: 35.861660, lng: 104.195396};
+        var map = new google.maps.Map(document.getElementById('map'), {zoom: 5, center: china});
+        var marker = new google.maps.Marker({position: china, map: map});
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
