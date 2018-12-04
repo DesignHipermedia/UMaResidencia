@@ -77,7 +77,7 @@
             //console.log(data)
             var html = '';
             $.each(data, function(entryIndex, entry) {//passa pela 'data' por cada entryIndex
-                html += '<img class="section-gallery__image" src="' + entry.imagem + '" id="' + entryIndex + '" style="height:200px;width:200px;" onclick="selecionaimagem(this.id)">'
+                html += '<img class="section-gallery__image" src="' + entry.imagem + '" id="' + entryIndex + '" onclick="selecionaimagem(this.id)">'
             });
             $('#galeria').html(html);//add to html toda a info em 'html'
             //console.log(html)

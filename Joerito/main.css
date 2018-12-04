@@ -149,12 +149,11 @@ nav form button {
 
 @media only screen and (max-width: 800px) {
   nav ul {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   nav li {
-    padding: 20px 10px 20px 10px;
+    padding: 20px 5px 20px 5px;
   }
 }
 
@@ -292,6 +291,7 @@ main .bgimage {
   font-weight: 100;
   font-size: 20px;
   width: 30%;
+  height: 100vh;
 }
 
 .section-gallery__gallery {
@@ -324,6 +324,8 @@ main .bgimage {
   transition: opacity 1s, flex-grow 1s, -webkit-box-flex 1s;
   transition: opacity 1s, flex-grow 1s;
   transition: opacity 1s, flex-grow 1s, -webkit-box-flex 1s, -ms-flex-positive 1s;
+  height: 200px;
+  width: 200px;
 }
 
 .section-gallery__image:hover {
@@ -346,14 +348,18 @@ main .bgimage {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    margin-left: 0;
   }
   .section-gallery__content {
+    font-size: 15px;
     padding: 10px;
     width: 50%;
   }
   .section-gallery__image {
-    height: 100%;
-    width: 100%;
+    height: 100px;
+    width: 100px;
   }
 }
 
