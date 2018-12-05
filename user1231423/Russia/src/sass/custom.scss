@@ -406,6 +406,7 @@ i:hover{
     text-align: center;
     font-size: 22px;
 }
+
 .contact-form{
     input[type=text],textarea{
         width: 100%;
@@ -468,5 +469,23 @@ i:hover{
         background:none!important;
         height:30rem;
         width:100%;
+    }
+    .contact-form-txt{
+        margin-top: -1rem;
+    }
+    .contact-form{
+        input[type=submit]{
+            margin-left: 3rem;
+        }
+        input[type=text],textarea{
+            width: 90%;
+            border: 2px $color__primary_2;
+            border-style: solid;
+            padding: 12px;
+            border-radius: 50px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
     }
 }
