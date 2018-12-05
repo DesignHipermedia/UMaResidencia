@@ -5,12 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Marrocos</title>
 </head>
 
 <body>
-    <div>
-        <img src="" alt="">
+    <div class="container">
+        <section>
+            <header>
+                <nav>
+                    <div class="logo">
+                        <img src="marrocos.png" alt="">
+                    </div>
+                    <div class="nav-wrapper">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Culture</a>
+                            </li>
+                            <li>
+                                <a href="#">Spaces</a>
+                            </li>
+                            <li>
+                                <a href="#">Food</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(window).scroll(function () {
+                var scroll_position = $(window).scrollTop();
+                $('section').css({
+                    'background-position-x': - scroll_position + 'px',
+                })
+            })
+        </script>
     </div>
 </body>
 
