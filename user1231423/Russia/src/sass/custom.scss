@@ -489,3 +489,51 @@ i:hover{
         }
     }
 }
+
+//Experience Page
+.experience-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.opinion{
+    width: 30rem;
+    .opinion-img > img{
+        width: 30rem;
+        height: 15rem;
+    }
+    .opinion-title{
+        text-align: center;
+        margin-top: 16rem;
+    }
+    .opinion-txt{
+        text-align: justify;
+    }
+}
+
+.person{
+    width: 30rem;
+    .person-img > img{
+        margin-left: 7rem !important;
+        height: 15rem;
+    }
+    .person-title{
+        text-align: center;
+        margin-top: 16rem;
+    }
+    .person-profession{
+        text-align: center;
+        margin-top: -1rem;
+    }
+    .person-txt{
+        text-align: justify;
+    }
+    .person-social-media{
+        margin-left: 8rem;
+    }
+    .person-social-media > i{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+}
