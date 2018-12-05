@@ -9,17 +9,6 @@
   --color-grey-dark-1:  #333;
   --color-grey-dark-2:  #777;
   --color-grey-dark-3:  #999;
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
-  --line: 1px solid var(--color-grey-light-2);
-}
-
-::-moz-selection {
-  background-color: var(--color-secondary);
-}
-
-::selection {
-  background-color: var(--color-secondary);
 }
 
 html {
@@ -90,7 +79,7 @@ nav .navbar-nav li a:hover {
   border-bottom: 5px solid var(--color-primary);
 }
 
-main {
+.main-index {
   background-image: url("../img/bg-index.jpg");
   height: 100vh;
   background-size: cover;
@@ -100,28 +89,31 @@ main {
 }
 
 @media screen and (max-width: 950px) {
-  main {
+  .main-index {
     margin-top: -105px;
   }
 }
 
-main h1 {
-  color: #fff;
-  text-align: left;
-  font-size: 4.2rem;
-  letter-spacing: 2px;
+.main-index .index-welcome {
   position: absolute;
   bottom: calc(50% - 200px);
   left: 200px;
-  text-shadow: 1px 1px 2px #000;
 }
 
-main h1 a {
-  color: #fff;
+.main-index h1 {
+  color: #f2f3f2;
+  text-shadow: 1px 1px 2px #000;
+  text-align: left;
+  font-size: 4.2rem;
+  letter-spacing: 2px;
+}
+
+.main-index h1 a {
+  color: #f2f3f2;
   text-decoration: none;
 }
 
-main h1 a i {
+.main-index h1 a i {
   position: relative;
   top: 0px;
   font-size: 2.2rem;
@@ -131,46 +123,201 @@ main h1 a i {
   transition: top .1s ease-in-out;
 }
 
-main h1 a i:hover {
-  top: 5px;
+.main-index h1 a i:hover {
+  top: 10px;
 }
 
-.plan {
-  width: 65%;
+.main-info {
+  width: 80%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
-.plan h1 {
+.main-info h1 {
   color: #000;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.plan .card {
-  width: 100%;
-  text-align: center;
+.main-info hr {
+  border: 2px solid #000;
+  width: 50px;
+  margin-bottom: 30px;
 }
 
-.plan .card a {
+.main-info .info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main-info .info-card a {
   text-decoration: none;
 }
 
-.plan .card figure {
-  display: inline-block;
-  width: 25%;
-  margin: 0 20px;
+.main-info .info-card figure {
+  margin: 20px 0;
+  overflow: hidden;
+  max-height: 380px;
+  -webkit-transition: -webkit-box-shadow .3s, -webkit-transform .3s;
+  transition: -webkit-box-shadow .3s, -webkit-transform .3s;
+  transition: box-shadow .3s, transform .3s;
+  transition: box-shadow .3s, transform .3s, -webkit-box-shadow .3s, -webkit-transform .3s;
 }
 
-.plan .card figure img {
-  width: 100%;
+.main-info .info-card figure:hover {
+  -webkit-box-shadow: -10px 15px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: -10px 15px 25px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
-.plan .card figure figcaption {
-  margin-top: -2px;
+.main-info .info-card figure:hover img {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+
+.main-info .info-card figure:hover figcaption h2 {
+  -webkit-transform: translateY(-130px);
+          transform: translateY(-130px);
+}
+
+.main-info .info-card figure:hover figcaption p {
+  color: #f2f3f2;
+  text-shadow: 1px 1px 2px #000;
+  line-height: 1.5rem;
+  word-spacing: 5px;
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-info .info-card figure img {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.main-info .info-card figure figcaption {
+  max-width: 380px;
   padding: 15px 0;
-  color: #fff;
-  background-color: #000;
+  background-color: transparent;
+  position: relative;
+}
+
+.main-info .info-card figure figcaption h2 {
+  position: absolute;
+  bottom: 70px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #f2f3f2;
+  margin-left: 30px;
+  text-shadow: 1px 1px 2px #000;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.main-info .info-card figure figcaption p {
+  color: transparent;
+  font-size: 1.2rem;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 30px;
+  -webkit-transition: opacity .3s, visibility .3s;
+  transition: opacity .3s, visibility .3s;
+}
+
+footer {
+  background-color: var(--color-secondary);
+}
+
+footer .footer-social {
+  padding: 30px 0 37px;
+  background-color: var(--color-primary);
+  text-align: center;
+}
+
+footer .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-social ul li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+footer .footer-social ul li:first-child {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+footer .footer-social ul li a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: .5px;
+  border-bottom: 1px dotted var(--color-secondary);
+}
+
+footer .footer-social ul li a:hover {
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+footer .separador {
+  border-left: 5px solid var(--color-primary);
+}
+
+footer .footer-link {
+  padding: 100px 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer-link .footer-nav li {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+footer .footer-link .footer-nav li:first-child {
+  margin-top: 0;
+}
+
+footer .footer-link .footer-nav li a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=main.css.map */
