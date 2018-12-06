@@ -195,7 +195,7 @@ i:hover{
 }
 
 .card {
-    width: 30%;
+    width: 18rem;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -391,5 +391,149 @@ i:hover{
         border-radius: 20px;
         text-align: center;
         font-weight: bold;
+    }
+}
+
+//Contact page
+.full-contact-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-form-txt{
+    margin-top: -2rem;
+    text-align: center;
+    font-size: 22px;
+}
+
+.contact-form{
+    input[type=text],textarea{
+        width: 100%;
+        border: 2px $color__primary_2;
+        border-style: solid;
+        padding: 12px;
+        border-radius: 50px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input:focus{
+        outline: none !important;
+        border: 2px solid $color__primary_1;
+        transform: scale(1.01);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    textarea:focus{
+        outline: none !important;
+        border: 2px solid $color__primary_1;
+        transform: scale(1.01);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    textarea{
+        border-radius: 20px!important;
+        height: 12.2rem;
+    }
+    input[type=submit]{
+        background-color: $color__primary_3;
+        color: white;
+        font-size: 20px;
+        padding: 12px 5rem;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover{
+        background-color: $color__primary_1;
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+
+@media screen and (max-width: 600px) {
+    .full-contact-container{
+        margin: 2rem;
+    }
+    .map{
+        max-width: 100%;
+    }
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:30rem;
+        width:100%;
+    }
+    .contact-form-txt{
+        margin-top: -1rem;
+    }
+    .contact-form{
+        input[type=submit]{
+            margin-left: 3rem;
+        }
+        input[type=text],textarea{
+            width: 90%;
+            border: 2px $color__primary_2;
+            border-style: solid;
+            padding: 12px;
+            border-radius: 50px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+    }
+}
+
+//Experience Page
+.experience-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.opinion{
+    width: 30rem;
+    .opinion-img > img{
+        width: 30rem;
+        height: 15rem;
+    }
+    .opinion-title{
+        text-align: center;
+        margin-top: 16rem;
+    }
+    .opinion-txt{
+        text-align: justify;
+    }
+}
+
+.person{
+    width: 30rem;
+    .person-img > img{
+        margin-left: 7rem !important;
+        height: 15rem;
+    }
+    .person-title{
+        text-align: center;
+        margin-top: 16rem;
+    }
+    .person-profession{
+        text-align: center;
+        margin-top: -1rem;
+    }
+    .person-txt{
+        text-align: justify;
+    }
+    .person-social-media{
+        margin-left: 8rem;
+    }
+    .person-social-media > i{
+        margin-left: 20px;
+        font-size: 20px;
     }
 }
