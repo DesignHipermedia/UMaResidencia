@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Tinos:400,700");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tinos', serif;
+  font-weight: 700;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+}
+
+header nav {
+  width: 80%;
+  margin: 0 auto;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+header nav .navbar-bandeira {
+  float: left;
+  margin-top: 20px;
+}
+
+header nav .navbar-nav {
+  float: right;
+  margin-top: 50px;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav li:last-child {
+  margin-right: 0;
+}
+
+header nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header nav li a:hover {
+  color: #000;
+}
+
+section {
+  background-image: url("../img/santorini.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 90vh;
+  margin-top: -150px;
+}
+/*# sourceMappingURL=main.css.map */

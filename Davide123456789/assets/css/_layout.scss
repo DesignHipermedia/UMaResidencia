@@ -1,0 +1,50 @@
+header {
+    position: relative;
+
+    nav {
+        width: 80%;
+        margin: 0 auto;
+        list-style-type: none;
+        overflow: hidden;
+        
+        .navbar-bandeira {
+            float: left;
+            margin-top: 20px;
+        }
+    
+        .navbar-nav {
+            float: right;
+            margin-top: 50px;
+        }
+    
+        li {
+            display: inline-block;
+            margin-right: 20px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+    
+            a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+section {
+    background-image: url("../img/santorini.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+    margin-top: -150px;
+}
