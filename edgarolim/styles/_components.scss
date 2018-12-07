@@ -12,7 +12,6 @@
     &__input {
         font-family: inherit;
         font-size: 1.4rem;
-        color: inherit;
         background-color: var(--color-grey-light-2);
         border: none;
         padding: .7rem 2rem;
@@ -81,7 +80,7 @@
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
-        fill: var(--color-grey-dark-2);
+        fill: var(--color-grey-1);
     }
 
     &__notification {
@@ -143,7 +142,7 @@
 
     &__link:link,
     &__link:visited {
-        color: var(--color-grey-light-1);
+        color: var(--color-grey-1);
         text-decoration: none;
         text-transform: uppercase;
         padding: 1.5rem 3rem;
@@ -334,7 +333,6 @@
 }
 
 .review {
-    background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
     margin-bottom: 3.5rem;
