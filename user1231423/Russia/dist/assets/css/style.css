@@ -233,14 +233,10 @@ i:hover {
   height: 5rem;
   width: 16rem;
   margin-top: -4rem;
-  margin-right: -3px;
-  margin-left: -3px;
   font-size: 20px;
-  background-color: #F8F7F7;
+  background-color: #FF0027;
   border-radius: 30px;
-  border: 3px #FF0027;
-  border-style: solid;
-  color: #0F0E0E;
+  color: #F8F7F7;
   text-align: center;
   font-weight: bold;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
