@@ -51,7 +51,7 @@ nav {
 }
 
 .main-index {
-    background-image: url("../img/bg-index.jpg");
+    background-image: url("../img/bg-index2.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -102,7 +102,7 @@ nav {
 
     h1 {
         color: #000;
-        font-size: 2.8rem;
+        font-size: 2.7rem;
         letter-spacing: 1px;
         text-align: center;
         margin-bottom: 40px;
@@ -126,7 +126,7 @@ nav {
         figure {
             margin: 20px 0;
             overflow: hidden;
-            max-height: 380px;
+            max-height: 340px;
             transition: box-shadow .3s, transform .3s;
             
             &:hover {
@@ -158,7 +158,7 @@ nav {
             }
             
             figcaption  {
-                max-width: 380px;
+                max-width: 340px;
                 padding: 15px 0;
                 background-color: transparent;
                 position: relative;
@@ -181,6 +181,7 @@ nav {
                     opacity: 0;
                     visibility: hidden;
                     margin-left: 30px;
+                    max-width: 290px;
                     transition: opacity .3s, visibility .3s;
                 }
             }
