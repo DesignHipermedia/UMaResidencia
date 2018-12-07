@@ -412,31 +412,60 @@ i:hover {
   flex-wrap: wrap; }
 
 .opinion {
-  width: 30rem; }
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 30rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .opinion .opinion-img > img {
     width: 30rem;
-    height: 15rem; }
+    height: 15rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; }
   .opinion .opinion-title {
+    font-size: 15px;
     text-align: center;
     margin-top: 16rem; }
   .opinion .opinion-txt {
+    font-size: 13px;
     text-align: justify; }
 
 .person {
-  width: 30rem; }
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 30rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .person .person-img > img {
     margin-left: 7rem !important;
-    height: 15rem; }
+    height: 15.5rem;
+    border-radius: 50%; }
   .person .person-title {
+    font-size: 15px;
     text-align: center;
     margin-top: 16rem; }
   .person .person-profession {
     text-align: center;
-    margin-top: -1rem; }
+    margin-top: -1rem;
+    font-size: 15px; }
   .person .person-txt {
-    text-align: justify; }
+    text-align: justify;
+    font-size: 13px; }
   .person .person-social-media {
-    margin-left: 8rem; }
+    margin-left: 8rem;
+    padding-bottom: 20px; }
   .person .person-social-media > i {
     margin-left: 20px;
     font-size: 20px; }
+
+@media screen and (max-width: 600px) {
+  .opinion {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem; }
+    .opinion .opinion-img > img {
+      width: 100%; }
+  .person {
+    width: 100%; }
+    .person .person-img > img {
+      margin-left: 4.1rem !important; }
+    .person .person-social-media {
+      margin-left: 4.5rem; } }
