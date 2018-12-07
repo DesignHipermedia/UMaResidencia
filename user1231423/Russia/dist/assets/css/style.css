@@ -233,14 +233,10 @@ i:hover {
   height: 5rem;
   width: 16rem;
   margin-top: -4rem;
-  margin-right: -3px;
-  margin-left: -3px;
   font-size: 20px;
-  background-color: #F8F7F7;
+  background-color: #FF0027;
   border-radius: 30px;
-  border: 3px #FF0027;
-  border-style: solid;
-  color: #0F0E0E;
+  color: #F8F7F7;
   text-align: center;
   font-weight: bold;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
@@ -405,3 +401,67 @@ i:hover {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical; } }
+
+.experience-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.opinion {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 30rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .opinion .opinion-img > img {
+    width: 30rem;
+    height: 15rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; }
+  .opinion .opinion-title {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 16rem; }
+  .opinion .opinion-txt {
+    font-size: 13px;
+    text-align: justify; }
+
+.person {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 30rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .person .person-img > img {
+    margin-left: 7rem !important;
+    height: 15.5rem;
+    border-radius: 50%; }
+  .person .person-title {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 16rem; }
+  .person .person-profession {
+    text-align: center;
+    margin-top: -1rem;
+    font-size: 15px; }
+  .person .person-txt {
+    text-align: justify;
+    font-size: 13px; }
+  .person .person-social-media {
+    margin-left: 8rem;
+    padding-bottom: 20px; }
+  .person .person-social-media > i {
+    margin-left: 20px;
+    font-size: 20px; }
+
+@media screen and (max-width: 600px) {
+  .opinion {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem; }
+    .opinion .opinion-img > img {
+      width: 100%; }
+  .person {
+    width: 100%; }
+    .person .person-img > img {
+      margin-left: 4.1rem !important; }
+    .person .person-social-media {
+      margin-left: 4.5rem; } }
