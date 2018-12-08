@@ -7,8 +7,11 @@
 :root {
     --color-primary: #ffffff;
     --color-bottom: rgb(0, 0, 0);
-    --color-representative-transparent:  rgb(66, 65, 65, 0.5);
+    --color-representative:  rgb(68, 67, 67);
+    --color-representative2: rgb(148, 145, 145);
+    --color-representative-transparent:  rgba(17, 15, 15, 0.5);
     --color-representative-transparent-visited:  rgba(143, 141, 141, 0.5);
+    --color-black-transparent:  rgba(12, 12, 12, 0.253);
 
  }
 
@@ -34,7 +37,6 @@
  .container {
      width: 98%;
      margin: auto;
-     background-color: none;
  }
 
  h1 {
