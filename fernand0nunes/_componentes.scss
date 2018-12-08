@@ -1,0 +1,58 @@
+//navbar
+.logo{
+    float: left;
+    padding:8px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #63636354;
+    font-family: 'poppins', sans-serif;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a{
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger{
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+}
+@media screen and (max-width: 1024px) {
+    .nav-links{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 728px) {
+    .nav-links{
+       position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #63636354;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+}
