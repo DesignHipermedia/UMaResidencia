@@ -15,6 +15,30 @@
   --line: 3px solid rgb(223, 0, 0);
 }
 
+.logo_ativar {
+  fill: var(--color-highlight-2);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.logo_desativar {
+  fill: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav_ativar {
+  background-color: var(--transparent-opacity-2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav_desativar {
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 a {
   text-decoration: none;
   color: var(--color-white-1);
@@ -25,13 +49,6 @@ a {
   padding: 0;
 }
 
-/*html{
-    box-sizing: border-box;
-
-    @media only screen and (max-width: $bp-large){
-        font-size: 50%;
-    }
-}*/
 .add-margin-top {
   margin-top: 69.25px;
 }
@@ -63,11 +80,6 @@ body {
   background-position: center;
 }
 
-/*$bp-largest: 75em;
-$bp-large: 68.75em;
-$bp-medium: 56.25em;
-$bp-small: 37.5em;
-$bp-smallest: 31.25em;*/
 header {
   z-index: 1;
   display: -webkit-box;
@@ -171,9 +183,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*@media only screen and (max-width: $bp-medium){
-        flex-direction: column;
-    }*/
 }
 
 main .bgimage {
@@ -182,7 +191,7 @@ main .bgimage {
   background-image: url("http://wanderlogue.co/wp-content/uploads/2017/08/DSC_0532.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% -10%;
+  background-position: 50% 0%;
   border: 0;
 }
 
@@ -390,6 +399,7 @@ footer {
 
 footer .footer-section__image {
   width: 225px;
+  height: 225px;
 }
 
 /*Logo*/
@@ -405,7 +415,6 @@ header {
 }
 
 header .topnav {
-  background-color: var(--transparent-opacity-2);
   color: var(--color-white-1);
   font-weight: 300;
 }
@@ -421,6 +430,8 @@ header .topnav .navbar__item__active {
 header .topnav .navbar__item:hover {
   background-color: var(--transparent-opacity-2);
   color: var(--color-highlight-2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 header .topnav .navbar .search__input {

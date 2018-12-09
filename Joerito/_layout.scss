@@ -75,13 +75,9 @@ main{
         background-image: url("http://wanderlogue.co/wp-content/uploads/2017/08/DSC_0532.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 50% -10%;
+        background-position: 50% 0%;
         border: 0;
     }
-
-    /*@media only screen and (max-width: $bp-medium){
-        flex-direction: column;
-    }*/
 }
 
 .main-section{
@@ -245,6 +241,7 @@ footer{
     .footer-section{
         &__image{
             width: 225px;
+            height: 225px;
         }
     }
 }

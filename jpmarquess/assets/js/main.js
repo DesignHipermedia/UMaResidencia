@@ -1,3 +1,11 @@
+// Quando for feito scroll
+// adicionar a class navbar-scroll ao header
+// para diminuir o tamanho da nav
+var $document = $(document);
+$document.scroll(function () {
+    $("header").toggleClass("navbar-scroll", $document.scrollTop() >= 100);
+});
+
 // Smooth Scroll
 $('a[href*="#"]')
 .not('[href="#"]')

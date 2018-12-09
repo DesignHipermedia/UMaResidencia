@@ -1,0 +1,11 @@
+.menu {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+
+    &__item{
+        display: flex;
+        align-items: center;
+        padding: 1rem;    
+    }
+    
+  }
