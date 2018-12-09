@@ -8,7 +8,7 @@ function selecionaimagem(x)/*parametro 'x' == this.id do elemento do DOM*/ {
     //console.log(id);
     $.getJSON('imagens_lib.json', function (data) {//get json file e guarda na 'data'
         for (var i = 0; i < data.length; i++) {//passa pela 'data' até a sua length
-            if (data[i].id == id) {//se o obj index.id for igual ao id
+            if (i == id) {//se i == id from parametro x
                 //console.log(data[i]);
                 $('#titulo').html(data[i].titulo);//add to html, titulo
                 $('#comentario').html(data[i].comentario);//add to html, comentario
