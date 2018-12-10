@@ -15,6 +15,30 @@
   --line: 3px solid rgb(223, 0, 0);
 }
 
+.logo_ativar {
+  fill: var(--color-highlight-2);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.logo_desativar {
+  fill: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav_ativar {
+  background-color: var(--transparent-opacity-2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav_desativar {
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 a {
   text-decoration: none;
   color: var(--color-white-1);
@@ -25,13 +49,6 @@ a {
   padding: 0;
 }
 
-/*html{
-    box-sizing: border-box;
-
-    @media only screen and (max-width: $bp-large){
-        font-size: 50%;
-    }
-}*/
 .add-margin-top {
   margin-top: 69.25px;
 }
@@ -63,11 +80,6 @@ body {
   background-position: center;
 }
 
-/*$bp-largest: 75em;
-$bp-large: 68.75em;
-$bp-medium: 56.25em;
-$bp-small: 37.5em;
-$bp-smallest: 31.25em;*/
 header {
   z-index: 1;
   display: -webkit-box;
@@ -171,9 +183,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*@media only screen and (max-width: $bp-medium){
-        flex-direction: column;
-    }*/
 }
 
 main .bgimage {
@@ -182,7 +191,7 @@ main .bgimage {
   background-image: url("http://wanderlogue.co/wp-content/uploads/2017/08/DSC_0532.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% -10%;
+  background-position: 50% 0%;
   border: 0;
 }
 
@@ -250,6 +259,75 @@ main .bgimage {
     width: 100%;
   }
   .main-section__map {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.main-section-3-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border: 0;
+  background-color: var(--color-white-1);
+}
+
+.main-section-3-show__title {
+  margin-bottom: 50px;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.main-section-3-show__content {
+  padding: 75px;
+  text-align: justify;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.main-section-3-show__image {
+  /*width: 40%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border: 0;
+        //border-top-right-radius: 50px;
+        //border-bottom-right-radius: 50px;*/
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 0;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-section-3-show {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-section-3-show__image {
+    height: 100%;
+    width: 100%;
+  }
+  .main-section-3-show__map {
     margin-top: 0;
     width: 100%;
   }
@@ -390,6 +468,7 @@ footer {
 
 footer .footer-section__image {
   width: 225px;
+  height: 225px;
 }
 
 /*Logo*/
@@ -405,7 +484,6 @@ header {
 }
 
 header .topnav {
-  background-color: var(--transparent-opacity-2);
   color: var(--color-white-1);
   font-weight: 300;
 }
@@ -421,6 +499,8 @@ header .topnav .navbar__item__active {
 header .topnav .navbar__item:hover {
   background-color: var(--transparent-opacity-2);
   color: var(--color-highlight-2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 header .topnav .navbar .search__input {
