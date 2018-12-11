@@ -8,3 +8,42 @@
         }
     }
 </script>
+
+<script>
+    var request = new XMLHttpRequest();
+
+    request.open('GET', 'assets/json/monuments.json', true);
+
+    request.onload = function () {
+        // begin accessing JSON data here
+        var data = JSON.parse(this.response);
+
+        for (var i = 0; i < data.length; i++) {
+            var main_div = document.createElement("div");
+            main_div.className = "monument";
+
+            var a = document.createElement("a");
+            main_div.appendChild(a);
+            a.target = "_blank";
+            a.href = data[i].target;
+
+            var img = document.createElement("img");
+            a.appendChild(img);
+            img.src = data[i].src;
+            img.alt = data[i].alt;
+
+            var div_secundaria = document.createElement("div");
+            a.appendChild(div_secundaria);
+            div_secundaria.className = "monument_text_container";
+
+            var p = document.createElement("p");
+            var text = document.createTextNode(data[i].name);
+            div_secundaria.appendChild(p);
+            p.appendChild(text);
+
+            document.getElementById("monuments").appendChild(main_div);
+        }
+
+    }
+    request.send()
+</script>
