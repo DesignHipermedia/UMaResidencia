@@ -36,6 +36,7 @@ header .container {
   margin: auto;
   background-color: none;
   text-align: justify;
+  padding: 0 150px;
 }
 
 h1 {
@@ -167,3 +168,8 @@ section {
   max-width: 280px;
 }
 /*# sourceMappingURL=principal.css.map */
+@media screen and (max-width: 1200px){
+  .container {
+    padding: 0;
+  }
+}
