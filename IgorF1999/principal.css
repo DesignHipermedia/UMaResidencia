@@ -35,6 +35,7 @@ header .container {
   width: 98%;
   margin: auto;
   background-color: none;
+  text-align: justify;
 }
 
 h1 {
