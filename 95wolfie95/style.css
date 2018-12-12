@@ -1,0 +1,597 @@
+@font-face {
+  font-family: Aleo;
+  src: url("./FONTS/Aleo-Regular.otf");
+}
+
+@font-face {
+  font-family: Aleo;
+  font-weight: bold;
+  src: url("./FONTS/Aleo-Bold.otf");
+}
+
+@font-face {
+  font-family: Brela;
+  src: url("./FONTS/Brela-Regular.otf");
+}
+
+@-webkit-keyframes glow {
+  100% {
+    -webkit-box-shadow: 0rem 0rem 0.75rem white;
+            box-shadow: 0rem 0rem 0.75rem white;
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  100% {
+    -webkit-box-shadow: 0rem 0rem 0.75rem white;
+            box-shadow: 0rem 0rem 0.75rem white;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes inverse {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  100% {
+    background-color: #333;
+    color: white;
+  }
+}
+
+@keyframes inverse {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  100% {
+    background-color: #333;
+    color: white;
+  }
+}
+
+@-webkit-keyframes highlight {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes highlight {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes extend {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes extend {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+          animation: glow 1s ease-in-out infinite alternate;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(circle, white, gray);
+  background-repeat: repeat;
+  background-size: 100%;
+  font-family: Brela, "Lucida Sans", sans-serif;
+}
+
+header {
+  font-family: Aleo, "Lucida Sans", sans-serif;
+}
+
+header > .main {
+  font-weight: bold;
+}
+
+a > img {
+  opacity: 0.75;
+  border-radius: 50%;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.subject {
+  font-size: 5rem;
+  opacity: 0.75;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+  .subject {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .subject {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .subject {
+    font-size: 2.15rem;
+  }
+}
+
+.author {
+  float: left;
+  font-size: 1rem;
+  opacity: 0.65;
+  -webkit-animation: highlight 1s ease-in-out 10 alternate;
+          animation: highlight 1s ease-in-out 10 alternate;
+}
+
+@media only screen and (max-width: 400px) {
+  .author {
+    font-size: 0.8rem;
+  }
+}
+
+.teacher {
+  float: right;
+  font-size: 1rem;
+  opacity: 0.65;
+  -webkit-animation: highlight 1s ease-in-out 10 alternate;
+          animation: highlight 1s ease-in-out 10 alternate;
+}
+
+@media only screen and (max-width: 400px) {
+  .teacher {
+    font-size: 0.8rem;
+  }
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  ul {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  ul {
+    font-size: 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  ul {
+    font-size: 0.3rem;
+  }
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 750px) {
+  li a {
+    font-size: 0.8;
+    padding: 14px 8px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  li a {
+    font-size: 0.6;
+    padding: 14px 4px;
+  }
+}
+
+li a:hover {
+  background-color: white;
+  color: black;
+  animation: inverse 1.5s ease-in-out 1 alternate-reverse;
+}
+
+.navicon {
+  margin-right: 0.2rem;
+  margin-right: 0.2rem;
+  fill: currentColor;
+  width: 1.25rem;
+  height: 1rem;
+}
+
+.revX {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.content {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.regular {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .regular {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .regular {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .regular {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .regular {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .regular {
+    font-size: 0.45rem;
+  }
+}
+
+.medium {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .medium {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .medium {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .medium {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .medium {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .medium {
+    font-size: 0.45rem;
+  }
+}
+
+.smaller {
+  font-size: 0.85rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .smaller {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .smaller {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .smaller {
+    font-size: 0.5rem;
+  }
+}
+
+.summary {
+  padding: 1rem;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .summary {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .summary {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .summary {
+    display: none;
+  }
+}
+
+.summary > svg {
+  position: relative;
+  margin-right: 0.2rem;
+  margin-right: 0.2rem;
+  fill: currentColor;
+  height: 1rem;
+  width: 1rem;
+  top: 0.1rem;
+}
+
+hr {
+  width: 50%;
+  -webkit-animation: extend 10s ease-in-out 1;
+          animation: extend 10s ease-in-out 1;
+}
+
+.opinion {
+  height: 40%;
+}
+
+.quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.userpic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.userpic > img {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0rem 0rem 3rem;
+          box-shadow: 0rem 0rem 3rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .userpic > img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .userpic > img {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .userpic > img {
+    width: 35%;
+    height: 35%;
+  }
+}
+
+.slideshow-container {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .slideshow-container {
+    width: 100%;
+  }
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 505px) {
+  .text {
+    font-size: 12.5px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .text {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .text {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .text {
+    font-size: 6.5px;
+  }
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 8s;
+  animation-name: fade;
+  animation-duration: 8s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .bottom {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .bottom {
+    font-size: 0.75rem;
+  }
+}
+
+.bottom > svg, svg {
+  position: relative;
+  fill: currentColor;
+  height: 1rem;
+  width: 1rem;
+  top: 0.1rem;
+}
+
+.bottom > svg {
+  margin-right: 0.25rem;
+}
+
+.svg {
+  margin-bottom: 0.1rem;
+}
+
+@media only screen and (max-width: 930px) {
+  .svg {
+    margin-bottom: 0.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
