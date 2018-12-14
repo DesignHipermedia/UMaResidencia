@@ -9,7 +9,7 @@
     --color-bottom: rgb(0, 0, 0);
     --color-representative:  rgb(68, 67, 67);
     --color-representative2: rgb(148, 145, 145);
-    --color-representative-transparent:  rgba(17, 15, 15, 0.5);
+    --color-representative-transparent:  #110f0f80;
     --color-representative-transparent-visited:  rgba(143, 141, 141, 0.5);
     --color-black-transparent:  rgba(12, 12, 12, 0.253);
 
@@ -22,13 +22,12 @@
  header {
      width: 100%;
      height: 74px;
-     background-color: var(--color-representative-transparent);
+     background-color:none;
      float: left;
      position: fixed;
      top:0;
      left: 0;
      z-index: 100;
-
  }
  header .container {
      display: table;
