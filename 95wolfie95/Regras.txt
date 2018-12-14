@@ -12,11 +12,11 @@ Em termos técnicos, pretende-se que sejam concretizados os seguintes items:
 
 (2 valores) - Tratamento de pelo menos 20 imagens a incluir numa galeria e/ou páginas do site;YES
 
-(5 valores) - Inclusão de um elementos programados (Javascript, sass, etc);1/etc
+(5 valores) - Inclusão de um elementos programados (Javascript, sass, etc);YES
 
 (3 valores) - Inclusão de elementos originais e marcação semântica desses conteúdos;YES
 
-(5 valores) - Design (CSS).2/5
+(5 valores) - Design (CSS).OH YES
 
 *Neste projeto não poderão ser usadas frameworks de CSS (como por exemplo o Bootstrap)
 
