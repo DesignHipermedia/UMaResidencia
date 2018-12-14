@@ -5,11 +5,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chile</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="main.css">
+    <title>UMa: Residências Universitárias</title>
 </head>
 
 <body>
-    Projeto UmaResidencia
+    <div class="container">
+        <header>
+            <img src="logo.jpg" alt="academica logo" class="logo">
+
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Pesquisar residências">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="symbol-defs.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="symbol-defs.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="symbol-defs.svg#icon-chat"></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="user.jpg" alt="User photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Anónimo</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-home"></use>
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-shop"></use>
+                            </svg>
+                            <span>Receção</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-bowl"></use>
+                            </svg>
+                            <span>Bar</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-game-controller"></use>
+                            </svg>
+                            <span>Espaços</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    Copyright &copy; AGTO
+                </div>
+            </nav>
+            <main class="chile-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="cidade1.jpg" alt="logoprin" width="985rem" height="500rem">
+                    </figure>
+                </div>
+
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        RESIDÊNCIA NOSSA Srª DAS VITÓRIAS
+                    </h1>
+                    <div class="overview__stars">
+                        <svg class="overview__icon-star">
+                            <use xlink:href="symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="symbol-defs.svg#icon-star-outlined"></use>
+                        </svg>
+                    </div>
+
+                    <div class="overview__location">
+                        <svg class="overview__icon-location">
+                            <use xlink:href="symbol-defs.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="btn-inline">Rua de Santa Maria, nº253</button>
+                    </div>
+
+                    <div class="overview__rating">
+                        <div class="overview__rating-average">8.6</div>
+                        <div class="overview__rating-count">429 votos</div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="description">
+                        <p class="paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quos officia nemo quisquam
+                            repellendus tenetur? Quo quos officia nemo?
+                        </p>
+                        <p class="paragraph">
+                            Nulla eaque sunt id aspernatur aut odit alias, explicabo ipsum totam porro pariatur
+                            nesciunt est?
+                        </p>
+                        <ul class="list">
+                            <li class="list__item">31 Duplos (beliche)</li>
+                            <li class="list__item">45 Triplos (beliche + cama)</li>
+                            <li class="list__item">6 Duplos para alunos NEE</li>
+                            <li class="list__item">Cozinha equipada</li>
+                            <li class="list__item">Sala de convívio</li>
+                            <li class="list__item">Jardins</li>
+                            <li class="list__item">Snack-Bar</li>
+                            <li class="list__item">Gabinete Médico</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                3 pessoas recomendam visitar o Chile.
+                            </p>
+                            <div class="recommend__friends">
+                                <img src="https://avatars2.githubusercontent.com/u/30042844?s=400&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars0.githubusercontent.com/t/2974883?s=280&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825275?s=88&v=4" alt="foto" class="recommend__photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Recomendo visitar o Chile!
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars2.githubusercontent.com/u/30042844?s=400&v=4" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Jhonny Cabelos</p>
+                                    <p class="review__user-country">Portugal</p>
+                                </div>
+                                <div class="review__rating">7.5</div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Expected more, but i recommend!
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars0.githubusercontent.com/t/2974883?s=280&v=4" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">3Dentes</p>
+                                    <p class="review__user-country">Reino Unido</p>
+                                </div>
+                                <div class="review__rating">6.1</div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                5 stars!
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars3.githubusercontent.com/u/43825275?s=88&v=4" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">N00B</p>
+                                    <p class="review__user-country">França</p>
+                                </div>
+                                <div class="review__rating">7.0</div>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.9/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js"></script>
+    <script>
+        new Vue({
+            el: '.user-reviews',
+            created() {
+                this.fetchData();
+            },
+            data: {
+                posts: [],
+                shortposts: [],
+                viewposts: true
+            },
+            methods: {
+                fetchData() {
+                    axios.get('https://final-project-recording-817f4.firebaseio.com/hipermedia2018/.json')
+                        .then(response => {
+                            this.posts = response.data;
+                        })
+                        .then(response => {
+                            this.shortposts.push(this.posts[this.aleatorio(this.posts.length, 0)])
+                            this.shortposts.push(this.posts[this.aleatorio(this.posts.length, 0)])
+                        })
+                },
+                aleatorio(max, min) {
+                    return Math.max(Math.floor(Math.random() * max) + 1, min)
+                }
+            },
+            computed: {
+                biografias() {
+                    if (this.viewposts) {
+                        return this.shortposts
+                    } else {
+                        return this.posts
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
