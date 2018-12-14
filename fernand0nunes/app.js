@@ -14,17 +14,13 @@ const navSlide =() => {
             link.style.animation = ''; 
             } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index /7 + 0.3}s`;
-                
             }
         });
         //burger animation
         burger.classList.toggle('toogle');
-
     });
-
 }
 navSlide();
-
 //scroll image
 $(window).scroll(function () {
     var scroll_position = $(window).scrollTop();
@@ -32,3 +28,15 @@ $(window).scroll(function () {
         'background-position-x': - scroll_position + 'px',
     })
 })
+//background navbar
+$(window).on('scroll', function(){
+    if ($(window).scrollTop()){
+         $('nav').addClass('black');
+    }
+    else 
+    {
+        $('nav').removeClass('black');
+    }
+})
+
+
