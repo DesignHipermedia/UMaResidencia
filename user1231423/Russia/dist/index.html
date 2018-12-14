@@ -40,34 +40,7 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     
-    <div class="img_cards">
-        <div class="card">
-            <img src="https://sohowines.hk/wp-content/uploads/2015/04/absolut-vodka.png" alt="vodka">
-            <div class="text_container">
-                <p>Vodka</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://logodownload.org/wp-content/uploads/2014/09/counter-strike-global-offensive-cs-go-logo.png" alt="cs">
-            <div class="text_container">
-                <p>CS GO</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://assets.bigcartel.com/product_images/217981699/CYKA+BLYAT+PVC+PATCH+FRONT+BLK+RFL+DIV.jpg" alt="c###">
-            <div class="text_container">
-                <p>C##### ####</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://99px.ru/sstorage/41/2014/11/image_412011141344109816746.gif" alt="babushka">
-            <div class="text_container">
-                <p>Babushka</p>
-            </div>
-        </div>
+    <div class="img_cards" id="cards">
 
     </div>
     
@@ -83,9 +56,21 @@
         </div>
      </div>
     <!--Scripts-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("nav_top");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+
     <script>
         var slideIndex = 1;
-            showSlides(slideIndex);
+        showSlides(slideIndex);
 
         function plusSlides(n) {
             showSlides(slideIndex += n);
@@ -98,65 +83,47 @@
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {slideIndex = 1}    
+            if (n > slides.length) {slideIndex = 1}
             if (n < 1) {slideIndex = slides.length}
             for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
+                slides[i].style.display = "none";
             }
-            slides[slideIndex-1].style.display = "block";  
+            slides[slideIndex-1].style.display = "block";
         }
     </script>
-    
-<script>
-    function myFunction() {
-        var x = document.getElementById("nav_top");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
+
+    <script>
+        var request = new XMLHttpRequest();
+
+        request.open('GET', 'assets/json/cards.json', true); //Get the json file
+
+        request.onload = function () {
+            // begin accessing JSON data here
+            var data = JSON.parse(this.response);
+
+            for (var i = 0; i < data.length; i++) { //Loop the data we got from the json
+                var main_div = document.createElement("div"); //Create main_div
+                main_div.className = "card"; //Add class to the main_div
+
+                var img = document.createElement("img"); //Create img element
+                main_div.appendChild(img); //Make img child of a
+                img.src = data[i].src; //Set img src to the data we got from the json file
+                img.alt = data[i].alt; //Set img alt to the data we got from the json file
+
+                var div_secundaria = document.createElement("div");
+                div_secundaria.className = "text_container";
+                var p = document.createElement("p"); //Create p
+                var text = document.createTextNode(data[i].desc); //Set the text to the data we got form the json file
+                p.appendChild(text); //Make text child of p
+                div_secundaria.appendChild(p); //Make p child of div_secundaria
+                main_div.appendChild(div_secundaria); //Make div_secundaria child of main_div
+
+                document.getElementById("cards").appendChild(main_div); //Get the id "cards" in the file and print the main_div inside it
+
+            }
         }
-    }
-</script>
-
-<script>
-    var request = new XMLHttpRequest();
-
-    request.open('GET', 'assets/json/monuments.json', true);
-
-    request.onload = function () {
-        // begin accessing JSON data here
-        var data = JSON.parse(this.response);
-
-        for (var i = 0; i < data.length; i++) {
-            var main_div = document.createElement("div");
-            main_div.className = "monument";
-
-            var a = document.createElement("a");
-            main_div.appendChild(a);
-            a.target = "_blank";
-            a.href = data[i].target;
-
-            var img = document.createElement("img");
-            a.appendChild(img);
-            img.src = data[i].src;
-            img.alt = data[i].alt;
-
-            var div_secundaria = document.createElement("div");
-            a.appendChild(div_secundaria);
-            div_secundaria.className = "monument_text_container";
-
-            var p = document.createElement("p");
-            var text = document.createTextNode(data[i].name);
-            div_secundaria.appendChild(p);
-            p.appendChild(text);
-
-            document.getElementById("monuments").appendChild(main_div);
-        }
-
-    }
-    request.send()
-</script>
-
+        request.send()
+    </script>
 </body>
 
 </html>
