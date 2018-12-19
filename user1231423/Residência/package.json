@@ -2,7 +2,7 @@
   "name": "uma_residencia",
   "version": "1.0.0",
   "description": "Residencia Website",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "",
