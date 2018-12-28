@@ -75,7 +75,7 @@
     width: 100%;
   }
   100% {
-    width: 50%;
+    width: 0%;
   }
 }
 
@@ -87,7 +87,7 @@
     width: 100%;
   }
   100% {
-    width: 50%;
+    width: 0%;
   }
 }
 
@@ -142,8 +142,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -263,8 +264,8 @@ a > img {
 
 hr {
   width: 50%;
-  -webkit-animation: extend 10s ease-in-out 1;
-          animation: extend 10s ease-in-out 1;
+  -webkit-animation: extend 10s ease-in-out infinite;
+          animation: extend 10s ease-in-out infinite;
 }
 
 .opinion {
