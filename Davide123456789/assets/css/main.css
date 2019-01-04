@@ -15,6 +15,8 @@ ul {
 
 header {
   position: relative;
+  background-color: #fff;
+  text-align: center;
 }
 
 header nav {
@@ -26,7 +28,15 @@ header nav {
 
 header nav .navbar-bandeira {
   float: left;
-  margin-top: 20px;
+}
+
+header nav .navbar-bandeira a {
+  text-decoration: none;
+}
+
+header nav .navbar-bandeira a h3 {
+  color: #4783c3;
+  font-size: 2rem;
 }
 
 header nav .navbar-nav {
@@ -34,33 +44,88 @@ header nav .navbar-nav {
   margin-top: 50px;
 }
 
-header nav li {
+header nav .navbar-nav li {
   display: inline-block;
   margin-right: 20px;
 }
 
-header nav li:last-child {
+header nav .navbar-nav li:last-child {
   margin-right: 0;
 }
 
-header nav li a {
-  display: block;
-  color: white;
+header nav .navbar-nav li a {
+  color: #4783c3;
   text-align: center;
+  font-size: 1.2rem;
   padding: 14px 16px;
   text-decoration: none;
+  display: block;
 }
 
-header nav li a:hover {
-  color: #000;
+header nav .navbar-nav li a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-section {
+main {
   background-image: url("../img/santorini.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 90vh;
-  margin-top: -150px;
+  height: 100vh;
+}
+
+main .main-welcome {
+  background-color: white;
+  text-align: left;
+  position: absolute;
+  bottom: 200px;
+  padding: 0 30px;
+}
+
+main .main-welcome h1 {
+  font-size: 2.5rem;
+  color: #4783c3;
+}
+
+main .main-welcome i {
+  font-size: 2rem;
+  color: #4783c3;
+  padding-bottom: 20px;
+}
+
+.teste2 {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.teste2 h1 {
+  text-align: center;
+  color: #4783c3;
+}
+
+.teste2 a {
+  text-decoration: none;
+  display: block;
+}
+
+.teste2 a button {
+  background-color: #ccc;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow .2s, -webkit-transform .2s;
+  transition: -webkit-box-shadow .2s, -webkit-transform .2s;
+  transition: box-shadow .2s, transform .2s;
+  transition: box-shadow .2s, transform .2s, -webkit-box-shadow .2s, -webkit-transform .2s;
+}
+
+.teste2 a button:hover {
+  -webkit-box-shadow: 0 2px 5px #ccc;
+          box-shadow: 0 2px 5px #ccc;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 /*# sourceMappingURL=main.css.map */
