@@ -121,6 +121,55 @@ input[type="submit"]:focus, input[type="button"]:focus {
 	color: #555555;
 }
 
+// gallery
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin: 20px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 /*-----------------------------------------------------------------------------------*/
 /*	GENERAL
 /*-----------------------------------------------------------------------------------*/
@@ -134,8 +183,9 @@ body {
     line-height: 21px;
     letter-spacing: 0.2px;
     color: #b9b9b9;
-    background: url(https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-USA-Landscape-hd-wallpapers-1080p-PIC-WPD0012380.jpg);
+    background: url(../images/img-background.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -283,7 +333,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 24px;
 }
 h4 {
     font-size: 18px;
@@ -333,6 +383,7 @@ hr {
 .wrapper {
     width: 1010px;
     margin: 0 auto;
+    margin-bottom: 10%;
 }
 .header-wrapper {
     background: rgba(0, 0, 0, 0.33);
@@ -638,9 +689,10 @@ hr {
                 font-weight: bold;
             }
 
-            .active a,
+            &.active a,
             a:hover {
                 color: #86aca3
+                
             }
         }
     }
