@@ -1,19 +1,23 @@
-UMaResidencia
+ÔªøUMaResidencia
 
-Projeto Colaborativo - ResidÍncias Universit·rias
+Projeto Colaborativo - Resid√™ncias Universit√°rias
 
-Uma das valÍncias conferidas pela cadeira de Design HipermÈdia È o Web Design, mais especificamente utilizando HTML5, CSS3 e Javascript. Sendo assim, uma vez concluÌda o CTeSP - Tecnologias e ProgramaÁ„o de Sistemas de InformaÁ„o - È plausÌvel o cen·rio em que tenha de realizar, rapidamente, um protÛtipo de Website.
+Uma das val√™ncias conferidas pela cadeira de Design Hiperm√©dia √© o Web Design, mais especificamente utilizando HTML5, CSS3 e Javascript.
+Sendo assim, uma vez conclu√≠do o CTeSP - Tecnologias e Programa√ß√£o de Sistemas de Informa√ß√£o - √© plaus√≠vel o cen√°rio em que tenha de realizar,
+rapidamente, um prot√≥tipo de um website.
 
-Em termos tÈcnicos, pretende-se que sejam concretizados os seguintes items:
+Em termos t√©cnicos, pretende-se que sejam concretizados os seguintes items:
 
-(5 valores) ñ Estrutura de navegaÁ„o funcional (mÌnimo de 5 p·ginas);
+(5 valores) - Estrutura de navega√ß√£o funcional (m√≠nimo de 5 p√°ginas);YES
 
-(2 valores) ñ Tratamento de pelo menos 20 imagens a incluir numa galeria e/ou p·ginas do site;
+(2 valores) - Tratamento de pelo menos 20 imagens a incluir numa galeria e/ou p√°ginas do site;YES
 
-(5 valores) ñ Inclus„o de um elementos programados (Javascript, sass, etc);
+(5 valores) - Inclus√£o de um elementos programados (Javascript, sass, etc);YES
 
-(3 valores) ñ Inclus„o de elementos originais e marcaÁ„o sem‚ntica desses conte˙dos;
+(3 valores) - Inclus√£o de elementos originais e marca√ß√£o sem√¢ntica desses conte√∫dos;YES
 
-(5 valores) ñ Design (CSS).
+(5 valores) - Design (CSS).OH YES
 
-*Neste projeto n„o poderam ser usadas frameworks de CSS (como por exemplo o Bootstrap)
+*Neste projeto n√£o poder√£o ser usadas frameworks de CSS (como por exemplo o Bootstrap)
+
+
