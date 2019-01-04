@@ -83,6 +83,7 @@ main {
     width: 70%;
     margin: 0 auto;
     padding: 40px 0;
+    height: 150px;
 
     h1 {
         text-align: center;
@@ -96,11 +97,17 @@ main {
         button {
             width: 43px;
             height: 44px;
-            background: url(img_navsprites.gif) -91px 0;
-          }
-            
-            &:hover {
-                transform: translateY(-5px);
-            }
         }
+    }
+    
+    .text-left {
+        float: left;
+        width: 50%;
+        padding: 40px 0;
+    }
+    
+    .text-right {
+        float: right;
+        width: 40%;
+    }
 }

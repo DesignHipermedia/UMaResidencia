@@ -98,6 +98,7 @@ main .main-welcome i {
   width: 70%;
   margin: 0 auto;
   padding: 40px 0;
+  height: 150px;
 }
 
 .teste2 h1 {
@@ -111,21 +112,18 @@ main .main-welcome i {
 }
 
 .teste2 a button {
-  background-color: #ccc;
-  padding: 10px 20px;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  -webkit-transition: -webkit-box-shadow .2s, -webkit-transform .2s;
-  transition: -webkit-box-shadow .2s, -webkit-transform .2s;
-  transition: box-shadow .2s, transform .2s;
-  transition: box-shadow .2s, transform .2s, -webkit-box-shadow .2s, -webkit-transform .2s;
+  width: 43px;
+  height: 44px;
 }
 
-.teste2 a button:hover {
-  -webkit-box-shadow: 0 2px 5px #ccc;
-          box-shadow: 0 2px 5px #ccc;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+.teste2 .text-left {
+  float: left;
+  width: 50%;
+  padding: 40px 0;
+}
+
+.teste2 .text-right {
+  float: right;
+  width: 40%;
 }
 /*# sourceMappingURL=main.css.map */
