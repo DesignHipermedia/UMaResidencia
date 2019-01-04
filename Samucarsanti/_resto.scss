@@ -1,15 +1,37 @@
 .logoprin {
+<<<<<<< HEAD
     height: 6.25rem;
     margin-left: 2rem;
     float: left;
 }
+=======
+    //height: 6.25rem;
+    height: 74px;
+    margin-left: 2rem;
+    float: left;
+}
+.logomenuresponsive {
+    display: none;
+    float: right;
+    margin-right: 16px;
+    transform: translateY(30%);
+}
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
 
 
 ////////////////////////////MENU
 
 .menu-bar {
     display: flex;
+<<<<<<< HEAD
     padding: 25px 0 0 400px;
+=======
+    //padding: 25px 0 0 400px;  SEM ISTO, OS BOTOES MOVEM-SE JUNTO O TAMANHO DA JANELA
+
+    float: right;
+    transform: translateY(25px);
+    margin-right: 10%;
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
 }
 
 .menu-div {
@@ -38,6 +60,10 @@
         color: var(--color-primary);
         text-decoration: none;
         text-transform: uppercase;
+<<<<<<< HEAD
+=======
+        transition: color .5s;
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
         
         position: relative;
 
@@ -66,7 +92,11 @@
     & div:hover > ul {
         display:block;
         padding: 10px 0 0 0;
+<<<<<<< HEAD
         position: relative;
+=======
+        //position: relative;
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
     }
 }
 
@@ -115,11 +145,37 @@
         margin-top: 20px;
         border: 3px solid #ffffff;
         align-content: center;
+<<<<<<< HEAD
+=======
+        transition: color .5s;
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
     }
     & a:hover {
         color: var(--color-bottom);
     }
 }
+<<<<<<< HEAD
+=======
+
+/// RESPONSIVE IMAGENS PRINCIPAIS E TEXTOS
+@media (max-width: 768px)
+{
+    #banner img{
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #banner h2{
+        font-size: 20px;
+        font-weight: 400;
+        text-shadow: 1px 2px #999;
+    }
+}
+/// FIM DO RESPONSIVE IMAGENS PRINCIPAIS E TEXTOS
+
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
 //////////MAIN
 
 #welcome {
@@ -156,6 +212,14 @@
 #imagesdestinos {
     //text-align: center;
     background-color: var(--color-representative);
+<<<<<<< HEAD
+=======
+
+    & #hr1 {
+        width: 70%;
+        margin-left: 15%;
+    }
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
     & h3, h4 {
         text-align: center;
         color: var(--color-primary);
@@ -175,7 +239,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform: translateX(0%) translateY(-456%);
+=======
+            transform: translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -183,7 +251,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform: translateX(0%) translateY(-668%);
+=======
+            transform: translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -191,7 +263,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -199,7 +275,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform: translateX(0%) translateY(-668%);
+=======
+            transform: translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -207,7 +287,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -215,7 +299,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -223,7 +311,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -231,7 +323,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -239,7 +335,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -247,7 +347,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -255,7 +359,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(0px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -263,7 +371,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -271,7 +383,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -279,7 +395,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -288,7 +408,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -296,7 +420,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -304,7 +432,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -312,7 +444,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -320,7 +456,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -328,7 +468,11 @@
             height: 65px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-360%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -336,7 +480,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -344,7 +492,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -352,7 +504,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -360,7 +516,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -368,7 +528,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -376,7 +540,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-456%);
+=======
+            transform:translateX(0%) translateY(-160px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -384,7 +552,11 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
+<<<<<<< HEAD
             transform:translateX(0%) translateY(-668%);
+=======
+            transform:translateX(0%) translateY(-234px);
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -415,6 +587,7 @@
 ///// RESPONSIVE DAS IMAGENS DOS DESTINOS ()
 @media (max-width: 1100px)
 {
+<<<<<<< HEAD
     #imagesdestinos .container1 {
         columns: 3;
         width: calc(100% - 40px);
@@ -452,6 +625,723 @@ footer .container {
         text-decoration: none;
     }
 }
+=======
+    #imagesdestinos .container1{
+        columns: 3;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        padding: 20px 0px 20px 0px;
+
+        .sa{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mc{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ror{ 
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ea{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ca{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cg {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ct {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mcbo {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ptocruz {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .coro {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .val {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cari {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ccs {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .apu {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+
+        .lr {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ic {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .im {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .tu {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mo {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .pndo {
+            height: 65px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .gs {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .st {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cb {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ch {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .pp {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ito {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mer {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+    }
+    .infodestino {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }        
+}
+
+@media (max-width: 950px) {
+    .menu-nav {
+        display: none;
+    }
+    .logomenuresponsive {
+        display: block;
+    }
+    .containermenuresponsive {
+        display: block;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #imagesdestinos .container1 {
+        columns: 2;
+
+        .sa{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mc{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ror{ 
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ea{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ca{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cg {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ct {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mcbo {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ptocruz {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .coro {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .val {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cari {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ccs {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .apu {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+
+        .lr {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ic {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .im {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .tu {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mo {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .pndo {
+            height: 65px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .gs {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .st {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cb {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ch {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .pp {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ito {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mer {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+    }
+    .infodestino {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .logomenuresponsive{
+        display: block;
+    }
+    .menu-nav {
+        display: none;
+    }
+}
+@media (max-width: 480px)
+{
+    .media {
+        margin-top: 115px;
+    }
+    #imagesdestinos .container1 {
+        columns: 1;
+
+        .sa{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mc{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ror{ 
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ea{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ca{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cg {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ct {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mcbo {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ptocruz {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .coro {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .val {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cari {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ccs {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .apu {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+
+        .lr {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ic {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .im {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .tu {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mo {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .pndo {
+            height: 65px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .gs {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .st {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cb {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ch {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .pp {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ito {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mer {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(0px);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+    }
+    .infodestino {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+//// FIM DO RESPONSIVE DAS IMAGENS DESTINOS
+
+
+>>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
 .copy {
     font-size: 20px;
 }
