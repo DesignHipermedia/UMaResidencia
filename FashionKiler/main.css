@@ -36,9 +36,9 @@ body {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 6px 8px;
+    padding: 14px 60px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
   }
   
   .top-nav a:hover {
@@ -58,8 +58,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.c {
+.box-bg {
   color: rgba(255,255,255,1);
   padding: 20px 35px;
   background-color: rgba(50,50,50,0.3);
+}
+
+.center-elements {
+  margin: auto;
+  width: 70%;
 }
