@@ -67,10 +67,20 @@ gulp.task('clean-css', function () {
 //Move JSON files
 gulp.task('move-json', function () {
 <<<<<<< HEAD
+    gulp.src("src/assets/json/*.json")
+=======
+<<<<<<< HEAD
     gulp.src("src/views/common/json/*.json")
 =======
     gulp.src("src/json/*.json")
 >>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
+>>>>>>> 45d846485b5926dec376e029246a95b892f83dc5
         .pipe(gulp.dest("dist/assets/json/"));
+});
+
+//Move JS files
+gulp.task('move-js', function () {
+    gulp.src("src/assets/js/**/*.js")
+        .pipe(gulp.dest("dist/assets/js/"));
 });
 
