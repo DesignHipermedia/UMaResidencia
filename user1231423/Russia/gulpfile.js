@@ -13,6 +13,7 @@ gulp.task('check-server', function () {
   });
   gulp.watch(['src/sass/*.scss'], ['compile-sass']).on('change', browserSync.reload);
   gulp.watch('src/views/**/*.mustache', ['compile-mustache']).on('change', browserSync.reload);
+  gulp.watch('src/views/common/json/*.json', ['move-json']).on('change', browserSync.reload);
 });
 
 //Compile scss into css
@@ -42,4 +43,10 @@ gulp.task('clean-css', function () {
     .pipe(purify(['src/*.css']))
     .pipe(gulp.dest('dist/assets/css/'))
     .pipe(browserSync.stream());
+});
+
+//Move JSON files
+gulp.task('move-json', function () {
+    gulp.src("src/views/common/json/*.json")
+        .pipe(gulp.dest("dist/assets/json/"));
 });
