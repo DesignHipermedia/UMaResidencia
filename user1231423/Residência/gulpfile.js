@@ -46,7 +46,13 @@ gulp.task('clean-css', function () {
 
 //Move JSON files
 gulp.task('move-json', function () {
-    gulp.src("src/json/*.json")
+    gulp.src("src/assets/json/*.json")
         .pipe(gulp.dest("dist/assets/json/"));
+});
+
+//Move JS files
+gulp.task('move-js', function () {
+    gulp.src("src/assets/js/**/*.js")
+        .pipe(gulp.dest("dist/assets/js/"));
 });
 
