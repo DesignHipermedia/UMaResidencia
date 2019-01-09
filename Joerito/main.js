@@ -20,10 +20,21 @@ function selecionaimagem(x)/*parametro 'x' == this.id do elemento do DOM*/ {
 function pagina_scroll(){
     var logo = document.getElementById("footer_logo");
 
+    var section = document.getElementsByName("text");
+    var section_top = section.offsetTop;
     var navbar = document.getElementById("nav");
     var navbar_top = navbar.offsetTop;
     var footer = document.getElementById("footer");
     var footer_top = footer.offsetTop;
+
+    if(window.pageYOffset >= navbar_top){
+        navbar.classList.remove("nav_desativar");
+        navbar.classList.add("nav_ativar")
+    }else{
+        navbar.classList.remove("nav_ativar");
+        navbar.classList.add("nav_desativar");
+    }
+
     if(window.pageYOffset >= footer_top){
         logo.classList.remove("logo_desativar");
         logo.classList.add("logo_ativar");
@@ -32,11 +43,11 @@ function pagina_scroll(){
         logo.classList.add("logo_desativar");
     }
 
-    if(window.pageYOffset >= navbar_top){
-        navbar.classList.remove("nav_desativar");
-        navbar.classList.add("nav_ativar")
+    if(window.pageYOffset >= section_top){
+        section.classList.remove("text-color_desativar");
+        section.classList.add("text-color_ativar");
     }else{
-        navbar.classList.remove("nav_ativar");
-        navbar.classList.add("nav_desativar");
+        section.classList.remove("text-color_ativar");
+        section.classList.add("text-color_desativar");
     }
 }
