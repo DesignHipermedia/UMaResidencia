@@ -9,60 +9,8 @@
     {{> common/nav }}
 
     <!--Monuments cards-->
-    <div class="monument_cards">
-        <div class="monument">
-            <a target="_blank" href="http://google.com">
-                <img src="http://staff.harrisonburg.k12.va.us/~cwalton/geopics/AX930147.jpg" alt="Monument img">
-                <div class="monument_text_container">
-                    <p>Monument</p>
-                </div>
-            </a>
-        </div>
+    <div class="monument_cards" id="monuments">
 
-        <div class="monument">
-            <a target="_blank" href="http://google.com">
-                <img src="https://cdni.rbth.com/rbthmedia/images/all/2016/10/18/monuments/tass_18123837_grozny.jpg" alt="Monument img">
-                <div class="monument_text_container">
-                    <p>Monument</p>
-                </div>
-            </a>
-        </div>
-
-        <div class="monument">
-            <a target="_blank" href="http://google.com">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Nizhegorodskiy_rayon%2C_Nizhnij_Novgorod%2C_Nizhegorodskaya_oblast%27%2C_Russia_-_panoramio_%28381%29.jpg/400px-Nizhegorodskiy_rayon%2C_Nizhnij_Novgorod%2C_Nizhegorodskaya_oblast%27%2C_Russia_-_panoramio_%28381%29.jpg" alt="Monument img">
-                <div class="monument_text_container">
-                    <p>Monument</p>
-                </div>
-            </a>
-        </div>
-
-        <div class="monument">
-            <a target="_blank" href="http://google.com">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/5d/e4/e4/monumento-nacional.jpg" alt="Monument img">
-                <div class="monument_text_container">
-                    <p>Monument</p>
-                </div>
-            </a>
-        </div>
-
-        <div class="monument">
-            <a target="_blank" href="http://google.com">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/35/95/10/das-monument.jpg" alt="Monument img">
-                <div class="monument_text_container">
-                    <p>Monument</p>
-                </div>
-            </a>
-        </div>
-
-        <div class="monument">
-            <a target="_blank" href="http://google.com">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%D0%A3%D0%BB%D0%B0%D0%BD-%D0%A3%D0%B4%D1%8D.%D0%9F%D0%BE%D1%87%D1%82%D0%BE%D0%B2%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%B3%D1%80%D0%B0%D1%84%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D0%BD%D1%82%D0%BE%D1%80%D0%B0.jpg/650px-%D0%A3%D0%BB%D0%B0%D0%BD-%D0%A3%D0%B4%D1%8D.%D0%9F%D0%BE%D1%87%D1%82%D0%BE%D0%B2%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%B3%D1%80%D0%B0%D1%84%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D0%BD%D1%82%D0%BE%D1%80%D0%B0.jpg" alt="Monument img">
-                <div class="monument_text_container">
-                    <p>Monument</p>
-                </div>
-            </a>
-        </div>
     </div>
 
     <!--Footer-->
@@ -70,6 +18,47 @@
     
     <!--Scripts-->
     {{> common/scripts }}
+
+    <script>
+        var request = new XMLHttpRequest();
+
+        request.open('GET', 'assets/json/monuments.json', true); //Get the json file
+
+        request.onload = function () {
+            // begin accessing JSON data here
+            var data = JSON.parse(this.response);
+
+            for (var i = 0; i < data.length; i++) { //Loop the data we got from the json
+                var main_div = document.createElement("div"); //Create main_div
+                main_div.className = "monument"; //Add class to the main_div
+
+                var a = document.createElement("a"); //Create a
+                main_div.appendChild(a); //Make a child of main div
+                a.target = "_blank"; //Set a target to _blank
+                a.href = data[i].target; //Set a href to the data we got from the json file
+
+                var img = document.createElement("img"); //Create img element
+                a.appendChild(img); //Make img child of a
+                img.src = data[i].src; //Set img src to the data we got form the json file
+                img.alt = data[i].alt; //Set img alt to the data we got from the json file
+
+                var div_secundaria = document.createElement("div"); //Create div_secundaria
+                a.appendChild(div_secundaria); //Make div_secundaria child of a
+                div_secundaria.className = "monument_text_container"; //Add a class to div_secundaria
+
+                var p = document.createElement("p"); //Create p
+                var text = document.createTextNode(data[i].name); //Set the text to the data we got form the json file
+                div_secundaria.appendChild(p); //Make p child of div_secundaria
+                p.appendChild(text); //Make text child of p
+
+                document.getElementById("monuments").appendChild(main_div); //Get the id "monuments" in the file and print the main_div inside it
+
+            }
+
+        }
+        request.send()
+    </script>
+
 </body>
 
 </html>
