@@ -236,18 +236,48 @@ body {font-family: Verdana, sans-serif; margin:0}
 .roda {
   list-style-type: none;
   justify-content: center;
-  width: 1348px;
+  width: 1366px;
   height: 70px;
   margin: 0%;
+  margin-top: 20px;
   padding: 0px;
   position: relative;
   overflow: hidden;
   background-color: #333333;
 }
 
+.roda ul {
+  margin-left: 43% !important;
+}
+
 .roda ul a img{
+  justify-content: center ;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 40% !important;
+}
+
+.rodas {
+  list-style-type: none;
   justify-content: center;
-  width: 35px;
-  height: 35px;
-  border-radius: 40%;
+  width: 1366px;
+  height: 70px;
+  margin: 0%;
+  margin-top: 66px;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.rodas ul {
+  margin-left: 42% !important;
+}
+
+.rodas ul a img{
+  margin-top: 20px;
+  justify-content: center ;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 40% !important;
 }
