@@ -167,17 +167,55 @@ body {
 
 .footer {
   background-color: #EFEFEF;
+<<<<<<< HEAD
   position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 6rem;
+=======
+<<<<<<< HEAD
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+=======
+<<<<<<< HEAD
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+=======
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+>>>>>>> 62f50c78b16665326a6cadddde965837c6e2e734
+>>>>>>> 45d846485b5926dec376e029246a95b892f83dc5
+>>>>>>> 81f3a093462146874cd2bdf2aaadf7792200165b
 }
 
 .social_media {
   text-align: center;
+<<<<<<< HEAD
   margin: 30px;
   padding-top: 20px;
+=======
+<<<<<<< HEAD
+  margin: 30px;
+  padding-top: 20px;
+=======
+<<<<<<< HEAD
+  margin: 15px;
+=======
+  margin: 30px;
+  padding-top: 20px;
+>>>>>>> 62f50c78b16665326a6cadddde965837c6e2e734
+>>>>>>> 45d846485b5926dec376e029246a95b892f83dc5
+>>>>>>> 81f3a093462146874cd2bdf2aaadf7792200165b
 }
 
 .social_media > i {
@@ -212,7 +250,11 @@ i:hover {
 }
 
 .card {
+<<<<<<< HEAD
+  width: 30%;
+=======
   width: 18rem;
+>>>>>>> 62f50c78b16665326a6cadddde965837c6e2e734
   border-radius: 20px;
   background-color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -262,7 +304,11 @@ i:hover {
     bottom: 0;
     left: 0;
     width: 100%;
+<<<<<<< HEAD
+    height: 5rem;
+=======
     height: 7rem;
+>>>>>>> 62f50c78b16665326a6cadddde965837c6e2e734
   }
   .social_media > i {
     margin-top: 20px;
@@ -271,6 +317,14 @@ i:hover {
     padding-left: 10px;
   }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 45d846485b5926dec376e029246a95b892f83dc5
+>>>>>>> 81f3a093462146874cd2bdf2aaadf7792200165b
 
 .monument_cards {
   display: -webkit-box;
@@ -286,8 +340,16 @@ i:hover {
 .monument {
   cursor: pointer;
   width: 16rem;
+<<<<<<< HEAD
+  margin: 1.5rem;
+=======
+<<<<<<< HEAD
+  margin: 1.5rem;
+=======
   height: 20rem;
   margin: 3rem;
+>>>>>>> 45d846485b5926dec376e029246a95b892f83dc5
+>>>>>>> 81f3a093462146874cd2bdf2aaadf7792200165b
   border-radius: 30px;
   background-color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -299,7 +361,15 @@ i:hover {
           transform: scale(1.01);
 }
 
+<<<<<<< HEAD
+.monument > img {
+=======
+<<<<<<< HEAD
+.monument > img {
+=======
 .monument > a > img {
+>>>>>>> 45d846485b5926dec376e029246a95b892f83dc5
+>>>>>>> 81f3a093462146874cd2bdf2aaadf7792200165b
   height: 22rem;
   width: 16rem;
   border-radius: 30px;
@@ -313,10 +383,37 @@ i:hover {
   height: 5rem;
   width: 16rem;
   margin-top: -4rem;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 81f3a093462146874cd2bdf2aaadf7792200165b
+  margin-right: -3px;
+  margin-left: -3px;
+>>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
+>>>>>>> 3fe5e8daa8aaf8d9735d49dacf136c15135a397d
   font-size: 20px;
   background-color: #FF0027;
   border-radius: 30px;
   color: #F8F7F7;
+<<<<<<< HEAD
+=======
+  text-align: center;
+  font-weight: bold;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+<<<<<<< HEAD
+=======
+=======
+  font-size: 20px;
+  background-color: #FF0027;
+  border-radius: 30px;
+  color: #F8F7F7;
+>>>>>>> 3fe5e8daa8aaf8d9735d49dacf136c15135a397d
   text-align: center;
   font-weight: bold;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -630,4 +727,13 @@ i:hover {
     margin-left: 4.5rem;
   }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 62f50c78b16665326a6cadddde965837c6e2e734
+>>>>>>> 45d846485b5926dec376e029246a95b892f83dc5
+>>>>>>> 81f3a093462146874cd2bdf2aaadf7792200165b
+>>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
+>>>>>>> 3fe5e8daa8aaf8d9735d49dacf136c15135a397d
 /*# sourceMappingURL=style.css.map */
