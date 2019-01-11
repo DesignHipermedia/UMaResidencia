@@ -386,15 +386,16 @@ i:hover {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> 81f3a093462146874cd2bdf2aaadf7792200165b
   margin-right: -3px;
   margin-left: -3px;
+>>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
   font-size: 20px;
-  background-color: #F8F7F7;
+  background-color: #FF0027;
   border-radius: 30px;
-  border: 3px #FF0027;
-  border-style: solid;
-  color: #0F0E0E;
+  color: #F8F7F7;
   text-align: center;
   font-weight: bold;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -720,7 +721,10 @@ i:hover {
     margin-left: 4.5rem;
   }
 }
+<<<<<<< HEAD
+=======
 >>>>>>> 62f50c78b16665326a6cadddde965837c6e2e734
 >>>>>>> 45d846485b5926dec376e029246a95b892f83dc5
 >>>>>>> 81f3a093462146874cd2bdf2aaadf7792200165b
+>>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
 /*# sourceMappingURL=style.css.map */
