@@ -247,7 +247,8 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .roda ul {
-  margin-left: 43% !important;
+  margin-left: 628px !important;
+  padding: 0px;
 }
 
 .roda ul a img{
@@ -271,11 +272,11 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .rodas ul {
-  margin-left: 42% !important;
+  margin-left: 628px !important;
 }
 
 .rodas ul a img{
-  margin-top: 20px;
+  margin-top: 16px;
   justify-content: center ;
   width: 35px !important;
   height: 35px !important;
