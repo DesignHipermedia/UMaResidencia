@@ -131,6 +131,7 @@ div.gallery {
   div.gallery img {
     width: 100%;
     height: auto;
+    min-height: 200px;
   }
   
   div.desc {
@@ -145,13 +146,13 @@ div.gallery {
   .responsive {
     padding: 0 6px;
     float: left;
-    width: 24.99999%;
+    width: 40%;
     margin: 40px;
   }
   
   @media only screen and (max-width: 700px) {
     .responsive {
-      width: 49.99999%;
+      width: 100%;
       margin: 6px 0;
     }
   }
@@ -768,7 +769,7 @@ hr {
 }
 .box {
     margin: 0 0 30px 0;
-    background: rgba(0, 0, 0, 0.44);
+    background: rgba(0, 0, 0, 0.58);
     -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
     padding: 20px;
