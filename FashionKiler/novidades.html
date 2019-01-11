@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Korea project</title>
+</head>
+
+<body>
+    <div class="top-nav" id="mytop-nav">
+        <div class="center-elements">
+            <a href="index.html">inicio</a>
+            <a class="active" href="novidades.html">novidades</a>
+            <a href="galeria.html">galeria</a>
+            <a href="contactos.html">contactos</a>
+
+        </div>
+    </div>
+    
+    <div class="container">
+        <img class="background-image" src="images\index_background_image.jpg" alt="image">
+        
+        <div class="box-bg centered"> 
+            <!-- A PARTIR DAKI PRESTA ATENÇÃO -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">Titulo 1</div>
+                    <img src="images/index_background_image.jpg" style="width:100%">
+                    <div class="text">Texto 1</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">Título 2</div>
+                    <img src="images/index_background_image.jpg" style="width:100%">
+                    <div class="text">Texto 2</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">Título 3</div>
+                  <img src="images/index_background_image.jpg" style="width:100%">
+                  <div class="text">Texto 3</div>
+                </div>
+                
+            </div>
+                <br>
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+        </div>
+        
+
+    </div>
+
+
+
+
+
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" ativo", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " ativo";
+        setTimeout(showSlides, 5000); // Muda o display em cada 10 segundos
+    }
+    </script>
+</body>
+</html>
