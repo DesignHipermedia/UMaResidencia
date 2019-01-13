@@ -15,6 +15,33 @@
     --line: 3px solid rgb(223, 0, 0);
 }
 
+.logo_ativar{
+    fill: var(--color-highlight-2);
+    transition: 2s;
+}
+.logo_desativar{
+    fill: black;
+    transition: 0.5s;
+}
+
+.nav_ativar{
+    background-color: var(--transparent-opacity-2);
+    transition: 0.5s;
+}
+.nav_desativar{
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.text-color_ativar{
+    color: white;
+    transition: 2s;
+}
+.text-color_desativar{
+    color: transparent;
+    transition: 1s;
+}
+
 a{
     text-decoration: none;
     color: var(--color-white-1);
@@ -24,14 +51,6 @@ a{
     margin: 0;
     padding: 0;
 }
-
-/*html{
-    box-sizing: border-box;
-
-    @media only screen and (max-width: $bp-large){
-        font-size: 50%;
-    }
-}*/
 
 .add-margin-top{
     margin-top: 69.25px;
@@ -64,9 +83,3 @@ body{
     background-attachment: fixed;
     background-position: center;
 }
-
-/*$bp-largest: 75em;
-$bp-large: 68.75em;
-$bp-medium: 56.25em;
-$bp-small: 37.5em;
-$bp-smallest: 31.25em;*/
