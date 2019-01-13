@@ -5,6 +5,20 @@
           box-sizing: border-box;
 }
 
+.containerimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.containerimg img {
+  width: 100%;
+  max-width: 280px;
+}
+
 ::-webkit-scrollbar {
   background: #ddd;
   width: 14px;
@@ -27,7 +41,7 @@
   --color-red: rgb(214, 14, 14);
   --color-representative:  rgb(68, 67, 67);
   --color-representative2: rgb(148, 145, 145);
-  --color-representative-transparent:  #110f0f80;
+  --color-representative-transparent:  #110f0fd5;
   --color-representative-transparent-visited:  rgba(143, 141, 141, 0.5);
   --color-black-transparent:  rgba(12, 12, 12, 0.253);
 }
@@ -53,6 +67,11 @@ header .container {
 
 .container {
   width: 98%;
+  margin: auto;
+}
+
+.containertexto {
+  width: 80%;
   margin: auto;
 }
 
@@ -124,7 +143,6 @@ footer .container .maisinfo a:hover {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 100%;
   text-align: center;
 }
 
@@ -411,6 +429,10 @@ section {
 #imagesdestinos #hr1 {
   width: 70%;
   margin-left: 15%;
+}
+
+#imagesdestinos .letrastyle {
+  color: var(--color-primary);
 }
 
 #imagesdestinos h3, #imagesdestinos h4 {
@@ -711,6 +733,11 @@ section {
 
 #imagesdestinos .container .infodestino img {
   max-width: 100%;
+  z-index: -1;
+}
+
+#imagesdestinos .container .infodestino h4 {
+  z-index: 1000 !important;
 }
 
 #imagesdestinos .infodestino1 {
@@ -1272,7 +1299,9 @@ section {
 
 @media (max-width: 480px) {
   .media {
+    width: 80%;
     margin-top: 115px;
+    margin-left: 40px;
   }
   #imagesdestinos .container1 {
     -webkit-columns: 1;
@@ -1535,7 +1564,127 @@ section {
   }
 }
 
+@media (max-width: 600px) {
+  iframe {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 420px) {
+  iframe {
+    width: 250px;
+    height: 150px;
+  }
+}
+
 .copy {
   font-size: 20px;
+}
+
+.galeria {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.galeria li {
+  margin: 5px;
+}
+
+.galeria img {
+  width: 250px;
+  height: 150px;
+}
+
+/*Estilos do modal*/
+.modal {
+  display: none;
+}
+
+.modal h3 {
+  margin-top: 90px;
+}
+
+.modal .imagen {
+  margin-top: 90px;
+}
+
+.modal:target {
+  display: block;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal h3 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.imagen {
+  width: 100%;
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imagen a {
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+  margin: 0;
+  height: 100%;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+
+.imagen img {
+  width: 500px;
+  height: 100%;
+  max-width: 100%;
+  border: 7px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cerrar {
+  display: block;
+  background: #fff;
+  width: 25px;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  padding: 5px;
+  border-radius: 50%;
+  line-height: 25px;
 }
 /*# sourceMappingURL=principal.css.map */

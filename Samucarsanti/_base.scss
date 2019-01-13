@@ -3,7 +3,15 @@
     padding: 0;
     box-sizing: border-box;
    }
+.containerimg {
+    display: flex;
+    justify-content: center;
 
+    & img {
+        width: 100%;
+        max-width: 280px;
+    }
+}
 ::-webkit-scrollbar{
     background: #ddd;
     width: 14px;
@@ -23,7 +31,7 @@
     --color-red: rgb(214, 14, 14);
     --color-representative:  rgb(68, 67, 67);
     --color-representative2: rgb(148, 145, 145);
-    --color-representative-transparent:  #110f0f80;
+    --color-representative-transparent:  #110f0fd5;
     --color-representative-transparent-visited:  rgba(143, 141, 141, 0.5);
     --color-black-transparent:  rgba(12, 12, 12, 0.253);
 
@@ -51,6 +59,11 @@
      width: 98%;
      margin: auto;
  }
+
+ .containertexto {
+    width: 80%;
+    margin: auto;
+}
  .containermenuresponsive {
     //width: 300px;
     width: 57%;
@@ -120,7 +133,7 @@ footer .container {
     margin-top: 40px;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    //width: 80%;
     text-align: center;
 }
 footer .btn {
