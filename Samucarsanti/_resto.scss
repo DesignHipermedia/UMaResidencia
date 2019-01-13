@@ -1,14 +1,4 @@
 .logoprin {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
-    height: 6.25rem;
-    margin-left: 2rem;
-    float: left;
-}
-<<<<<<< HEAD
-=======
     //height: 6.25rem;
     height: 74px;
     margin-left: 2rem;
@@ -20,28 +10,17 @@
     margin-right: 16px;
     transform: translateY(30%);
 }
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
 
 
 ////////////////////////////MENU
 
 .menu-bar {
     display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    padding: 25px 0 0 400px;
-=======
     //padding: 25px 0 0 400px;  SEM ISTO, OS BOTOES MOVEM-SE JUNTO O TAMANHO DA JANELA
 
     float: right;
     transform: translateY(25px);
     margin-right: 10%;
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-    padding: 25px 0 0 400px;
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
 }
 
 .menu-div {
@@ -70,13 +49,7 @@
         color: var(--color-primary);
         text-decoration: none;
         text-transform: uppercase;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         transition: color .5s;
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
         
         position: relative;
 
@@ -105,15 +78,7 @@
     & div:hover > ul {
         display:block;
         padding: 10px 0 0 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-        position: relative;
-=======
         //position: relative;
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-        position: relative;
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
     }
 }
 
@@ -162,21 +127,12 @@
         margin-top: 20px;
         border: 3px solid #ffffff;
         align-content: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         transition: color .5s;
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
     }
     & a:hover {
         color: var(--color-bottom);
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 /// RESPONSIVE IMAGENS PRINCIPAIS E TEXTOS
 @media (max-width: 768px)
@@ -196,9 +152,6 @@
 }
 /// FIM DO RESPONSIVE IMAGENS PRINCIPAIS E TEXTOS
 
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
 //////////MAIN
 
 #welcome {
@@ -235,24 +188,15 @@
 #imagesdestinos {
     //text-align: center;
     background-color: var(--color-representative);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
     & #hr1 {
         width: 70%;
         margin-left: 15%;
     }
-<<<<<<< HEAD
     & .letrastyle {
         color: var(--color-primary);
         
     }
-=======
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
->>>>>>> 2756d4bc77da9e8bc3c8670d74ad6e0ec42bbfee
     & h3, h4 {
         text-align: center;
         color: var(--color-primary);
@@ -272,15 +216,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform: translateX(0%) translateY(-456%);
-=======
             transform: translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform: translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -288,15 +224,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform: translateX(0%) translateY(-668%);
-=======
             transform: translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform: translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -304,15 +232,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -320,15 +240,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform: translateX(0%) translateY(-668%);
-=======
             transform: translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform: translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -336,15 +248,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -352,15 +256,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
             // z-index: 100;
@@ -369,15 +265,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -385,15 +273,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -401,15 +281,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -417,15 +289,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -433,15 +297,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(0px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -449,15 +305,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -465,15 +313,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -481,15 +321,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -498,15 +330,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -514,15 +338,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -530,15 +346,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -546,15 +354,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -562,15 +362,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -578,15 +370,7 @@
             height: 65px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-360%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-360%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -594,15 +378,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -610,15 +386,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -626,15 +394,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -642,15 +402,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -658,15 +410,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -674,15 +418,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-456%);
-=======
             transform:translateX(0%) translateY(-160px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-456%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -690,15 +426,7 @@
             height: 35px;
             width: 236px;
             line-height: 2.1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            transform:translateX(0%) translateY(-668%);
-=======
             transform:translateX(0%) translateY(-234px);
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-            transform:translateX(0%) translateY(-668%);
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
             position: absolute;
             background-color: var(--color-black-transparent);
         }
@@ -731,57 +459,9 @@
 }
 
 ///// RESPONSIVE DAS IMAGENS DOS DESTINOS ()
-<<<<<<< HEAD
 @media (max-width: 1100px){
 
 
-=======
-@media (max-width: 1100px)
-{
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
-    #imagesdestinos .container1 {
-        columns: 3;
-        width: calc(100% - 40px);
-        box-sizing: border-box;
-        padding: 20px 20px 20px 0px;
-    }
-}
-@media (max-width: 768px)
-{
-    #imagesdestinos .container1 {
-        columns: 2;
-    }
-}
-@media (max-width: 480px)
-{
-    #imagesdestinos .container1 {
-        columns: 1;
-    }
-}
-//// FIM DO RESPONSIVE DAS IMAGENS DESTINOS
-
-footer {
-    border-top: thick solid var(--color-bottom);
-    margin-top: -29px;
-}
-
-footer .container {
-    background-color: var(--color-primary);
-    display: flex;
-    //flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    & p {
-        text-align: center;
-        text-decoration: none;
-    }
-}
-<<<<<<< HEAD
-=======
->>>>>>> 2756d4bc77da9e8bc3c8670d74ad6e0ec42bbfee
     #imagesdestinos .container1{
         columns: 3;
         width: calc(100% - 40px);
@@ -1516,9 +1196,6 @@ footer .container {
 }
 
 
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
 .copy {
     font-size: 20px;
 }
