@@ -11,7 +11,7 @@ gulp.task('check-server', function () {
         baseDir: "dist/",
         server: "dist"
     });
-    gulp.watch(['src/assets/scss/*.scss'], ['compile-sass']).on('change', browserSync.reload);
+    gulp.watch('src/assets/scss/*.scss', ['compile-sass']).on('change', browserSync.reload);
     gulp.watch('src/views/**/*.mustache', ['compile-mustache']).on('change', browserSync.reload);
     gulp.watch('src/assets/js/*.js', ['move-js']).on('change', browserSync.reload);
 });
