@@ -6,18 +6,19 @@ var mustache = require('gulp-mustache');
 var purify = require('gulp-purifycss');
 
 //Detect changes in files and autosync
-gulp.task('watch', function () {
+gulp.task('check-server', function () {
     browserSync.init({
-        server: "dist/",
+        baseDir: "dist/",
+        server: "dist"
     });
-    gulp.watch(['src/assets/scss/*.scss'], gulp.series('compile-sass')).on('change', browserSync.reload);
-    gulp.watch('src/views/*.mustache', gulp.series('compile-mustache')).on('change', browserSync.reload);
-    // gulp.watch('src/view/json/*.json', ['move-json']).on('change', browserSync.reload);
+    gulp.watch(['src/assets/scss/*.scss'], ['compile-sass']).on('change', browserSync.reload);
+    gulp.watch('src/views/**/*.mustache', ['compile-mustache']).on('change', browserSync.reload);
+    gulp.watch('src/assets/js/*.js', ['move-js']).on('change', browserSync.reload);
 });
 
 //Compile scss into css
 gulp.task('compile-sass', function () {
-    return gulp.src('src/assets/scss/style.scss')
+    return gulp.src('src/sass/style.scss')
         .pipe(sass())
         .pipe(gulp.dest('dist/assets/css/'))
         .pipe(browserSync.stream());
@@ -38,15 +39,22 @@ gulp.task('compile-mustache', function () {
 
 //Remove all unused css
 gulp.task('clean-css', function () {
-    return gulp.src('dist/assets/css/style.css')
-        .pipe(purify(['dist/assets/css/style.css']))
+    return gulp.src('dist/assets/css/main.css')
+        .pipe(purify(['src/*.css']))
         .pipe(gulp.dest('dist/assets/css/'))
         .pipe(browserSync.stream());
 });
 
 //Move JSON files
 gulp.task('move-json', function () {
-    gulp.src("src/json/*.json")
-        .pipe(gulp.dest("dist/assets/json/"));
+    gulp.src("src/assets/json/*.json")
+    gulp.src("src/views/common/json/*.json")
+    .pipe(gulp.dest("dist/assets/json/"));
+});
+
+//Move JS files
+gulp.task('move-js', function () {
+    gulp.src("src/assets/js/**/*.js")
+        .pipe(gulp.dest("dist/assets/js/"));
 });
 
