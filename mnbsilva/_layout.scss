@@ -162,6 +162,10 @@
 	flex-basis: 60%;
 }
 
+// teste
+
+ 
+// teste-end
 
 @media (max-width: 1000px){
 	.gallery .grid li.small,
@@ -171,8 +175,11 @@
 }
 
 .gallery-text{
+    background-color: var(--color-grey-light-1);
     max-width: 1400px;
-    margin: 40px auto 0 auto;
+    // margin: 40px auto 0 auto;
+    margin: 40px 20px 0 20px;
+    padding: 20px;
 /*  display: flex;
     justify-content: space-between; */
 }
