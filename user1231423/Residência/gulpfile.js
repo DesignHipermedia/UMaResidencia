@@ -18,7 +18,7 @@ gulp.task('check-server', function () {
 
 //Compile scss into css
 gulp.task('compile-sass', function () {
-    return gulp.src('src/sass/style.scss')
+    return gulp.src('src/assets/scss/style.scss')
         .pipe(sass())
         .pipe(gulp.dest('dist/assets/css/'))
         .pipe(browserSync.stream());
