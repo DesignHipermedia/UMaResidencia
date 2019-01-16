@@ -11,14 +11,14 @@ gulp.task('check-server', function () {
         baseDir: "dist/",
         server: "dist"
     });
-    gulp.watch(['src/assets/scss/*.scss'], ['compile-sass']).on('change', browserSync.reload);
+    gulp.watch('src/assets/scss/*.scss', ['compile-sass']).on('change', browserSync.reload);
     gulp.watch('src/views/**/*.mustache', ['compile-mustache']).on('change', browserSync.reload);
-    gulp.watch('src/views/common/json/*.json', ['move-json']).on('change', browserSync.reload);
+    gulp.watch('src/assets/js/*.js', ['move-js']).on('change', browserSync.reload);
 });
 
 //Compile scss into css
 gulp.task('compile-sass', function () {
-    return gulp.src('src/sass/style.scss')
+    return gulp.src('src/assets/scss/style.scss')
         .pipe(sass())
         .pipe(gulp.dest('dist/assets/css/'))
         .pipe(browserSync.stream());

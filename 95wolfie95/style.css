@@ -247,17 +247,17 @@ a > img {
   width: 40%;
 }
 
-@media only screen and (max-width: 700px) {
-  .summary {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 1150px) {
   .summary {
     padding-left: 1rem;
     padding-right: 1.5rem;
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .summary {
+    display: none;
   }
 }
 
