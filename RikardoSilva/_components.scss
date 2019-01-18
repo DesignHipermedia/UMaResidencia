@@ -193,6 +193,7 @@
 //GALLERY
 .gallery {
     display: flex;
+    overflow: auto;
     &__item{
         margin: 0px;
     }
@@ -401,7 +402,7 @@
     &__user-name {
         font-size: 1.1rem;
         font-weight: 600;
-        text-transform: uppercase;
+        text-transform: none;
         margin-bottom: .4rem;
     }
     &__user-country {

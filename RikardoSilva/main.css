@@ -46,6 +46,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  padding: 20px 50px;
 }
 
 .container {
@@ -410,6 +411,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: auto;
 }
 
 .gallery__item {
@@ -715,7 +717,7 @@ header {
 .review__user-name {
   font-size: 1.1rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: .4rem;
 }
 
