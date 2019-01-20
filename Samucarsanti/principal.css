@@ -44,6 +44,7 @@
   --color-representative-transparent:  #110f0fd5;
   --color-representative-transparent-visited:  rgba(143, 141, 141, 0.5);
   --color-black-transparent:  rgba(12, 12, 12, 0.253);
+  --color-skyblue: rgb(11, 126, 179);
 }
 
 body {
@@ -59,6 +60,8 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 header .container {
@@ -222,6 +225,39 @@ footer .btn:hover::before {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+buttondisplay {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: -100;
+  z-index: 100;
+}
+
+.btnup {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: var(--color-skyblue);
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  border-radius: 30px;
+  z-index: 100;
+}
+
+.btnupdisplay {
+  -webkit-transition: 2s;
+  transition: 2s;
+  opacity: initial;
+}
+
 section {
   widows: 100%;
   margin-bottom: 25px;
@@ -306,13 +342,17 @@ section {
 }
 
 .menu-nav div ul {
-  display: none;
+  opacity: -100;
   position: absolute;
   min-width: 140px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .menu-nav div:hover > ul {
-  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
   padding: 10px 0 0 0;
 }
 
@@ -386,12 +426,17 @@ section {
   }
 }
 
+#welcome {
+  padding: 0 25px 0 25px;
+}
+
 #welcome h2 {
   text-align: center;
 }
 
 #welcome p {
   text-align: center;
+  margin-top: 10px;
 }
 
 #exemplosimages {
@@ -1017,7 +1062,7 @@ section {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 980px) {
   .menu-nav {
     display: none;
   }
@@ -1026,6 +1071,9 @@ section {
   }
   .containermenuresponsive {
     display: block;
+  }
+  header {
+    background-color: var(--color-representative-transparent);
   }
 }
 
@@ -1609,6 +1657,9 @@ section {
 
 /*Estilos do modal*/
 .modal {
+  opacity: -100;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   display: none;
 }
 
@@ -1622,6 +1673,7 @@ section {
 
 .modal:target {
   display: block;
+  opacity: 1;
   position: fixed;
   background: rgba(0, 0, 0, 0.8);
   top: 0;
@@ -1681,10 +1733,23 @@ section {
   margin: 15px auto;
   text-align: center;
   text-decoration: none;
-  font-size: 25px;
   color: #000;
-  padding: 5px;
+  padding: 2px;
   border-radius: 50%;
   line-height: 25px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btnup {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: var(--color-skyblue);
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
 }
 /*# sourceMappingURL=principal.css.map */

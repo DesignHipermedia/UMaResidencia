@@ -35,6 +35,7 @@
     --color-representative-transparent:  #110f0fd5;
     --color-representative-transparent-visited:  rgba(143, 141, 141, 0.5);
     --color-black-transparent:  rgba(12, 12, 12, 0.253);
+    --color-skyblue: rgb(11, 126, 179);;
 
  }
 
@@ -51,6 +52,7 @@
      top:0;
      left: 0;
      z-index: 100;
+     transition: 0.5s;
  }
  header .container {
      display: table;
@@ -188,3 +190,38 @@ footer .btn:hover::before {
 }
 }
 ////FIM FOOOTER (media)
+
+
+//BOTÃO SCROLL UP
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+buttondisplay {
+    transition: 0.5s;
+    opacity: -100;
+    z-index: 100;
+}
+.btnup {
+
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: var(--color-skyblue);
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    z-index: 100;
+}
+
+.btnupdisplay {
+    transition: 2s;
+    opacity: initial;
+}
