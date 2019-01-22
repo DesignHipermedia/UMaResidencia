@@ -1209,12 +1209,18 @@
     }
 
 }
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     iframe {
         width: 250px;
         height: 150px;
     }
 
+}
+
+footer {
+    .container{
+        margin-top: 20px;
+    }
 }
 
 
