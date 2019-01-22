@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sobre</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+        <link rel="stylesheet" href="sobre.css">
+        <title>Sobre</title>
+    </head>
+
+<body>
+    <div class="menu">
+        <button onclick="myFunction()" class="inicio">Menu</button>
+        <div id="Menu1" class="abas">
+            <a href="index.html">🏠 Inicio</a>
+            <a href="galeria.html">📸 Galeria</a>
+            <a href="sobre.html">? Sobre</a>
+            <a href="historia.html">⚔ História</a>
+            <a href="segurança.html">🔒 Segurança</a>
+        </div>
+    </div>
+
+
+    <script>
+        /* Quando clica */
+        function myFunction() {
+            document.getElementById("Menu1").classList.toggle("show");
+        }
+
+        // Quando fecha
+        window.onclick = function (event) {
+            if (!event.target.matches('.inicio')) {
+                var dropdowns = document.getElementsByClassName("abas");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Imagem de fundo inicial e texto a meio -->
+    <section id="banner">
+        <div class="container">
+            <h3>O Chile, o melhor destino turistico!</h3>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- titulo -->
+    <h2 class="titulo"><a title="Chile" target="_top">Chile</a></h2>
+    <br>
+    <!-- texto inicial -->
+    <div class="texto3">
+        <div class="texto">
+            <p>
+                <h4>Do mais alto planalto andino aos intocados territórios do sul no fim do mundo, o país mais longo e
+                    mais
+                    fino que vai dos Andes ao pacífico, o Chile convida a viver aventuras no meio do deserto mais seco
+                    do
+                    mundo, na única floresta chuvosa e temperada da América do Sul, sob o olhar atento dos Andes no
+                    meio da
+                    agitação das cidades modernas diante dos glaciares milineares que estão esperando ser descobertos,
+                    como
+                    a sua capital de Santiago no Chile.
+                    Estes contrastes culturais e climáticos deixaram uma marca na identidade do país e do seu povo.
+                </h4>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
