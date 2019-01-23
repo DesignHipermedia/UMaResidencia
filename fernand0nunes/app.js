@@ -19,7 +19,7 @@ const navSlide =() => {
         //burger animation
         burger.classList.toggle('toogle');
     });
-}
+};
 navSlide();
 //scroll image
 $(window).scroll(function () {
@@ -27,7 +27,31 @@ $(window).scroll(function () {
     $('section').css({
         'background-position-x': - scroll_position + 'px',
     })
-})
+});
+$(window).scroll(function () {
+    var scroll_position = $(window).scrollTop();
+    $('.section2').css({
+        'background-position-x': - scroll_position + 'px',
+    })
+});
+$(window).scroll(function () {
+    var scroll_position = $(window).scrollTop();
+    $('.section3').css({
+        'background-position-x': - scroll_position + 'px',
+    })
+});
+$(window).scroll(function () {
+    var scroll_position = $(window).scrollTop();
+    $('.section4').css({
+        'background-position-x': - scroll_position + 'px',
+    })
+});
+$(window).scroll(function () {
+    var scroll_position = $(window).scrollTop();
+    $('.section5').css({
+        'background-position-x': - scroll_position + 'px',
+    })
+});
 //background navbar
 $(window).on('scroll', function(){
     if ($(window).scrollTop()){
@@ -37,6 +61,37 @@ $(window).on('scroll', function(){
     {
         $('nav').removeClass('black');
     }
-})
+});
+//smoth scroll
+$(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 2000);
+          return false;
+        }
+      }
+    });
+  });
+
+////botão para subir
+$(document).ready(function(){
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() >40){
+            $('#topBtn').fadeIn();
+        } else{
+            $('#topBtn').fadeOut();
+        }
+    });
+
+    $("#topBtn").click(function(){
+        $('html ,body').animate({scrollTop : 0},2000);
+    });
+});
 
 

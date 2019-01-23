@@ -1,0 +1,283 @@
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+h1 { font-size: 60px; }
+h6 { font-size: 22px; }
+
+.banner h1, .banner h6 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+}
+
+.banner {
+  color: white;
+  background: url('https://www.canbedone.co.uk/wp-content/uploads/2017/12/ireland.jpg') top left/cover no-repeat;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {   
+    float: center;
+    width: 100%;
+}
+
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.footer {
+    padding: 50px;
+    text-align: left;
+    background: #333;
+    margin-top: 20px;
+    color: white;
+
+}
+.img{
+  width:500px;
+  height:300px;
+}
+.video{
+  width:800px;
+  height:400px;
+}
+.imgfooter{
+  width: 200px;
+  height:100px;
+}
+
+
+
+@media only screen and (max-width: 320px) {
+  .banner {
+    color: white;
+    background: url('https://www.canbedone.co.uk/wp-content/uploads/2017/12/ireland.jpg') top left/cover no-repeat;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner h1{
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+    font-size: 45px;
+
+  }.banner h6 {
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+    font-size:15px;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.footer {
+  padding: 25px;
+  text-align: left;
+  background: #333;
+  margin-top: 20px;
+  color: white;
+}
+.img{
+width:250px;
+height:150px;
+}
+.video{
+width:200px;
+height:100px;
+}
+.imgfooter{
+width: 100px;
+height:50px;
+}
+
+}
+
+@media only screen and (max-width: 375px) {
+  .banner {
+    color: white;
+    background: url('https://www.canbedone.co.uk/wp-content/uploads/2017/12/ireland.jpg') top left/cover no-repeat;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner h1{
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+    font-size: 45px;
+
+  }.banner h6 {
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+    font-size:15px;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer {
+  padding: 25px;
+  text-align: left;
+  background: #333;
+  margin-top: 20px;
+  color: white;
+}
+.img{
+width:300px;
+height:2000px;
+}
+.video{
+width:200px;
+height:100px;
+}
+.imgfooter{
+width: 150px;
+height:75px;
+}
+
+}
+@media only screen and (max-width: 425px) {
+  .banner {
+    color: white;
+    background: url('https://www.canbedone.co.uk/wp-content/uploads/2017/12/ireland.jpg') top left/cover no-repeat;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner h1{
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+    font-size: 45px;
+
+  }.banner h6 {
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+    font-size:15px;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.footer {
+  padding: 25px;
+  text-align: left;
+  background: #333;
+  margin-top: 20px;
+  color: white;
+}
+.img{
+width:250px;
+height:150px;
+}
+.video{
+width:200px;
+height:100px;
+}
+.imgfooter{
+width: 100px;
+height:50px;
+}
+
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    color: white;
+    background: url('https://www.canbedone.co.uk/wp-content/uploads/2017/12/ireland.jpg') top left/cover no-repeat;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner h1{
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+    font-size: 45px;
+
+  }.banner h6 {
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+    font-size:15px;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.footer {
+  padding: 25px;
+  text-align: left;
+  background: #333;
+  margin-top: 20px;
+  color: white;
+}
+.img{
+width:250px;
+height:150px;
+}
+.video{
+width:200px;
+height:100px;
+}
+.imgfooter{
+width: 100px;
+height:50px;
+}
+
+}

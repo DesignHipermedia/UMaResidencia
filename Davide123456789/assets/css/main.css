@@ -67,7 +67,11 @@ header nav .navbar-nav li a:hover {
           transform: scale(1.1);
 }
 
+<<<<<<< HEAD
 .main-welcome {
+=======
+main {
+>>>>>>> 9c2de403024667d6c2363efdc24a97c3be0daa75
   background-image: url("../img/santorini.jpg");
   background-size: cover;
   background-position: center;
@@ -75,7 +79,11 @@ header nav .navbar-nav li a:hover {
   height: 100vh;
 }
 
+<<<<<<< HEAD
 .main-welcome .main-inicio {
+=======
+main .main-welcome {
+>>>>>>> 9c2de403024667d6c2363efdc24a97c3be0daa75
   background-color: #f9f9f9b8;
   text-align: left;
   position: absolute;
@@ -83,11 +91,16 @@ header nav .navbar-nav li a:hover {
   padding: 0 30px;
 }
 
+<<<<<<< HEAD
 .main-welcome .main-inicio h1 {
+=======
+main .main-welcome h1 {
+>>>>>>> 9c2de403024667d6c2363efdc24a97c3be0daa75
   font-size: 2.5rem;
   color: #4783c3;
 }
 
+<<<<<<< HEAD
 .main-welcome .main-inicio i {
   font-size: 2rem;
   color: #4783c3;
@@ -170,6 +183,9 @@ header nav .navbar-nav li a:hover {
 }
 
 .main-sobre .sobre i {
+=======
+main .main-welcome i {
+>>>>>>> 9c2de403024667d6c2363efdc24a97c3be0daa75
   font-size: 2rem;
   color: #4783c3;
   padding-bottom: 20px;
@@ -425,6 +441,7 @@ img.hover-shadow {
   }
 }
 
+<<<<<<< HEAD
 body .col-1 {
   width: 8.33%;
 }
@@ -784,4 +801,9 @@ head [class*="col-"] {
     width: 100%;
   }
 }
+=======
+.foster {
+  background: #fff;
+}
+>>>>>>> 9c2de403024667d6c2363efdc24a97c3be0daa75
 /*# sourceMappingURL=main.css.map */
