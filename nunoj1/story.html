@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Great Britain</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="btn-menu" onclick="toggleNav()"></div>
+            <div class="logo">
+                <h2 style="margin-top: 10px; font-size: 20px;">History</h2>
+            </div>
+            <div></div>
+        </div>
+        <div class="content" id="app">
+            <div class="story" v-if="i==1">
+                <h3>Prehistoric period</h3>
+                <p>The island was first inhabited by people who crossed over the land bridge from the European
+                    mainland. Human footprints have been found from over 800,000 years ago in Norfolk and traces of
+                    early humans have been found (at Boxgrove Quarry, Sussex) from some 500,000 years ago and
+                    modern humans from about 30,000 years ago.</p>
+
+                <p>Until about 14,000 years ago, Great Britain was connected to Ireland, and as recently as 8,000 years
+                    ago it retained a land connection to the continent, with an area of mostly low marshland joining it
+                    to what are now Denmark and the Netherlands. In Cheddar Gorge, near Bristol, the remains of
+                    animal species native to mainland Europe such as antelopes, brown bears, and wild horses have been
+                    found alongside a human skeleton, 'Cheddar Man', dated to about 7150 BC. Thus, animals and humans
+                    must have moved between mainland Europe and Great Britain via a crossing. Great Britain became
+                    an island at the end of the last glacial period when sea levels rose due to the combination of
+                    melting glaciers and the subsequent isostatic rebound of the crust.</p>
+
+                <p>Great Britain's Iron Age inhabitants are known as Britons; they spoke Celtic languages.</p>
+                <div class="scroll">
+                    <img src="img/empty.png">
+                </div>
+            </div>
+            <div class="story2" v-if="i==1">
+                <h3>Roman and medieval period</h3>
+                <p>The Romans conquered most of the island (up to Hadrian's Wall in northern England) and this became
+                    the Ancient Roman province of Britannia. In the course of the 500 years after the Roman Empire
+                    fell, the Britons of the south and east of the island were assimilated or displaced by invading
+                    Germanic tribes (Angles, Saxons, and Jutes, often referred to collectively as Anglo-Saxons). At
+                    about the same time, Gaelic tribes from Ireland invaded the north-west, absorbing both the Picts
+                    and Britons of northern Britain, eventually forming the Kingdom of Scotland in the 9th century. The
+                    south-east of Scotland was colonised by the Angles and formed, until 1018, a part of the Kingdom of
+                    Northumbria. Ultimately, the population of south-east Britain came to be referred to as the English
+                    people, so-named after the Angles.</p>
+
+                <p>Germanic speakers referred to Britons as Welsh. This term came to be applied exclusively to the
+                    inhabitants of what is now Wales, but it also survives in names such as Wallace and in the second
+                    syllable of Cornwall. Cymry, a name the Britons used to describe themselves, is similarly
+                    restricted in modern Welsh to people from Wales, but also survives in English in the place name of
+                    Cumbria. The Britons living in the areas now known as Wales, Cumbria and Cornwall were not
+                    assimilated by the Germanic tribes, a fact reflected in the survival of Celtic languages in these
+                    areas into more recent times. At the time of the Germanic invasion of Southern Britain, many
+                    Britons emigrated to the area now known as Brittany, where Breton, a Celtic language closely
+                    related to Welsh and Cornish and descended from the language of the emigrants, is still spoken. In
+                    the 9th century, a series of Danish assaults on northern English kingdoms led to them coming under
+                    Danish control (an area known as the Danelaw). In the 10th century, however, all the English
+                    kingdoms were unified under one ruler as the kingdom of England when the last constituent kingdom,
+                    Northumbria, submitted to Edgar in 959. In 1066, England was conquered by the Normans, who
+                    introduced a Norman-speaking administration that was eventually assimilated. Wales came under
+                    Anglo-Norman control in 1282, and was officially annexed to England in the 16th century.</p>
+                <div class="scroll">
+                    <img src="img/next.png" id="next" @click="incrementa">
+                </div>
+            </div>
+            <div class="story3" v-if="i==2">
+                <h3>Early modern period</h3>
+                <p>On 20 October 1604 King James, who had succeeded separately to the two thrones of England and
+                    Scotland, proclaimed himself "King of Great Brittaine, France, and Ireland". When James died in
+                    1625 and the Privy Council of England was drafting the proclamation of the new king, Charles I, a
+                    Scottish peer, Thomas Erskine, 1st Earl of Kellie, succeeded in insisting that it use the phrase
+                    "King of Great Britain", which James had preferred, rather than King of Scotland and England (or
+                    vice versa). While that title was also used by some of James's successors, England and Scotland
+                    each remained legally separate countries, each with its own parliament, until 1707, when each
+                    parliament passed an Act of Union to ratify the Treaty of Union that had been agreed the previous
+                    year. This created a single kingdom out of two, with a single parliament, with effect from 1 May
+                    1707. The Treaty of Union specified the name of the new all-island state as "Great Britain", while
+                    describing it as "One Kingdom" and "the United Kingdom". To most historians, therefore, the
+                    all-island state that existed between 1707 and 1800 is "Great Britain" or the "Kingdom of Great
+                    Britain".</p>
+                <div class="scroll">
+                    <img src="img/prev.png" id="prev" @click="i--"><img src="img/empty.png">
+                </div>
+            </div>
+        </div>
+        <img src="img/book.jpg" class="fundo">
+    </div>
+    <div class="exit" onclick="toggleNav()"></div>
+    <div class="menu-nav">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="termi.html">Terminology</a>
+            </li>
+            <li>
+                <span>History</span>
+            </li>
+            <li>
+                <a href="geo.html">Geografy</a>
+            </li>
+            <li>
+                <a href="galery.html">Galery</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="quote">
+            <p>"It is a standing source of astonishment and amusement to visitors that the British Museum has so few
+                British things in it: that it is a museum about the world as seen from Britain rather than a history
+                focused on these islands."</p>
+        </div>
+        <img src="img/dash.png" class="dash">
+        <div class="social">
+            <a href="https://www.facebook.com/groups/853888401424572/"><img src="img/face.png" id="social"></a>
+            <a href="https://www.instagram.com/lovegreatbritain/"><img src="img/insta.png" id="social"></a>
+            <a href="https://twitter.com/greatbritain"><img src="img/twitter.png" id="social"></a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
+    <script src="main.js"></script>
+    <script src="scroll.js"></script>
+</body>
+
+</html>
