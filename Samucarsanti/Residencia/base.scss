@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    height: 100px;
+    background: var(--color-blueheader);
+    padding: 0 20px;
+    color: var(--color-white);
+}

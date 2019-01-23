@@ -1,137 +1,233 @@
 <!DOCTYPE html>
-
-<html lang="">
+<html lang="en">
 
 <head>
-  <title>Finlândia</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="main.css">
+    <title>Finlândia</title>
 </head>
 
-<body id="top">
-  <div class="wrapper row1">
-    <header id="header" class="hoc clear">
-      <div id="logo" class="fl_left">
-        <img src="Imagens/bandfin.png" alt="bandeira da Finlândia">
-      </div>
-      <nav id="mainav" class="fl_right">
-        <ul class="clear">
-          <li class="active">
-            <a class="fa fa-home" href="index.html">&nbsp; Home</a>
-          </li> 
-          <li><a class="fa fa-map-marker" href="Localização.html">&nbsp; Localização</a></li>
-          <li><a class="fa fa-image" href="Turku.html">&nbsp; Turku</a></li>
-          <li><a class="fa fa-image" href="Helsinki.html">&nbsp; Helsinki</a></li>
-          <li><a class="fa fa-image" href="Savonlinna.html">&nbsp; Savonlinna</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+<body>
+    <div class="container">
+        <header>
+            <img src="fi.png" alt="bandeira da Finlândia" class="logo">
 
-  <div id="pageintro" class="hoc clear">
-    <article>
-      <h3 class="heading">Finlândia</h3>
-      
-      <p>A Finlândia, conhecida por ser a terra da sauna e da vodka, é, acima de tudo um país repleto de belezas
-        naturais, em razão de sua geografia muito peculiar, numa península de litoral recortado e com milhares de
-        ilhas, com muitos lagos e florestas típicas de altas latitudes, pântanos e rios. Suas extensas florestas de
-        pinheiros, bétulas e abetos fazem da Finlândia um grande exportador de madeira, papel e celulose.</p>
-    </article>
-  </div>
-  </div>
 
-  <div class="wrapper row3">
-    <main class="hoc container clear">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Pesquisar residências">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="symbol-defs.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
 
-      <section id="introblocks">
-        <ul class="nospace group btmspace-80">
-          <li class="one_third first">
-            
-            <figure><a class="imgover" href="Turku.html"><img src="Imagens/Turku.jpg" alt=""></a>
-              <figcaption>
-                <h6 class="heading">Turku</h6>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="one_third">
-            <figure><a class="imgover" href="Helsinki.html"><img src="Imagens/Helsinki.jpg" alt=""></a>
-              <figcaption>
-                <h6 class="heading">Helsinki</h6>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="one_third">
-            <figure><a class="imgover" href="Savonlinna.html"><img src="Imagens/Savonlinna.jpg" alt=""></a>
-              <figcaption>
-                <h6 class="heading">Savonlinna</h6>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </section>
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                            <use xlink:href="symbol-defs.svg#icon-bookmark"></use>
+                        </svg>
+                    <span class="user-nav__notification">2</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                            <use xlink:href="symbol-defs.svg#icon-chat"></use>
+                        </svg>
+                    <span class="user-nav__notification">50</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="user.jpg" alt="User photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Finlândia</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-home"></use>
+                            </svg>
+                            <span>Sobre</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-shop"></use>
+                            </svg>
+                            <span>Melhores lugares</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-bowl"></use>
+                            </svg>
+                            <span>Comida tradicional</span>
+                        </a>
+                </ul>
+                <div class="legal">
+                    Copyright &copy; Alexandre Abreu
+                </div>
+            </nav>
+            <main class="residencia-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="fin.jpg" alt="quartos da residência" class="gallery__photo">
+                </div>
 
-      <hr class="btmspace-80">
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        Finlândia
+                    </h1>
+                    <div class="overview__stars">
+                        <svg class="overview__icon-star">
+                                <use xlink:href="symbol-defs.svg#icon-star"></use>
+                            </svg>
+                        <svg class="overview__icon-star">
+                                <use xlink:href="symbol-defs.svg#icon-star"></use>
+                            </svg>
+                        <svg class="overview__icon-star">
+                                <use xlink:href="symbol-defs.svg#icon-star"></use>
+                            </svg>
+                        <svg class="overview__icon-star">
+                                <use xlink:href="symbol-defs.svg#icon-star"></use>
+                            </svg>
+                        <svg class="overview__icon-star">
+                                <use xlink:href="symbol-defs.svg#icon-star-outlined"></use>
+                            </svg>
+                    </div>
 
-      <section id="overview">
-        <div class="sectiontitle">
-          <p class="heading underline font-x2">Gastronomia</p>
+                    <div class="overview__rating">
+                        <div class="overview__rating-average">8.6</div>
+                        <div class="overview__rating-count">429 votos</div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="description">
+                        <p class="paragraph">
+                            É um país nórdico situado na região da Fino-Escandinávia, no norte da Europa. Faz fronteira com a Suécia a oeste, com a Rússia a leste e com a Noruega ao norte, enquanto a Estónia está ao sul através do Golfo da Finlândia. A capital do país é Helsinque. Cerca de 5,3 milhões de pessoas vivem na Finlândia, sendo que a maior parte da população está concentrada no sul do país. 
+                        </p>
+                        <p class="paragraph">
+                            É o oitavo maior país da Europa em extensão e o país menos densamente povoado da União Europeia. A língua materna de quase toda a população é o finlandês, que é uma das línguas fino-úgricas e é mais estreitamente relacionado com o estoniano. O finlandês é apenas uma das quatro línguas oficiais da UE que não são de origem Indo-Europeia. A segunda língua oficial da Finlândia - o Sueco - é a língua nativa de 5,5 por cento da população.
+                        </p>
+                        <ul class="list">
+                            <li class="list__item">Capital: Helsínquia</li>
+                            <li class="list__item">Moeda: Euro</li>
+                            <li class="list__item">População: 5,503 milhões (2017)</li>
+                            <li class="list__item">Línguas oficiais: Finlandês e sueco</li>
+                            <li class="list__item">Entrada na UE: 1 de janeiro de 1995</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                4 estudantes recomendam ir á Finlândia.
+                            </p>
+                            <div class="recommend__friends">
+                                <img src="https://avatars3.githubusercontent.com/u/44034816?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825239?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars1.githubusercontent.com/u/43825290?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825275?s=88&v=4" alt="foto" class="recommend__photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <figure class="review" v-for="entry of biografias">
+
+                            <blockquote class="review__text">
+                                <a :href="'./'+entry.nickname+'/index.html'" class="review__text--link" target="_self">{{entry.review}}</a>
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img :src="entry.photo" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">
+                                        <a :href="'https://github.com/'+entry.nickname" class="review__user-name--link" target="_self">
+                                            {{entry.nickname}}
+                                        </a>
+                                    </p>
+                                    <p class="review__user-country">{{entry.country}}</p>
+                                </div>
+                                <div class="review__rating">{{entry.rating}}</div>
+                            </figcaption>
+
+                        </figure>
+
+                        <!-- <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars3.githubusercontent.com/u/44034816?s=88&v=4" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Anónimo</p>
+                                    <p class="review__user-country">Venezuela</p>
+                                </div>
+                                <div class="review__rating">7.8</div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars3.githubusercontent.com/u/43825275?s=88&v=4" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Anónimo</p>
+                                    <p class="review__user-country">Marrocos</p>
+                                </div>
+                                <div class="review__rating">8.1</div>
+                            </figcaption>
+                        </figure> -->
+
+                        <button class="btn-inline" @click="viewposts=!viewposts">Mostrar {{viewposts?'mais':'menos'}} recomendações <span>&rarr;</span></button>
+
+                    </div>
+                </div>
+            </main>
         </div>
-        <ul class="nospace group btmspace-80">
-          <li class="one_third">
-            <article>
-              <div class="clear"><a href="#"><i class="fa fa-uten"></i></a>
-                <h6 class="heading">Carne - "Maksalaatikko"</h6>
-              </div>
-              <figure><img src="Imagens/maksalaatikko.JPG" alt=""></a>
-                <br>
-                <br>
-
-                <p>O maksalaatikko é um dos pratos da mesa natalícia dos finlandeses, preparado no forno, com arroz e
-                  fígado ou carne de bovino, podendo ser acompanhado por molho de bagas silvestres.</p>
-            </article>
-          </li>
-          <li class="one_third">
-            <article>
-              <div class="clear"><a href="#"></a>
-                <h6 class="heading">Doces - "Pulla"</h6>
-              </div>
-              <figure><img src="Imagens/Pullia.jpg" alt=""></a>
-                <br>
-                <br>
-
-                <p>De entre os doces da Finlândia, é possível destacar o denominado pulla, que consiste num pão doce,
-                  servido em fatias com café ou chá.</p>
-            </article>
-          </li>
-          <li class="one_third">
-            <article>
-              <div class="clear"><a href="#"><i class="fa fa-fish"></i></a>
-                <h6 class="heading">Peixe - "kalakukko"</h6>
-              </div>
-              
-              <figure><img src="Imagens/kalakukko.jpg" alt=""></a>
-                <br>
-                <br>
-
-                <p>Entre os pratos de peixe, é possível destacar o kalakukko, um pastel de peixe típico da região da
-                  Savônia.</p>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <div class="clear"></div>
-    </main>
-  </div>
-
-
-  <p class="fl_left">Copyright &copy; Alexandre Abreu
     </div>
-    </div>
-    <a id="backtotop" href="#top"><i class="fa fa-arrow-up"></i></a>
-    <script src="layout/scripts/jquery.min.js"></script>
-    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.9/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js"></script>
+    <script>
+        new Vue({
+            el: '.user-reviews',
+            created() {
+                this.fetchData();
+            },
+            data: {
+                posts: [],
+                shortposts: [],
+                viewposts: true
+            },
+            methods: {
+                fetchData() {
+                    axios.get('https://final-project-recording-817f4.firebaseio.com/hipermedia2018/.json')
+                        .then(response => {
+                            this.posts = response.data;
+                        })
+                        .then(response => {
+                            this.shortposts.push(this.posts[this.aleatorio(this.posts.length, 0)])
+                            this.shortposts.push(this.posts[this.aleatorio(this.posts.length, 0)])
+                        })
+                },
+                aleatorio(max, min) {
+                    return Math.max(Math.floor(Math.random() * max) + 1, min)
+                }
+            },
+            computed: {
+                biografias() {
+                    if (this.viewposts) {
+                        return this.shortposts
+                    } else {
+                        return this.posts
+                    }
+                }
+            }
+        });
+    </script>
 </body>
-
-</html>

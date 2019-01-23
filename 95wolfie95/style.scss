@@ -37,7 +37,7 @@
 
 @keyframes inverse {
   from {
-  color: initial;
+    color: initial; 
   }
   to {
     color:darkorange;
@@ -52,29 +52,13 @@
 
 @keyframes extend {
   0% {
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 0%;
-=======
-    width: 0%; 
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-    width: 0%;
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
   }
   50% {
     width: 100%;
   }
   100% {
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 50%;
-=======
-    width: 0%;
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-    width: 50%;
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
   }
 }
 
@@ -119,15 +103,7 @@ ul {
   display: flex;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   flex-direction: row;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: space-around;
-=======
-  justify-content: space-between;
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-  justify-content: space-around;
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
   align-items: center;
   font-size: 1.25rem;
   list-style-type: none;
@@ -203,29 +179,19 @@ a>img {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
   width: 40%;
-  @media only screen and (max-width: 700px) {
-    display: none;
-  }
-
   @media only screen and (max-width: 1150px) {
     padding-left: 1rem;
     padding-right: 1.5rem;
     width: 50%;
   }
-
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
 }
 
 hr {
   width: 50%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   animation: extend 10s ease-in-out 1;
-=======
-  animation: extend 10s ease-in-out infinite;
->>>>>>> 45486e58e65d4199bf0aae508c5c8f25803eb555
-=======
-  animation: extend 10s ease-in-out 1;
->>>>>>> b6e1727c66bea377fe3686f4da3390feb771e9e7
 }
 
 .opinion {
