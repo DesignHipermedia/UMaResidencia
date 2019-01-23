@@ -109,6 +109,7 @@ main section .containertexto {
   position: fixed;
   z-index: -20;
   opacity: -100;
+  display: none;
 }
 
 h1 {
@@ -922,6 +923,9 @@ section {
   .containermenuresponsive {
     display: block;
   }
+  .fondomenuresponsive {
+    display: block;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1198,6 +1202,9 @@ section {
     display: block;
   }
   .containermenuresponsive {
+    display: block;
+  }
+  .fondomenuresponsive {
     display: block;
   }
   header {
