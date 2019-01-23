@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
    }
+
+
+
+   
 .containerimg {
     display: flex;
     justify-content: center;
@@ -34,6 +38,7 @@
     --color-representative-transparent:  #110f0fd5;
     --color-representative-transparent-visited:  rgba(143, 141, 141, 0.5);
     --color-black-transparent:  rgba(12, 12, 12, 0.253);
+    --color-skyblue: rgb(11, 126, 179);;
 
  }
 
@@ -50,6 +55,7 @@
      top:0;
      left: 0;
      z-index: 100;
+     transition: 0.5s;
  }
  header .container {
      display: table;
@@ -60,11 +66,22 @@
      margin: auto;
  }
 
+main {
+    section {
+        .container1 {
+            padding: 0 0 30px 0;
+        }
+        .containertexto {
+            padding: 0 0 30px 0;
+        }
+    }
+}
+
  .containertexto {
     width: 80%;
     margin: auto;
 }
- .containermenuresponsive {
+.containermenuresponsive {
     //width: 300px;
     width: 57%;
     height: 100%;
@@ -72,8 +89,6 @@
     float: left;
     display: none;
     //transform: translateX(-150%);
-
-
     position: fixed;
     margin-top: 74px;
     left: -900px;
@@ -81,10 +96,24 @@
     & a {
         margin-left: 20px;
     }
- }
+}
+
+.fondomenuresponsive {
+
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    float: left;
+    position: fixed;
+    z-index: -20;
+    opacity: -100;
+    //left: -900px
+
+    //display: none;
+}
 
 
- h1 {
+h1 {
     float: left;
 }
 header .container { 
@@ -187,3 +216,115 @@ footer .btn:hover::before {
 }
 }
 ////FIM FOOOTER (media)
+
+
+//BOTÃO SCROLL UP
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+buttondisplay {
+    transition: 0.5s;
+    opacity: -100;
+    z-index: 100;
+}
+.btnup {
+
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: var(--color-skyblue);
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    z-index: 100;
+}
+
+.btnupdisplay {
+    
+    transition: 2s;
+    opacity: initial;
+}
+
+
+
+///   LOADING ANIMATION
+
+
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.obj {
+    width: 6px;
+    height: 40px;
+    background: white;
+    margin: 0 3px;
+    border-radius: 10px;
+    animation: loading 0.8s infinite;
+}
+
+.obj:nth-child(2){
+    animation-delay: 0.1s;
+}
+.obj:nth-child(3){
+    animation-delay: 0.2s;
+}
+.obj:nth-child(4){
+    animation-delay: 0.3s;
+}
+.obj:nth-child(5){
+    animation-delay: 0.4s;
+}
+.obj:nth-child(6){
+    animation-delay: 0.5s;
+}
+.obj:nth-child(7){
+    animation-delay: 0.6s;
+}
+.obj:nth-child(8){
+    animation-delay: 0.7s;
+}
+  
+  
+@keyframes loading {
+    0%{
+      height: 0;
+    }
+    50%{
+      height: 40px;
+    }
+    100%{
+      height: 0;
+    }
+}
+  
+
+.containerbig{
+    width: 100%;
+    background-color: black;
+    min-height: 100vh;
+
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    z-index: 1;
+    display: none;
+}

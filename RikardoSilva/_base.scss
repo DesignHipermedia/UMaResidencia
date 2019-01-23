@@ -1,0 +1,52 @@
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+
+:root {
+    --color-primary: #eaf81f;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA265D;
+    --color-grey-light-1: #0059fd;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    --color-grey-dark-1: #1ed60e;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+    --line: 1px solid var(--color-grey-light-2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px, 10px/16p = 62.5%
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    } 
+}
+
+body{
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: 50;
+    line-height: 1.6;
+    background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/VNeT5TvDx/brazilian-flag-the-flag-of-brazil-waving_43qrllopx__F0000.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px 50px;
+}
+
