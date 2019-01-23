@@ -1,50 +1,74 @@
 [
     {
-      "target": "http://google.com",
-      "src": "http://staff.harrisonburg.k12.va.us/~cwalton/geopics/AX930147.jpg",
+      "target": "https://pt.wikipedia.org/wiki/Kremlin_de_Moscovo",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Moscow_Kremlin_and_Bolshoy_Kamenny_Bridge_late_evening_01.JPG/300px-Moscow_Kremlin_and_Bolshoy_Kamenny_Bridge_late_evening_01.JPG",
       "alt": "Monument img",
-      "name": "Monument 1"
+      "name": "Kremlin de Moscovo"
     },
     {
-      "target": "http://google.com",
-      "src": "http://staff.harrisonburg.k12.va.us/~cwalton/geopics/AX930147.jpg",
+      "target": "https://pt.wikipedia.org/wiki/Oper%C3%A1rio_e_Mulher_Kolkosiana",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/The_Worker_and_Kolkhoz_Woman.jpg/250px-The_Worker_and_Kolkhoz_Woman.jpg",
       "alt": "Monument img",
-      "name": "Monument 2"
+      "name": "Operário e Mulher"
     },
     {
-      "target": "http://google.com",
-      "src": "http://staff.harrisonburg.k12.va.us/~cwalton/geopics/AX930147.jpg",
+      "target": "https://pt.wikipedia.org/wiki/M%C3%A3e_P%C3%A1tria_(monumento)",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/The_Motherland_Calls_%28Volgograd%29.JPG/250px-The_Motherland_Calls_%28Volgograd%29.JPG",
       "alt": "Monument img",
-      "name": "Monument 3"
+      "name": "Mãe Pátria"
     },
     {
-      "target": "http://google.com",
-      "src": "http://staff.harrisonburg.k12.va.us/~cwalton/geopics/AX930147.jpg",
+      "target": "https://en.wikipedia.org/wiki/Millennium_of_Russia",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%82%D1%8B%D1%81%D1%8F%D1%87%D0%B5%D0%BB%D0%B5%D1%82%D0%B8%D1%8E_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_2013_02.JPG/306px-%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%82%D1%8B%D1%81%D1%8F%D1%87%D0%B5%D0%BB%D0%B5%D1%82%D0%B8%D1%8E_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_2013_02.JPG",
       "alt": "Monument img",
-      "name": "Monument 4"
+      "name": "Millennium of Russia"
     },
     {
-      "target": "http://google.com",
-      "src": "http://staff.harrisonburg.k12.va.us/~cwalton/geopics/AX930147.jpg",
+      "target": "https://en.wikipedia.org/wiki/Novgorod_Kremlin",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Nowgorod_2005_w.jpg/300px-Nowgorod_2005_w.jpg",
       "alt": "Monument img",
-      "name": "Monument 5"
+      "name": "Novgorod Kremlin"
     },
     {
-      "target": "http://google.com",
-      "src": "http://staff.harrisonburg.k12.va.us/~cwalton/geopics/AX930147.jpg",
+      "target": "https://pt.wikipedia.org/wiki/Monumento_a_Minin_e_Pozharsky",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D0%B8%D0%BD%D1%83_%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD%D1%83_%D0%B8_%D0%BA%D0%BD%D1%8F%D0%B7%D1%8E_%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%BC%D1%83.jpg/220px-%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D0%B8%D0%BD%D1%83_%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD%D1%83_%D0%B8_%D0%BA%D0%BD%D1%8F%D0%B7%D1%8E_%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%BC%D1%83.jpg",
       "alt": "Monument img",
-      "name": "Monument 6"
+      "name": "Minin e Pozharsky"
     },
     {
-      "target": "http://google.com",
-      "src": "http://staff.harrisonburg.k12.va.us/~cwalton/geopics/AX930147.jpg",
+      "target": "https://en.wikipedia.org/wiki/Peter_the_Great_Statue",
+      "src": "https://lidenz.ru/wp-content/uploads/2016/07/peter-the-great-.jpg",
       "alt": "Monument img",
-      "name": "Monument 7"
+      "name": "Peter the Great Statue"
     },
     {
-      "target": "http://google.com",
-      "src": "http://staff.harrisonburg.k12.va.us/~cwalton/geopics/AX930147.jpg",
+      "target": "https://pt.wikipedia.org/wiki/Cavaleiro_de_Bronze_(S%C3%A3o_Petersburgo)",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Bronze_Horseman_%28St._Petersburg%2C_Russia%29.jpg/300px-The_Bronze_Horseman_%28St._Petersburg%2C_Russia%29.jpg",
       "alt": "Monument img",
-      "name": "Monument 8"
+      "name": "Cavaleiro de Bronze"
+    },
+    {
+      "target": "https://en.wikipedia.org/wiki/Tatishchev_Monument_(Tolyatti)",
+      "src": "https://upload.wikimedia.org/wikipedia/en/thumb/6/61/Tatischev_Monument%2C_Tolyatti_-_Medium_View.jpg/220px-Tatischev_Monument%2C_Tolyatti_-_Medium_View.jpg",
+      "alt": "Monument img",
+      "name": "Tatishchev Monument"
+    },
+    {
+      "target": "https://pt.wikipedia.org/wiki/Kostya",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Dog_Monument%2C_Togliatti%2C_Russia.JPG/280px-Dog_Monument%2C_Togliatti%2C_Russia.JPG",
+      "alt": "Monument img",
+      "name": "Kostya"
+    },
+    {
+      "target": "https://pt.wikipedia.org/wiki/Coluna_de_Alexandre",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/WinterPalaceAndAC.jpg/400px-WinterPalaceAndAC.jpg",
+      "alt": "Monument img",
+      "name": "Coluna de Alexandre"
+    },
+    {
+      "target": "https://en.wikipedia.org/wiki/Monument_to_Salavat_Yulaev",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Salavat_Yulaev_Panorama.jpg/220px-Salavat_Yulaev_Panorama.jpg",
+      "alt": "Monument img",
+      "name": "Salavat Yulaev"
     }
 ]
