@@ -8,7 +8,7 @@
     display: none;
     float: right;
     margin-right: 16px;
-    transform: translateY(30%);
+    transform: translateY(10px);
 }
 
 
@@ -70,16 +70,19 @@
         list-style: none;
     }
     & div ul {
-        display: none;
+        opacity: -100;
         //transform: translateX(-10px) translateY(30px);
         position: absolute;
         min-width: 140px;
+        transition: 0.5s;
     }
     & div:hover > ul {
-        display:block;
+        transition: 0.5s;
+        opacity: 1;
         padding: 10px 0 0 0;
         //position: relative;
     }
+
 }
 
 ////NAV-LINGUAS
@@ -92,6 +95,7 @@
     left: 100%;
 }
 ///////////////IMAGEM BANNER
+
 #banner {
     position: relative;
     text-align: center;
@@ -155,11 +159,14 @@
 //////////MAIN
 
 #welcome {
+    padding: 0 25px 0 25px;
     & h2 {
         text-align: center;
     }
     & p {
+        
         text-align: center;
+        margin-top: 10px;
     }
 }
 
@@ -458,6 +465,19 @@
     }
 }
 
+
+@media (max-width: 1100px){
+
+    .containermenuresponsive{
+        display:block;
+    }
+    .fondomenuresponsive {
+        display: block;
+    }
+
+
+}
+
 ///// RESPONSIVE DAS IMAGENS DOS DESTINOS ()
 @media (max-width: 1100px){
 
@@ -693,7 +713,7 @@
     }        
 }
 
-@media (max-width: 950px) {
+@media (max-width: 980px) {
     .menu-nav {
         display: none;
     }
@@ -702,6 +722,14 @@
     }
     .containermenuresponsive {
         display: block;
+    }
+    .fondomenuresponsive {
+        display: block;
+    }
+
+    header {
+        background-color: var(--color-representative-transparent);
+
     }
 }
 
@@ -1187,12 +1215,18 @@
     }
 
 }
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     iframe {
         width: 250px;
         height: 150px;
     }
 
+}
+
+footer {
+    .container{
+        margin-top: 20px;
+    }
 }
 
 
