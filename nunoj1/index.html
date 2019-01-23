@@ -5,11 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Great Britain</title>
 </head>
 
 <body>
-    Projeto UmaResidencia
+    <div class="container">
+        <div class="top">
+            <div class="btn-menu" onclick="toggleNav()"></div>
+            <div>
+                <img src="img/logo.png" class="logo">
+                <h2></h2>
+            </div>
+            <div></div>
+        </div>
+        <img src="img/fundo.png" class="fundo">
+    </div>
+    <div class="exit" onclick="toggleNav()"></div>
+    <div class="menu-nav">
+        <ul>
+            <li>
+                <span>Home</span>
+            </li>
+            <li>
+                <a href="termi.html">Terminology</a>
+            </li>
+            <li>
+                <a href="story.html">History</a>
+            </li>
+            <li>
+                <a href="geo.html">Geografy</a>
+            </li>
+            <li>
+                <a href="galery.html">Galery</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="quote">
+            <p>"It is a standing source of astonishment and amusement to visitors that the British Museum has so few British things in it: that it is a museum about the world as seen from Britain rather than a history focused on these islands."</p>
+        </div>
+        <img src="img/dash.png" class="dash">
+        <div class="social">
+            <a href="https://www.facebook.com/groups/853888401424572/"><img src="img/face.png" id="social"></a>
+            <a href="https://www.instagram.com/lovegreatbritain/"><img src="img/insta.png" id="social"></a>
+            <a href="https://twitter.com/greatbritain"><img src="img/twitter.png" id="social"></a>
+        </div>
+    </div>
 </body>
+<script src="main.js"></script>
 
 </html>
