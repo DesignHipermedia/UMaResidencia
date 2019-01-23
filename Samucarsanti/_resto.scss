@@ -471,6 +471,9 @@
     .containermenuresponsive{
         display:block;
     }
+    .fondomenuresponsive {
+        display: block;
+    }
 
 
 }
@@ -718,6 +721,9 @@
         display: block;
     }
     .containermenuresponsive {
+        display: block;
+    }
+    .fondomenuresponsive {
         display: block;
     }
 
@@ -1209,12 +1215,18 @@
     }
 
 }
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     iframe {
         width: 250px;
         height: 150px;
     }
 
+}
+
+footer {
+    .container{
+        margin-top: 20px;
+    }
 }
 
 
