@@ -1,0 +1,230 @@
+  .middle{
+    position: relative;
+  }
+  .container-card {
+      margin: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .card{
+    cursor: pointer;
+    width: 47%;
+    height: 480px;
+  }
+  .front,.back{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+  }
+  .front img{
+    height: 100%;
+  }
+  .front{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .back{
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+  }
+  .back-content{
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+  }
+  .sm{
+    margin: 20px 0;
+  }
+  .sm a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%
+  }
+  .sm a:hover{
+    background: #2c3e50;
+    color: white;
+  }
+  .card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  
+//////////////////////////
+
+.container{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.container span{
+  text-transform: uppercase;
+  display: block;
+}
+.text1{
+  color: white;
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+ 
+  position: relative;
+  animation: text 3s 1;
+}
+.text2{
+  display: none;
+  font-size: 30px;
+  color: #0066ff;
+}
+
+@keyframes text {
+  0%{
+    background: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    background: black;
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  80%{
+    background: black;
+    margin-bottom: -40px;
+  }
+  95%{
+    background: rgba(0,0,0,0.3);
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+/////////////////contactos//////////////
+
+.contact-section{
+    background-size: cover;
+    padding: 40px 0;
+    
+  }
+  .contact-section h1{
+    text-align: center;
+    color: #ddd;
+  }
+  .border{
+    width: 100px;
+    height: 10px;
+    background: #000000;
+    margin: 40px auto;
+  }
+  
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #000000;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #000000;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .contact-form-btn{
+    float: right;
+    border: 0;
+    background: #000000;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .contact-form-btn:hover{
+    background: grey;
+  }
+
+  ///////icones para o fotter///////
+  section{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .s1{
+    background: #000000;
+  }
+  
+  .iconbtn{
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    margin: 1px;
+    position: relative;
+    font-size: 30px;
+    border-radius: 50%;
+  }
+  .iconbtn::before{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .iconbtn::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  .s1 .iconbtn,.s2 .iconbtn{
+    color: #fff;
+  }
+  .s1 .iconbtn::after{
+    border: 4px dashed;
+  }
+  .s1 .iconbtn:hover::after{
+    animation: ro 7s linear infinite;
+  }
+
+  @keyframes ro {
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  

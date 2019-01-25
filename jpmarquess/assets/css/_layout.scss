@@ -157,8 +157,8 @@ footer {
 
     .index-welcome {
         position: absolute;
-        bottom: calc(50% - 260px);
-        left: 200px;
+        bottom: calc(50% - 300px);
+        left: 300px;
 
         h1 {
             color: #f2f3f2;
@@ -329,7 +329,7 @@ footer {
  * Destinations Page
  */
 .destinations-main {
-    background-image: url("../img/destinations3.jpg");
+    background-image: url("../img/destinations.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -337,8 +337,8 @@ footer {
 
     .destinations-welcome {
         position: absolute;
-        bottom: calc(50% - 260px);
-        left: 200px;
+        bottom: calc(50% - 300px);
+        left: 300px;
 
         h1 {
             color: #f2f3f2;
@@ -452,19 +452,19 @@ footer {
 }
 
 /*
- * Things to Do
+ *
  */
 .things-to-do-main {
     height: 100vh;
-    background-image: url("../img/winter-activities2.jpg");
+    background-image: url("../img/winter-activities.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     .things-to-do-welcome {
         position: absolute;
-        bottom: calc(50% - 260px);
-        left: 200px;
+        bottom: calc(50% - 300px);
+        left: 300px;
 
         h1 {
             color: #f2f3f2;

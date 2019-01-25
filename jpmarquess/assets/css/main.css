@@ -195,8 +195,8 @@ footer .separador {
 
 .index-main .index-welcome {
   position: absolute;
-  bottom: calc(50% - 260px);
-  left: 200px;
+  bottom: calc(50% - 300px);
+  left: 300px;
 }
 
 .index-main .index-welcome h1 {
@@ -397,7 +397,7 @@ footer .separador {
  * Destinations Page
  */
 .destinations-main {
-  background-image: url("../img/destinations3.jpg");
+  background-image: url("../img/destinations.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -406,8 +406,8 @@ footer .separador {
 
 .destinations-main .destinations-welcome {
   position: absolute;
-  bottom: calc(50% - 260px);
-  left: 200px;
+  bottom: calc(50% - 300px);
+  left: 300px;
 }
 
 .destinations-main .destinations-welcome h1 {
@@ -532,11 +532,11 @@ footer .separador {
 }
 
 /*
- * Things to Do
+ *
  */
 .things-to-do-main {
   height: 100vh;
-  background-image: url("../img/winter-activities2.jpg");
+  background-image: url("../img/winter-activities.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -544,8 +544,8 @@ footer .separador {
 
 .things-to-do-main .things-to-do-welcome {
   position: absolute;
-  bottom: calc(50% - 260px);
-  left: 200px;
+  bottom: calc(50% - 300px);
+  left: 300px;
 }
 
 .things-to-do-main .things-to-do-welcome h1 {
