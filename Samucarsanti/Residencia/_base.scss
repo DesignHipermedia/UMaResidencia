@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container-contactos1 {
+    border: 1px;
+    width: 550px;
+
+ 
+}
+
+.container-contactos2 {
+    width: 250px;
+}
+
+.container-eventos1 {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-pagamentos{
+    margin: auto;
+    width: 500px;
+}
+
+.container-pagamentos1 {
+    width: 98%;
+    margin: auto;
+    display: flex;
+}
+
+
+.container-pagamentos2 {
+    //width: 98%;
+    margin: auto;
+    display: flex;
+    margin: 0 15px 0 15px;
+}
+.container-pagamentos3 {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-pagamentos1tipo{
+    width: 150px;
+    height: 40px;
+    padding: 7px;
+}
+
+.container-pagamentos2tipo{
+    width: 450px;
+    //height: 40px;
+    padding: 10px 40px 0 40px;
+}
+
+.container-pagamentos3tipo{
+    width: 550px;
+    height: 40px;
+    padding: 7px;
+}
+
+.container-carousels {
+    //height: 350px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-noticias {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-min_carousel {
+    width: 350px;
+    //height: 100px;
+    //padding: 30px;
+    margin: 25px 20px 0px;
+
+
+}
+
+.container-min_noticias {
+    width: 300px;
+    height: 400px;
+    //padding: 30px;
+    margin: 0px 25px 30px;
+
+}
+
+.container-main {
+    width: 100%;
+    background-color: var(--color-white);
+    margin: auto;
+}
+
+#section1 {
+    & img {
+        height: 250px;
+    }
+}
+
+//Button Animation 
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.container_button {
+    position: relative;
+    display: inline-block;
+    padding: 0 40px;
+    cursor: pointer;
+
+    background-color: var(--color-white);
+    border-radius: 7px;
+    border: 2px solid var(--color-principal1);
+}
+
+.text_button {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    color: var(--color-principal-op);
+}
+.text_button::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--color-white-op);
+    width: 0;
+    overflow: hidden;
+    //transition: 0.1s;
+    z-index: 100;
+}
+.container_button::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: var(--color-principal-sop);
+    border-radius: 5px;
+    right: 0;
+    top: 0;
+    transition: 0.6s;
+}
+.container_button:hover .text_button::before, .container_button:hover::before {
+    width: 100%;
+}
+
+//Fim button animation
+
+body {
+    //background-image: url(http://brasil.uma.pt/wp-content/uploads/2016/08/Panorama1.jpg);
+    background-image: url(http://sahdrsjghdr.000webhostapp.com/fondoop.jpg);
+    background-attachment: fixed;
+    background-position: center center; 
+    background-size: cover;
+}
+
+
+.contactosimg {
+
+    background-image: url(IMAGES/fondo-contactos.jpg);
+    background-attachment: fixed;
+    background-position: center center; 
+    background-size: cover;
+
+}
+
+.eventosimg{
+
+    background-image: url(IMAGES/fondo-eventos.jpg);
+    background-attachment: fixed;
+    background-position: center center; 
+    background-size: cover;
+
+}
+
+.pagamentosimg{
+
+    background-image: url(IMAGES/fondo-pagamentos.jpg);
+    background-attachment: fixed;
+    background-position: center center; 
+    background-size: cover;
+
+}
+
+//f
+
+//.container-fondo{
+   // width: 100%;
+    //height: 696px;
+ 
+    //position: fixed;
+   // }
+
+header {
+    float: right;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background: var(--color-principal-op);
+    padding: 0 20px;
+    color: var(--color-white);
+    z-index: 100;
+    transition: 0.5s;
+}
+
+#hr1 {
+    width: 2000px;
+    transform: translateX(-20px) translateY(83px);
+    position: fixed;
+}
+
+
+//IMAGEM DO CABEÇALHO
+
+.logoprin {
+    //height: 74px;
+    //width: 100%;
+    //max-width: 280px;
+    //transform: translateX(540px);
+    display: flex;
+    justify-content: center;
+    transform: translateY(5px);
+    //margin-left: 2rem;
+    //float: left;
+    & img {
+        width:130px;
+        height:63px;
+        transition: 0.5s;
+    }
+}
+//LINGUAS
+
+.linguas {
+    float: right;
+    transform: translateY(-20px);
+}
+
+.linguas-responsive {
+    display: none;
+    float: right;
+}
+
+
+
+footer {
+    //background-color: var(--color-principal-sop);
+    background-color: var(--color-nfooter);
+    & #nomes {
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+#icons-f {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

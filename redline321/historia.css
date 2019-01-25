@@ -1,6 +1,7 @@
 /* cor da pagina */
 body {
     background-color: rgba(182, 253, 15, 0.219);
+    font-family: arial;
   }
   /* fim cor da pagina */
   
@@ -82,24 +83,27 @@ body {
 .titulo {
     border: 1px solid rgba(223, 37, 37, 0.8);
     border-radius: 3px;
-    box-shadow: rgba(235, 41, 41, 0.425) 0px 1px 4px, inset rgba(255, 145, 42, 0.5) 0px 100px 0px;
+    box-shadow: rgba(66, 11, 11, 0.425) 0px 1px 4px, inset rgba(255, 145, 42, 0.5) 0px 100px 0px;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 15px;
     margin: 5px;
+    font: arial;
   }
   /* fim titulos */
 
   /* texto 1*/
   .texto {
+    font: arial;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(15, 9, 9);
     padding: 10px;
     border: 1px solid rgb(62, 5, 73) ;
-    background: url(img/natureza.jpg) 1%;
+    background: url(img/natureza.jpg);
     }
 
     .texto3 {
+      font: arial;
       text-align: center;
       color: rgb(29, 10, 10);
       padding: 10px;

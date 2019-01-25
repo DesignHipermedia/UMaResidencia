@@ -1,6 +1,7 @@
 /* cor da pagina */
 body {
   background-color: rgba(182, 253, 15, 0.219);
+  font-family: arial;
 }
 /* fim cor da pagina */
   
@@ -12,6 +13,7 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    font: arial;
   }
   
   /* botão de menu em hover & focus */
@@ -23,6 +25,7 @@ body {
   .menu {
     position: fixed;
     display: inline-block;
+    font: arial;
   }
   
   /* conteudo do menu (escondido por default) */
@@ -61,7 +64,7 @@ body {
     background-repeat: no-repeat; 
     justify-content: center;
     align-items: center;
-    
+    font: arial;
   }
   
   #banner .container {
@@ -78,38 +81,37 @@ body {
 
 /* fim da imagem inicial */
 
-/* GALERIA */
+/* titulo */
+.titulo {
+  border: 1px solid rgba(223, 37, 37, 0.8);
+  border-radius: 3px;
+  box-shadow: rgba(235, 41, 41, 0.425) 0px 1px 4px, inset rgba(255, 145, 42, 0.5) 0px 100px 0px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px;
+  font: arial;
+}
+/* fim titulo */
+
+/* GALERIA compativel com dispositivos moveis */
 div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
+    margin: 3px;
+    padding: 1px;
     float: left;
-    width: 180px;
-    border: 1px;
+    width: 90px;
     }
     
     div.gallery:hover {
     justify-items: center;
-    border: 1px solid #777;
     }
     
     div.gallery img {
     justify-items: center;
-    width: 100%;
-    height: auto;
+    width: 90px;
+    height: 90px;
     }
     /* FIM DA GALERIA */
-
-/* titulo */
-    .titulo {
-      border: 1px solid rgba(223, 37, 37, 0.8);
-      border-radius: 3px;
-      box-shadow: rgba(235, 41, 41, 0.425) 0px 1px 4px, inset rgba(255, 145, 42, 0.5) 0px 100px 0px;
-      font-size: 1.5rem;
-      font-weight: bold;
-      padding: 15px;
-      margin: 5px;
-    }
-
 
     /* texto inicial da galeria */
 .texto {
@@ -118,5 +120,5 @@ color: rgb(29, 10, 10);
 padding: 5px;
 border: 0.5px solid rgb(62, 5, 73) ;
 background-color: rgba(130, 226, 255, 0.281);
+font: arial;
 }
-    
