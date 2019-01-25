@@ -1,16 +1,28 @@
 :root {
     --color-nav-bar: #333;
-    --color-background: white;
+    --color-background: rgb(218, 218, 218);
     --color-nav-bar-hover: #111;
+    --color-background-container: white;
 }
 
 html {
     background-color: var(--color-background);
-    font-family: sans-serif;
+    font-family: Verdana, sans-serif;
+    font-size: 85%;
 }
 
 body {
     margin-top: 0px;
     margin-right: 0px;
     margin-left: 0px;
+}
+
+h1 {
+    font-family: 'Signika', sans-serif;
+    background-color: var(--color-nav-bar);
+    color: white;
+    text-align: center;
+}
+p{
+    text-align: justify;
 }
