@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand;
+}
+
+// NAV
+.header{
+  height: 100px;
+  background: black;
+  padding: 0 20px;
+  color: white;
+}
+.logo{
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+}
+.menu{
+  float: right;
+  line-height: 70px;
+  margin: 0;
+}
+.menu a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.menu a::before{
+  content:'';
+  width: 60px;
+  position: absolute;
+  border-bottom: 8px solid rgb(19, 128, 218);
+  bottom: 0;
+  right: 350px;
+  transition: 0.7s all;
+}
+.menu a:hover::before{
+  right: 0;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: rgb(19, 128, 218);
+}
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+.content{
+  padding: 0 20px;
+}
+.content img{
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+.content p{
+  text-align: justify;
+}
+.menu li{
+  list-style: none;
+  display: inline-block;  
+  transform: translateY(15px);
+}
+.menu li a{
+  text-decoration: none;
+  position: relative;
+  color: white;
+  display: block;
+  overflow: hidden;
+  transition: 0.7s all;
+  text-transform: uppercase;
+}
+.menu li a:before{
+  content: '';
+  width: 100%;
+  position: absolute;
+  border-bottom: 8px solid rgb(19, 128, 218);
+  bottom: 0;
+  right: 100%;
+  transition: 0.7s all;
+}
+.menu li a:hover:before{
+  right: 0;
+}
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .menu li{
+    display: block;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+  .menu li a:before{
+    display: none;
+  }
+}
+section.sec1 {
+  width: 100%;
+  height: 100vh;
+  background: url(ice3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section.sec2 {
+  width: 100%;
+  height: 100vh;
+  background: url(ice2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section.sec3 {
+  width: 100%;
+  height: 100vh;
+  background: url(ice3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section.sec4 {
+  width: 100%;
+  height: 100vh;
+  background: url(ice.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section.sec5 {
+  width: 100%;
+  height: 100vh;
+  background: url(ice2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  justify-content: center;
+  display: flex;
+}
+
+.logo {
+  height: 80px;
+  float: left;
+  font-size: 24px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  float: left;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+//////////hover/////////////
+.post{
+  width: 600px;
+  height: 400px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex: wrap;
+}
+.post:hover .post-s{
+  width: 600px;
+}
+.post img {
+  display: block;
+  width: 600px;
+  height: 400px;
+}
+.post-s{
+  width: 0px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.71);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+.post-s h2{
+  color: white;
+  font-size: 50px;
+  border: 6px solid white;
+  padding: 10px ;
+}
+.direito{
+  margin: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

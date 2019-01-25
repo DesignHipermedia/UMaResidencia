@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="hamburgers.css">
     <link rel="icon" type="image/png" href="http://flags.fmcdn.net/data/flags/w580/ve.png">
 
     <!--FONTAWESOME PARA OS MEDIA SOCIAL-->
@@ -34,8 +35,13 @@
             <a href="index.html" class="logoprin">
                 <img src="logoprin.png" alt="logoprin" width="150px" height="74px">
             </a>
-            <a href="#" class="logomenuresponsive">
-                <img src="menuslide.png">
+            <a class="logomenuresponsive">
+
+                <button class="hamburger hamburger--elastic" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </a>
 
             <nav class="menu-nav">
@@ -105,6 +111,7 @@
                 </li>
             </nav>
             <!--PARA O MENU RESPONSIVE-->
+
             <nav class="containermenuresponsive">
                 <ul>
                     <br><br>
@@ -170,29 +177,19 @@
 
 
                 </ul>
+
+
+
             </nav>
-            <!--FIM DO MENU RESPONSIVE-->
-
-
-
-
-            <!--<nav class="linguas">
-                <ul>
-                    <br><br>
-                    <span><a href="#">ENGLISH</a></span>
-                    <span><a href="#">PORTUGUÊS</a></span>
-
-                </ul>
-            </nav>-->
-
-
-
-
 
         </div>
     </header>
 
     <main>
+        <nav class="fondomenuresponsive">
+            <br>
+        </nav>
+
         <section id="banner">
             <img src="guacamaya.1jpg.jpg" alt="">
             <div class="container">
@@ -235,7 +232,23 @@
                 </section>
 
             </div>
-            
+
+            <div class="containerbig">
+                <div class="loading">
+
+                    <div class="obj"></div>
+                    <div class="obj"></div>
+                    <div class="obj"></div>
+                    <div class="obj"></div>
+                    <div class="obj"></div>
+                    <div class="obj"></div>
+                    <div class="obj"></div>
+                    <div class="obj"></div>
+
+                </div>
+
+            </div>
+
             <buttondisplay>
                 <a class="btnup" href="#"> <i class="fas fa-arrow-up"></i> </a>
             </buttondisplay>
@@ -369,7 +382,7 @@
 
                         </div>
                     </a>
-                    <a href="destinos.html"></a>
+                    <a href="destinos.html">
                     <div class="infodestino scrollflow -slide-right -opacity">
                         <img src="indeximg/Destinos/caracas.jpg" height="156px" alt="">
 
@@ -452,6 +465,10 @@
     <!--SLIDE JAVA-->
     <script src="js/menuJAVA.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!--HAMBURGUER JAVA-->
+    <script src="js/hamburguer.js"></script>
+    <!--LOADING JAVA-->
+    <script src="js/loading.js"></script>
     <!--SCRIPT NAV-BAR-MENU-->
     <script src="js/nav-bar-menu.js"></script>
     <!--JQUERY ANYVIEW-->

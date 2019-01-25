@@ -1,0 +1,16 @@
+:root{
+    --color-background-1: #bb7e5d;
+    --color-background-2: #dbb68f;
+    --color-item-1: #06908f;
+    --color-item-2: #0892a5;
+    --color-item-3: #0ca4a5;
+}
+body{
+    background-color: var(--color-background-1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(53, 47, 47);
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
