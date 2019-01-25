@@ -1,0 +1,80 @@
+:root {
+    --cor-azul:#1d86e8;
+    --cor-cinza:#35424a;
+    --cor-cinzento:#cccccc;
+    --cor-branco-intenso:#ffffff;
+    --cor-branco:#f4f4f4;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /*tipo da letra*/
+    font-size: 15px; /* tamanho da letra */
+    line-height: 1.5; /* define a altura entre as linhas*/
+
+    padding: 0; /*espaçamento */
+    background-color: var(--cor-branco);
+
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background: var(--cor-cinza);
+    color: var(--cor-branco-intenso);
+    padding-top: 30px;
+    min-height: 70px; 
+    border-bottom: var(--cor-azul) 3px solid; /* BORDER COLOR / WIDTH / STYLE */
+
+}
+
+header a { /* formatação dos links dentro do header */
+    color: var(--cor-branco-intenso);
+    text-decoration: none; /* para remover a linha que aparece debaixo dos links */
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+header li {
+    float: left;
+    display:inline;
+    padding: 0 20px 0 20px; /* padding na esquerda e direita */
+}
+
+header #logotipo{
+    float: left;
+}
+
+header #logotipo h1{
+    margin: 0px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: var(--cor-azul);
+    font-weight: bold;
+}
+
+header a:hover {
+    color: var(--cor-cinzento);
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--cor-branco-intenso);
+    background-color: var(--cor-azul);
+    text-align: center;
+}
