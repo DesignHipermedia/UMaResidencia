@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>História</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+        <link rel="stylesheet" href="historia.css">
+        <title>História</title>
+    </head>
+
+<body>
+    <div class="menu">
+        <button onclick="myFunction()" class="inicio">Menu</button>
+        <div id="Menu1" class="abas">
+            <a href="index.html">🏠 Inicio</a>
+            <a href="galeria.html">📸 Galeria</a>
+            <a href="sobre.html">? Sobre</a>
+            <a href="historia.html">⚔ História</a>
+            <a href="segurança.html">🔒 Segurança</a>
+        </div>
+    </div>
+
+
+    <script>
+        /* Quando o utilizador clica */
+        function myFunction() {
+            document.getElementById("Menu1").classList.toggle("show");
+        }
+
+        // Fecha
+        window.onclick = function (event) {
+            if (!event.target.matches('.inicio')) {
+                var dropdowns = document.getElementsByClassName("abas");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Imagem de fundo inicial e texto a meio -->
+    <section id="banner">
+        <div class="container">
+            <h3>O Chile, o melhor destino turistico!</h3>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- titulo -->
+    <h2 class="titulo"><a title="Chile" target="_top">Chile</a></h2>
+    <br>
+    <!-- texto inicial -->
+    <div class="texto3">
+        <div class="texto">
+            <p>
+                <h4>O Chile é mais que somente 16 regiões, é a testemunha de uma sociedade que convive com diversas
+                    diferenças e a partir delas constrói um futuro melhor.
+                    É uma mistura de varias culturas e povos indígenas que evitaram durante séculos o contacto com os
+                    exploradores europeus, para que no final fossem colonizados pelos espanhóis que chegaram a América
+                    do Sul em busca de riquezas e glória.
+                    Também passando por dificuldades devido a guerras civis, governos liberais e regimes radicais.
+                    Foi um território que se transformou numa república e que celebra hoje um pouco mais de 200 anos da
+                    independência.
+                </h4>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
