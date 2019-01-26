@@ -96,3 +96,28 @@ section>div>img{
 .margin_l{
     margin-left: 2.5em;
 }
+.inputbox{
+    height: 5em;
+    width: 30em;
+    margin: 0.5em;
+    transition-duration: 300ms;
+    &:active{
+        height: 8em;
+    }
+}
+.inputboxes{
+    display: flex;
+    flex-direction: column;
+}
+.contactsect{
+    display: flex;
+    justify-content: center;
+}
+.bgcolor{
+    background-color: var(--color-background-2);
+    margin-top: 2em;
+    padding-bottom: 2em;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -52,18 +52,23 @@ a {
   width: 3em;
   height: 1em;
   text-align: center;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .item:hover {
   background-color: var(--color-item-2);
-  -webkit-transition: 200ms;
-  transition: 200ms;
 }
 
 .places_img {
   width: 33vw;
   height: 20vh;
   padding: 1em;
+}
+
+.send_button {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gallery {
@@ -203,5 +208,45 @@ section > div > img:hover {
 
 .margin_l {
   margin-left: 2.5em;
+}
+
+.inputbox {
+  height: 5em;
+  width: 30em;
+  margin: 0.5em;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.inputbox:active {
+  height: 8em;
+}
+
+.inputboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactsect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bgcolor {
+  background-color: var(--color-background-2);
+  margin-top: 2em;
+  padding-bottom: 2em;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */
