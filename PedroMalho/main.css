@@ -49,29 +49,29 @@ body, html {
 }
 
 .fundo {
-  background-image: url("/img/background.jpeg");
+  background-image: url("./img/background.jpeg");
   min-height: 100%;
 }
 
 .img1 {
-  background-image: url("/img/flag2.png");
+  background-image: url("./img/flag2.png");
   min-height: 600px;
   background-size: 100% 100%;
 }
 
 .img2 {
-  background-image: url("/img/img2.jpg");
+  background-image: url("./img/img2.jpg");
   min-height: 600px;
   background-position-y: -70px;
 }
 
 .img3 {
-  background-image: url("/img/img3.jpg");
+  background-image: url("./img/img3.jpg");
   min-height: 600px;
 }
 
 .img4 {
-  background-image: url("/img/img4.jpg");
+  background-image: url("./img/img4.jpg");
   min-height: 100%;
   opacity: 0.9;
 }
