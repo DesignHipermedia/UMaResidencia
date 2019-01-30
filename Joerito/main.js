@@ -20,16 +20,27 @@ function selecionaimagem(x)/*parametro 'x' == this.id do elemento do DOM*/ {
 function pagina_scroll(){
     var logo = document.getElementById("footer_logo");
 
-    var section = document.getElementsByName("text");
-    var section_top = section.offsetTop;
     var navbar = document.getElementById("nav");
     var navbar_top = navbar.offsetTop;
     var footer = document.getElementById("footer");
     var footer_top = footer.offsetTop;
 
+    var section1 = document.getElementById("section_movement1");
+    var section1_top = section1.offsetTop;
+    console.log("Section_top1",section1_top);
+
+    var section2 = document.getElementById("section_movement2");
+    var section2_top = section2.offsetTop;
+    console.log("Section_top2",section2_top);
+
+    var section3 = document.getElementById("section_movement3");
+    var section3_top = section3.offsetTop;
+    console.log("Section_top3",section3_top);
+
+    console.log(window.pageYOffset)
     if(window.pageYOffset >= navbar_top){
         navbar.classList.remove("nav_desativar");
-        navbar.classList.add("nav_ativar")
+        navbar.classList.add("nav_ativar");
     }else{
         navbar.classList.remove("nav_ativar");
         navbar.classList.add("nav_desativar");
@@ -43,11 +54,25 @@ function pagina_scroll(){
         logo.classList.add("logo_desativar");
     }
 
-    if(window.pageYOffset >= section_top){
-        section.classList.remove("text-color_desativar");
-        section.classList.add("text-color_ativar");
+    if(window.pageYOffset+275 >= section1_top){
+        console.log('s1 +');
+        section1.classList.remove("text-color_off");
+        section1.classList.add("text-color_ativar");
     }else{
-        section.classList.remove("text-color_ativar");
-        section.classList.add("text-color_desativar");
+        console.log('s1 -');
+    }
+    if(window.pageYOffset+275 >= section2_top){
+        console.log('s2 +');
+        section2.classList.remove("text-color_off");
+        section2.classList.add("text-color_ativar");
+    }else{
+        console.log('s2 -');
+    }
+    if(window.pageYOffset+275 >= section3_top){
+        console.log('s3 +');
+        section3.classList.remove("text-color_off");
+        section3.classList.add("text-color_ativar");
+    }else{
+        console.log('s3 -');
     }
 }
