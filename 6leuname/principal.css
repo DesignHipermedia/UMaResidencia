@@ -6,7 +6,7 @@ header{
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img1.jpg");
   height: 100vh;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .main-nav{
   float: right;
@@ -30,11 +30,11 @@ header{
 }
 .main-nav li a:hover{
   border: 1px solid white;
-
 }
 .logo img{
   margin-top: 7px;
   width: 90px;
+  margin-left: 10px;
   height: auto;
   float: left;
 }
@@ -47,8 +47,8 @@ body{
 }
 .hero{
   position: absolute;
-  width: 1200px;
-  margin-left: 100px;
+  /* width: 1200px; */
+  margin-left: 25%;
   margin-top: 275px;
 }
 h1{
@@ -58,8 +58,8 @@ h1{
   text-align: center;
 }
 .button{
-  margin-top: 30px;
-  margin-left: 440px;
+  margin-top: 70px;
+  margin-left: 36%;
 }
 .btn{
   border: 1px solid white;
@@ -71,13 +71,9 @@ h1{
   text-transform: uppercase;
 }
 .btn-one{
-  background-color: darkorange;
   font-family: "Roboto",sans-serif;
 }
-.btn-two{
-  font-family: "Roboto", sans-serif;
-}
-.btn-two:hover{
+.btn-one:hover{
   background-color: darkorange;
   transition: all 0.5s ease-in;
 }
@@ -95,7 +91,7 @@ h1{
   background: rgb(255, 255, 255); 
 }
 footer {
-  background-color: #555;
+  background-color: #242323;
   color: white;
   font-size: 0.75rem;
   min-height: 0.75rem;
@@ -104,31 +100,502 @@ footer {
 }
 .footer{
   display: flex;
-  align-items: center;
+  align-items: center; 
   padding: 1rem;
 }
-/* section{
-  margin: 10px;
-  flex-direction: column;
-  background-color: rgb(252, 252, 252);
+.texto1{
+  padding-top: 10%;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("img2.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
 }
-.box{
-  background-color: rgb(241, 241, 241);
-  width: auto;
-  height: 200px;
-  margin: auto;
+.texto1 div{
+  color: white;
+  /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 30px;
+  padding-left: 150px;
+  padding-right: 100px;
 }
-.box-1{
-  margin: 10px;
-  width: 250px;
-  float: left;
+.texto2{
+  padding-top: 10%;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("img3.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
 }
-.box-2{
-  width: 250px;
-  float: right;
-} 
+.texto2 div{
+  color: white;
+  /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  padding-top: 30px;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 100px;
+}
+.texto3{
+  padding-top: 10%;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("img4.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
+.texto3 div{
+  color: white;
+  /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 30px;
+  padding-left: 150px;
+  padding-right: 100px;
+}
+.texto4{
+  padding-top: 10%;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img5.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
+.texto4 div{
+  color: white;
+  /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 30px;
+  padding-left: 150px;
+  padding-right: 100px;
+}
 h2{
-  color: darkorange;
-  font-size: 40px;
-  font-family: 'Courier New', Courier, monospace;
-}*/
+  padding: 2px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+h2:hover{
+  padding: 1.5px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 61px;
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+.botao{
+  border: 1px solid white;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 13px;
+  transition: all 0.15s ease-in;
+}
+.botao a{
+  font-family: "Roboto",sans-serif !important;
+  text-shadow: none;
+}
+.botao:hover{
+  background-color: rgba(255, 157, 0, 0.7);
+  transition: all 0.15s ease-in;
+}
+@media only screen and (max-width: 900px){
+  .hero{
+    position: absolute;
+    /* width: 1200px; */
+    margin-left: 15%;
+    margin-top: 275px;
+  }
+  .texto1 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 100px;
+  }
+  .texto2 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 100px;
+  }
+  .texto3 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 100px;
+  }
+  .texto4 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 100px;
+  }
+}
+@media only screen and (max-width: 730px){
+  .hero{
+    position: absolute;
+    /* width: 1200px; */
+    margin-left: 10%;
+    margin-top: 275px;
+  }
+  .texto1 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .texto2 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .texto3 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .texto4 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media only screen and (max-width: 618px){
+  .logo img{
+    margin-top: 0px;
+    width: 0px;
+    margin-left: 0px;
+    height: auto;
+    float: left;
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 518px){
+  .main-nav li a{
+    color:white;
+    text-decoration: none;
+    padding: 5px 9px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 425px){
+  .hero{
+    position: absolute;
+    /* width: 1200px; */
+    margin-left: 0%;
+    margin-top: 275px;
+  }
+  .texto1 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .texto2 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .texto3 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .texto4 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  footer {
+    background-color: #242323;
+    color: white;
+    font-size: 10px;
+    min-height: 0.75rem;
+    justify-content: space-around;
+    padding: 0 1rem;
+  }
+  h2{
+    padding: 2px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+  }
+  .logo img{
+    margin-top: 0px;
+    width: 0px;
+    margin-left: 0px;
+    height: auto;
+    float: left;
+    visibility: hidden;
+  }
+  .main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+  }
+  .main-nav li{
+    display: inline-block;
+  }
+  .main-nav li a{
+    color:white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+  
+  }
+  .main-nav li.active a{
+    border: 1px solid white;
+  
+  }
+  .main-nav li a:hover{
+    border: 1px solid white;
+  }
+}
+@media only screen and (max-width: 375px){
+  .hero{
+    position: absolute;
+    /* width: 1200px; */
+    margin-left: 0%;
+    margin-top: 275px;
+  }
+  .texto1 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .texto2 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .texto3 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .texto4 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  footer {
+    background-color: #242323;
+    color: white;
+    font-size: 10px;
+    min-height: 0.75rem;
+    justify-content: space-around;
+    padding: 0 1rem;
+  }
+  h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+  }
+  h2{
+    padding: 2px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+  }
+  .logo img{
+    margin-top: 0px;
+    width: 0px;
+    margin-left: 0px;
+    height: auto;
+    float: left;
+    visibility: hidden;
+  }
+  .main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+  }
+  .main-nav li{
+    display: inline-block;
+  }
+  .main-nav li a{
+    color:white;
+    text-decoration: none;
+    padding: 5px 9px;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+  
+  }
+  .main-nav li.active a{
+    border: 1px solid white;
+  
+  }
+  .main-nav li a:hover{
+    border: 1px solid white;
+  }
+}
+@media only screen and (max-width: 320px){
+  .hero{
+    position: absolute;
+    /* width: 1200px; */
+    margin-left: 0%;
+    margin-top: 275px;
+  }
+  .cbotao{
+    margin-left: 30%;
+  }
+  .texto1 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .texto2 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .texto3 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .texto4 div{
+    color: white;
+    /* text-shadow:  -1px 0 #242323, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  footer {
+    background-color: #242323;
+    color: white;
+    font-size: 10px;
+    min-height: 0.75rem;
+    justify-content: space-around;
+    padding: 0 1rem;
+  }
+  h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+  }
+  h2{
+    padding: 2px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+  }
+  .logo img{
+    margin-top: 0px;
+    width: 0px;
+    margin-left: 0px;
+    height: auto;
+    float: left;
+    visibility: hidden;
+  }
+  .main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+  }
+  .main-nav li{
+    display: inline-block;
+  }
+  .main-nav li a{
+    color:white;
+    text-decoration: none;
+    padding: 5px 9px;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+  
+  }
+  .main-nav li.active a{
+    border: 1px solid white;
+  
+  }
+  .main-nav li a:hover{
+    border: 1px solid white;
+  }
+}

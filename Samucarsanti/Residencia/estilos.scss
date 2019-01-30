@@ -1,0 +1,34 @@
+:root {
+    --color-blueheader: #34495e;
+    --color-lightblue: #3498db;
+    --color-white: #fff;
+}
+
+.logo {
+    line-height: 100px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.menu {
+    float: right;
+    line-height: 100px;
+
+    & a {
+       color: var(--color-white);
+       text-transform: uppercase;
+       text-decoration: none; 
+       padding: 0 10px;
+    }
+
+}
+
+.show-menu-btn, .hide-menu-btn {
+    transition: 0.4s;
+}
+
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: var(--color-lightblue);
+}
