@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>United States of America</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css">
+    <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper opacity">
+            <div class="header">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="flag" src="images/flag.png" alt="flag" width="110" height="auto"> 
+                    </a>
+                </div>
+
+                <div id="menu-wrapper">
+                    <div id="menu" class="menu">
+                        <ul class="tiny">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="active">
+                                <a class="active" href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="destinations.html">Destinations</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="wrapper">
+        <div class="box">
+            <h1 class="welcome">Gallery</h1>
+            
+            <div class="row">
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="images/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="370" height="260">
+                    </div>
+                </div>
+            
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="images/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" width="700" height="500">
+                    </div>
+                </div>
+            
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="images/img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" width="700" height="500">
+                    </div>
+                </div>
+                
+                <div class="responsive">
+                    <div class="gallery"> 
+                        <img src="images/img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" width="700" height="500">
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="images/img5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" width="700" height="500">
+                    </div>
+                </div>
+                
+                
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="images/img6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" width="700" height="500">
+                    </div>
+                </div>
+                
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="images/img7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" width="700" height="500">
+                    </div>
+                </div>
+                
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="images/img8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" width="700" height="500">
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="images/img9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" width="700" height="500">
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="images/img10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow" width="700" height="500">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+        
+            <div class="mySlides">
+                <div class="numbertext">1 / 10</div>
+                <img src="images/img1.jpg" style="width:100%" width="1200" height="700">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">2 / 10</div>
+                <img src="images/img2.jpg" style="width:100%" width="1200" height="700">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">3 / 10</div>
+                <img src="images/img3.jpg" style="width:100%" width="1200" height="700">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">4 / 10</div>
+                <img src="images/img4.jpg" style="width:100%" width="1200" height="700">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 10</div>
+                <img src="images/img5.jpg" style="width:100%" width="1200" height="700">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 10</div>
+                <img src="images/img6.jpg" style="width:100%" width="1200" height="700">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 10</div>
+                <img src="images/img7.jpg" style="width:100%" width="1200" height="700">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 10</div>
+                <img src="images/img8.jpg" style="width:100%" width="1200" height="700">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 10</div>
+                <img src="images/img9.jpg" style="width:100%" width="1200" height="700">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">10 / 10</div>
+                <img src="images/img10.jpg" style="width:100%" width="1200" height="700">
+            </div>
+                
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+         <div class="site-generator-wrapper">
+            <div class="site-generator">&copy; Afonso Sousa. All rights reserved</a>.</div>
+        </div>
+    </footer>
+</body>
+
+<!-- scripts -->
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+        <script src="js/scripts.js"></script>
+</html>

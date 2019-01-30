@@ -11,33 +11,67 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/media-queries.css">
     <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
         <div class="header-wrapper opacity">
-                <div class="header">
-                <div class="logo"> <img class="flag" src="images/flag.png" alt="flag" width="110" height="auto"> </div>
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="flag" src="images/flag.png" alt="flag" width="110" height="auto"> 
+                    </a>
+                </div>
                 <div id="menu-wrapper">
                     <div id="menu" class="menu">
-                    <ul id="tiny">
-                        <li><a href="about.html">About</a>
-                        </li>
-                        <li><a href="gallery.html">Gallery</a>
-                        </li>
-                        <li><a href="contact.html">Destinations</a></li>
-                    </ul>
+                        <ul id="tiny">
+                            <li class="active">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="destinations.html">Destinations</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                
                 <div class="clear"></div>
-                </div>
             </div>
+        </div>
     </header>
     
-    <div>
-        <h1 class="welcome">Welcome to the United States of America!!!</h1>
-    </div>
-    
+    <div class="wrapper">
+        <br>
+
+        <div class="box">
+            <h1 class="welcome">Welcome to the United States of America!!!</h1>
+        </div>
+
+        <br>
+
+        <div class="box">
+            <iframe width="970" height="500" src="https://www.youtube.com/embed/4Ot0T4iCXfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div> 
+
+    <!-- footer -->
+    <footer>
+        <div class="site-generator-wrapper">
+           <div class="site-generator">&copy; Afonso Sousa. All rights reserved</a>.</div>
+       </div>
+   </footer>
 </body>
 
+<!-- scripts -->
+    <script src="js/scripts.js"></script>
 </html>
