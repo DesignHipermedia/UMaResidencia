@@ -34,12 +34,16 @@
 }
 
 .text-color_ativar{
-    color: white;
-    transition: 2s;
+    color: black;
+    margin: 10px;
+    transition: 1s;
 }
 .text-color_desativar{
     color: transparent;
     transition: 1s;
+}
+.text-color_off{
+    color: transparent;
 }
 
 a{

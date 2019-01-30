@@ -40,15 +40,20 @@
 }
 
 .text-color_ativar {
-  color: white;
-  -webkit-transition: 2s;
-  transition: 2s;
+  color: black;
+  margin: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .text-color_desativar {
   color: transparent;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.text-color_off {
+  color: transparent;
 }
 
 a {
