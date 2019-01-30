@@ -5,36 +5,25 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Etiópia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
+    <title>Etiópia</title>
 </head>
 
 <body>
     <header>
-        <ul class="menubar" id="mymenubar">
-            <li class="menuitem">
-                <img src="imagens/bandeira.png" height="58px" width="110px">
-            </li>
-            <li class="menuitem">
-                <a href="Index.html">Home</a>
-            </li>
-            <li class="menuitem">
-                <a href="sobre.html">Sobre</a>
-            </li>
-            <li class="menuitem">
-                <a href="capital.html">Capital</a>
-            </li>
-            <li class="menuitem">
-                <a href="galeria.html">Galeria</a>
-            </li>
+        <img src="imagens/bandeira.png" height="58px" width="110px">
+        <div class="topnav" id="myTopnav">
+            <a href="Index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="capital.html">Capital</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contactos.html">Contactos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
 
-            <li class="menuitem">
-                <a href="contactos.html">Contactos</a>
-            </li>
-
-            <li class="menuitem">
-            </li>
-        </ul>
     </header>
     <div class="homevideo">
         <div class="homevideotext">Etiópia</div>
@@ -52,5 +41,16 @@
         <li class="footitem">2019</li>
     </ul>
 </footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 </html>

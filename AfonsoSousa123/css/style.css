@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat|Kalam");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /*-----------------------------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
   margin: 0;
@@ -25,6 +26,307 @@ blockquote, q {
 .welcome {
   font-size: 40px;
   margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.9;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: relative;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
@@ -122,6 +424,57 @@ input[type="submit"]:focus, input[type="button"]:focus {
   color: #555555;
 }
 
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  cursor: pointer;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 40%;
+  margin: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	GENERAL
 /*-----------------------------------------------------------------------------------*/
@@ -134,8 +487,9 @@ body {
   line-height: 21px;
   letter-spacing: 0.2px;
   color: #b9b9b9;
-  background: url(https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-USA-Landscape-hd-wallpapers-1080p-PIC-WPD0012380.jpg);
+  background: url(../images/img-background.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -148,7 +502,7 @@ body {
 
 input,
 textarea {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(134, 172, 163, 0.24);
   border: none;
   color: #b9b9b9;
   font-weight: 400;
@@ -164,11 +518,13 @@ textarea {
 
 input:focus,
 textarea:focus {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(134, 172, 163, 0.49);
 }
 
 p {
   margin-bottom: 20px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -232,7 +588,7 @@ a .button.green {
 a.button,
 .forms fieldset .btn-submit,
 #commentform input#submit {
-  background: #f2f2f2 url(../images/button.png) repeat-x;
+  background-color: #f2f2f2;
   height: 31px;
   line-height: 31px;
   color: #383838;
@@ -252,13 +608,24 @@ a.button,
   font-weight: bold;
 }
 
+a.button .forms fieldset .btn-submit:hover,
+.forms fieldset .btn-submit .forms fieldset .btn-submit:hover,
+#commentform input#submit .forms fieldset .btn-submit:hover {
+  background-color: #383838;
+  color: #f2f2f2;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #dedede;
   margin-bottom: 20px;
 }
 
+.h1-yellow {
+  color: #f9e70d;
+}
+
 h1 {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 26px;
 }
 
@@ -284,7 +651,7 @@ h2.title a {
 
 h3 {
   font-size: 20px;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 h4 {
@@ -336,6 +703,7 @@ hr {
 .wrapper {
   width: 1010px;
   margin: 0 auto;
+  margin-bottom: 10%;
 }
 
 .header-wrapper {
@@ -518,8 +886,8 @@ hr {
 }
 
 .lite1 {
-  color: #86aca3;
-  border-bottom: 1px dotted #86aca3;
+  color: #21d2a8;
+  border-bottom: 1px dotted #21d2a8;
 }
 
 .lite2 {
@@ -620,7 +988,7 @@ hr {
 .one-sixth,
 .five-sixth {
   position: relative;
-  margin-right: 4%;
+  margin-right: 6%;
   float: left;
 }
 
@@ -675,7 +1043,7 @@ hr {
   font-weight: bold;
 }
 
-#menu-wrapper .menu ul li .active a,
+#menu-wrapper .menu ul li.active a,
 #menu-wrapper .menu ul li a:hover {
   color: #86aca3;
 }
@@ -757,11 +1125,10 @@ hr {
 
 .box {
   margin: 0 0 30px 0;
-  background: rgba(0, 0, 0, 0.44);
+  background: rgba(0, 0, 0, 0.58);
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.44);
   padding: 20px;
-  padding-bottom: 0;
   position: relative;
   overflow: hidden;
   -webkit-box-sizing: border-box;
@@ -1000,41 +1367,9 @@ iframe {
   padding-bottom: 20px;
 }
 
-.sidebox:first-child {
-  background: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebox .searchform {
-  margin: 0;
-}
-
 .sidebox h3 {
   font-size: 15px;
   margin-bottom: 15px;
-}
-
-.widget ul.post-list {
-  color: #B9B9B9;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  list-style: none;
-}
-
-.widget ul.post-list:after {
-  content: '';
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-.widget ul.post-list li {
-  clear: both;
-  background: none;
-  padding: 15px 0 0 0;
-  line-height: 17px;
 }
 
 #footer .widget ul.post-list li {
@@ -1535,155 +1870,6 @@ li.post.pingback p {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*	SOCIAL
-/*-----------------------------------------------------------------------------------*/
-.social {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-#footer .social {
-  margin: 0;
-  text-align: left;
-}
-
-.social li {
-  display: inline;
-  margin: 0 2px;
-}
-
-.social a {
-  background: transparent url(../images/social-icons.png) no-repeat 0 0;
-  height: 32px;
-  width: 32px;
-  display: inline-block;
-  position: relative;
-  -webkit-transition: none 200ms ease-in;
-  -o-transition: none 200ms ease-in;
-  -moz-transition: none 200ms ease-in;
-}
-
-.social a.rss {
-  background-position: 0 0;
-}
-
-.social a.facebook {
-  background-position: -32px 0;
-}
-
-.social .twitter {
-  background-position: -64px 0;
-}
-
-.social .dribbble {
-  background-position: -96px 0;
-}
-
-.social .pinterest {
-  background-position: -128px 0;
-}
-
-.social .flickr {
-  background-position: -160px 0;
-}
-
-.social .linkedin {
-  background-position: -192px 0;
-}
-
-.social .vimeo {
-  background-position: -224px 0;
-}
-
-.social .lastfm {
-  background-position: -256px 0;
-}
-
-.social .tumblr {
-  background-position: -288px 0;
-}
-
-.social .forrst {
-  background-position: -320px 0;
-}
-
-.social .skype {
-  background-position: -352px 0;
-}
-
-.social .friendfeed {
-  background-position: -384px 0;
-}
-
-.social .deviantart {
-  background-position: -416px 0;
-}
-
-.social .google {
-  background-position: -448px 0;
-}
-
-.social a.rss:hover {
-  background-position: 0 bottom;
-}
-
-.social .facebook:hover {
-  background-position: -32px bottom;
-}
-
-.social .twitter:hover {
-  background-position: -64px bottom;
-}
-
-.social .dribbble:hover {
-  background-position: -96px bottom;
-}
-
-.social .pinterest:hover {
-  background-position: -128px bottom;
-}
-
-.social .flickr:hover {
-  background-position: -160px bottom;
-}
-
-.social .linkedin:hover {
-  background-position: -192px bottom;
-}
-
-.social .vimeo:hover {
-  background-position: -224px bottom;
-}
-
-.social .lastfm:hover {
-  background-position: -256px bottom;
-}
-
-.social .tumblr:hover {
-  background-position: -288px bottom;
-}
-
-.social .forrst:hover {
-  background-position: -320px bottom;
-}
-
-.social .skype:hover {
-  background-position: -352px bottom;
-}
-
-.social .friendfeed:hover {
-  background-position: -384px bottom;
-}
-
-.social .deviantart:hover {
-  background-position: -416px bottom;
-}
-
-.social .google:hover {
-  background-position: -448px bottom;
-}
-
-/*-----------------------------------------------------------------------------------*/
 /*	FOOTER
 /*-----------------------------------------------------------------------------------*/
 .footer-wrapper {
@@ -1783,47 +1969,5 @@ ul.flickr-feed li img {
 
 .site-generator p {
   padding: 0;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*	TWITTER
-/*-----------------------------------------------------------------------------------*/
-.widget_twitter .entry-meta {
-  display: block;
-  font-size: 11px;
-}
-
-.widget_twitter .entry-meta a {
-  color: #797979 !important;
-}
-
-.widget_twitter .entry-meta a:hover {
-  color: #86aca3 !important;
-}
-
-.widget_twitter ul {
-  padding: 0;
-  list-style: none;
-  margin-bottom: 15px;
-}
-
-.widget_twitter ul li {
-  background: transparent url(../images/line.png) repeat-x center top;
-  padding: 0;
-  padding-top: 15px !important;
-  margin-top: 14px;
-}
-
-.widget_twitter ul li:first-child {
-  background: none;
-  margin: 0;
-  padding: 0 !important;
-}
-
-.follow-button {
-  display: block;
-  background: transparent url(../images/line.png) repeat-x left top;
-  margin: 0;
-  padding: 15px 0 0 0;
 }
 /*# sourceMappingURL=style.css.map */
