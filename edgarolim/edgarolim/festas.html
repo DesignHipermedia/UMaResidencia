@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mexico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        .slideshow-container {
+          max-width: 550px;
+          position: relative;
+          margin: auto;
+        }
+        
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/2000px-Flag_of_Mexico.svg.png" alt="logo" class="logo">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Pesquisar">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="symbol-defs.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="cultura.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-library"></use>
+                            </svg>
+                            <span>Cultura</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="foods.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-bowl"></use>
+                            </svg>
+                            <span>Comidas típicas</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="monumentos.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-office"></use>
+                            </svg>
+                            <span>Monumentos</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="festas.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-calendar"></use>
+                            </svg>
+                            <span>Festas</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="index.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-calendar"></use>
+                            </svg>
+                            <span>História</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    México - Edgar Olim
+                </div>
+            </nav>
+            <main>
+                <div class="slideshow-container">
+                      <img src="https://i.pinimg.com/originals/e6/99/2a/e6992a9c8ca5c6fed8475522392c6064.jpg" style="width:100%">
+                </div>                    
+                <div class="overview">
+                    <h1 class="overview__heading">
+                       Festas:
+                    </h1>
+                    <div class="overview__location">
+                        <svg class="overview__icon-location">
+                            <use xlink:href="symbol-defs.svg#icon-location2"></use>
+                        </svg>
+                        <a class="btn-inline" href="https://goo.gl/maps/o3dQW7KuKDS2">México</a>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="description">
+                        <div>
+                            <p class="paragraph">
+                            O México é um país de cultura muito rica e grandes festividades tradicionais. As festas mexicanas têm influências hispânicas e indígenas.
+                            Confira algumas das principais festas do México:
+                            </p><p class="paragraph">
+                            15 de agosto - Dia da Assunção da Virgem Maria – Essa festividade católica é celebrada em todo o país, com romarias. Em algumas vilas do México, as celebrações chegam a durar duas semanas.
+                            </p><p class="paragraph">
+                            12 de dezembro - Dia da Virgem de Guadalupe – Nessa data, o México celebra a aparição da Virgem de Guadalupe, que aconteceu em 1531. A festa é marcada por ritos religiosos, comidas e bebidas. A festa, apesar de religiosa, também tem conotações pagãs. As principais comemorações acontecem na Basílica de Guadalupe, localizada na Cidade do México.
+                            </p><p class="paragraph">
+                            31 de outubro e 2 de novembro - Dias dos Mortos – Essa é a festa mais popular do México, conhecida no mundo inteiro. Os mexicanos acreditam que os mortos têm autorização para visitar seus familiares uma vez por ano, no dia 31 de outubro. Por isso, durante a celebração do Dia dos Mortos, eles preparam a casa com comidas, velas, flores e doces. Já no dia 2 de novembro, os mexicanos celebram o Dia de Finados e Dia de Todos os Santos.
+                            </p><p class="paragraph">
+                            15 de Setembro – Festa do Grito da Independência – Nesse dia, as praças das cidades mexicanas são tomadas por bailes, música e fogos de artifício para celebrar a independência do país.
+                            </p><p class="paragraph">
+                            O México também se destaca pelas celebrações do Dia de Reis, em 6 de Janeiro; do Dia das Velas, em 2 de Fevereiro, do Natal, entre outras tradições.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

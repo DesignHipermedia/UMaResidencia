@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mexico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        .slideshow-container {
+          max-width: 550px;
+          position: relative;
+          margin: auto;
+        }
+        
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/2000px-Flag_of_Mexico.svg.png" alt="logo" class="logo">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Pesquisar">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="symbol-defs.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="cultura.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-library"></use>
+                            </svg>
+                            <span>Cultura</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="foods.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-bowl"></use>
+                            </svg>
+                            <span>Comidas típicas</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="monumentos.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-office"></use>
+                            </svg>
+                            <span>Monumentos</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="festas.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-calendar"></use>
+                            </svg>
+                            <span>Festas</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="index.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-calendar"></use>
+                            </svg>
+                            <span>História</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    México - Edgar Olim
+                </div>
+            </nav>
+            <main>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 2</div>
+                      <img src="data:image/jpeg;base64,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" style="width:100%">
+                    </div>                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 2</div>
+                      <img src="http://www.patrialatina.com.br/wp-content/uploads/2015/11/maya.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>                   
+                    </div>
+                    <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        Cultura:
+                    </h1>
+                    <div class="overview__location">
+                        <svg class="overview__icon-location">
+                            <use xlink:href="symbol-defs.svg#icon-location2"></use>
+                        </svg>
+                        <a class="btn-inline" href="https://goo.gl/maps/o3dQW7KuKDS2">México</a>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="description">
+                        <div>
+                            <p class="paragraph">
+                                A cultura mexicana, de origem milenar, muito rica e diversa, sofreu a influência de vários povos. Entres eles, destacam-se alguns povos pré-colombianos, como os astecas e maias, que viveram em território mexicano por milênios e construíram sociedades complexas e de enorme riqueza cultural, e os espanhóis, que colonizaram o país e impuseram suas tradições para os povos que sobreviveram ao etnocídio realizado por eles. Além disso, atualmente a cultura mexicana tem sofrido também uma crescente influência da cultura norte-americana, que, em virtude da globalização, tem se expandido pelo mundo por meio de filmes, músicas e das crescentes redes de fast-food.
+                            </p>
+                            <p class="paragraph">    
+                                O México é o país latino-americano que mais recebe turistas do mundo todo. Milhões de pessoas visitam-no para conhecer os vários pontos turísticos, que incluem vestígios das civilizações pré-cambrianas, como a Pirâmide de kukulcán e o sítio de Tulum, elementos da colonização espanhola, como o Museu de Belas Artes do México e o Templo de Santo Domingo, além das belas praias, como as de Cancún e Acapulco.
+                            </p>
+                            <p class="paragraph">    
+                                A culinária tradicional mexicana também deriva da mistura entre as antigas tradições indígenas e a cozinha espanhola. Com pratos típicos muito saborosos, como a Tortilla, o Burrito, Nacho, Guacamole, Mixiote, Chilli com carne e outros, a culinária mexicana foi considerada patrimônio mundial pela Unesco em 2006. As principais bebidas do México são a Cerveza Mezcal, Piña Colada, Ron e a Tequila.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.container {
+    width: 80%; /* para ser dinâmico */
+    margin: auto; /* para alinhar no meio*/
+    overflow: hidden; /* quando a window for resized e sair de uma div evita aparecer a barrinha de scroll*/
+}
+
+ul { /* por predefinição o ul tem margin e padding || ul = lista objetos*/
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    height: 38px;
+    background: var(--cor-azul);
+    border: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.dark {  /* CLASSE PARA DEFINIR O FUNDO DOS PARAGRAFOS A PRETO*/
+    padding: 15px;
+    background: var(--cor-cinza);
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* APLICA-SE A TODOS*/
