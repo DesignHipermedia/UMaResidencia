@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="galeria.css">
+    <title>Galeria</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="menu">
+            <button onclick="myFunction()" class="inicio">Menu</button>
+            <div id="Menu1" class="abas">
+                <a href="index.html">🏠 Inicio</a>
+                <a href="galeria.html">📸 Galeria</a>
+                <a href="sobre.html">? Sobre</a>
+                <a href="historia.html">⚔ História</a>
+                <a href="segurança.html">🔒 Segurança</a>
+            </div>
+        </div>
+
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the menu content */
+            function myFunction() {
+                document.getElementById("Menu1").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.inicio')) {
+                    var dropdowns = document.getElementsByClassName("abas");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <!-- imagem inicial -->
+        <section id="banner">
+            <div class="container">
+                <h3>O Chile, o melhor destino turistico!</h3>
+            </div>
+        </section>
+
+        <br>
+        <!-- titulo da natureza -->
+        <h2 class="titulo"><a title="Natureza" target="_top">Natureza</a></h2>
+
+        <!-- texto da natureza -->
+        <div class="texto">
+            <p><h4>A imensa natureza do Chile! Venha visitar e descobrir as maravilhas que estes reservam!</h4></p>
+        </div>
+
+
+        <!-- Inicio da galeria de natureza -->
+        <div class="gallery">
+            <img src="img/nt.jpg" alt="Cinque Terre" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/nt1.jpg" alt="Forest" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/nt2.jpg" alt="Northern Lights" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/nt3.jpg" alt="Mountains" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/nt4.jpg" alt="Mountains" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/nt5.jpg" alt="Mountains" width="300" height="200">
+        </div>
+
+        <!-- fim da galeria de natureza -->
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        <!-- titulo das cidades -->
+        <h2 class="titulo"><a title="Cidades" target="_top">Cidades</a></h2>
+
+        <!-- texto das Cidades -->
+        <div class="texto">
+
+            <p>
+                <h4>Aqui pode ver as magnificas cidades do chile!</h4>
+            </p>
+        </div>
+
+
+        <!-- Inicio da galeria das cidades -->
+        <div class="gallery">
+            <img src="img/cd.jpg" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/cd1.jpg" alt="" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/cd2.jpg" alt="Northern Lights" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/cd3.jpg" alt="Mountains" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/cd4.jpg" alt="Mountains" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/cd5.jpg" alt="Mountains" width="300" height="200">
+        </div>
+
+
+
+        <!-- fim da galeria das cidades -->
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        <!-- titulo da comida -->
+        <h2 class="titulo"><a title="Comida" target="top">Comida</a></h2>
+
+        <!-- texto da Comida -->
+        <div class="texto">
+
+            <p>
+                <h4>Gosta de comida? venha esperimentar as comidas tradicionais do Chile!</h4>
+            </p>
+        </div>
+
+        <!-- Inicio da galeria de comida -->
+        <div class="gallery">
+            <img src="img/cmd.jpg" alt="Cinque Terre" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/cmd1.jpg" alt="Forest" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/cmd2.jpg" alt="Northern Lights" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/cmd3.jpg" alt="Mountains" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/cmd4.jpg" alt="Mountains" width="300" height="200">
+        </div>
+
+        <div class="gallery">
+            <img src="img/cmd5.jpg" alt="Mountains" width="300" height="200">
+        </div>
+        <!-- fim da galeria de comida -->
+
+    </body>
+
+</html>

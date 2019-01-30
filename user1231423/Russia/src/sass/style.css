@@ -286,8 +286,12 @@ i:hover {
 .monument {
   cursor: pointer;
   width: 16rem;
+<<<<<<< HEAD
+  margin: 1.5rem;
+=======
   height: 20rem;
   margin: 3rem;
+>>>>>>> 8f28bbb8ee95d30d97bffae1005cf9661b6bb1c4
   border-radius: 30px;
   background-color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -299,7 +303,11 @@ i:hover {
           transform: scale(1.01);
 }
 
+<<<<<<< HEAD
+.monument > img {
+=======
 .monument > a > img {
+>>>>>>> 8f28bbb8ee95d30d97bffae1005cf9661b6bb1c4
   height: 22rem;
   width: 16rem;
   border-radius: 30px;
@@ -313,6 +321,21 @@ i:hover {
   height: 5rem;
   width: 16rem;
   margin-top: -4rem;
+<<<<<<< HEAD
+  margin-right: -3px;
+  margin-left: -3px;
+  font-size: 20px;
+  background-color: #F8F7F7;
+  border-radius: 30px;
+  border: 3px #FF0027;
+  border-style: solid;
+  color: #0F0E0E;
+  text-align: center;
+  font-weight: bold;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+=======
   font-size: 20px;
   background-color: #FF0027;
   border-radius: 30px;
@@ -630,4 +653,5 @@ i:hover {
     margin-left: 4.5rem;
   }
 }
+>>>>>>> 8f28bbb8ee95d30d97bffae1005cf9661b6bb1c4
 /*# sourceMappingURL=style.css.map */

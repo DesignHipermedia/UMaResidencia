@@ -1,0 +1,253 @@
+@charset "UTF-8";
+:root {
+  --cor-azul:#1d86e8;
+  --cor-cinza:#35424a;
+  --cor-cinzento:#cccccc;
+  --cor-branco-intenso:#ffffff;
+  --cor-branco:#f4f4f4;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /*tipo da letra*/
+  font-size: 15px;
+  /* tamanho da letra */
+  line-height: 1.5;
+  /* define a altura entre as linhas*/
+  padding: 0;
+  /*espaçamento */
+  background-color: var(--cor-branco);
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  background: var(--cor-cinza);
+  color: var(--cor-branco-intenso);
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: var(--cor-azul) 3px solid;
+  /* BORDER COLOR / WIDTH / STYLE */
+}
+
+header a {
+  /* formatação dos links dentro do header */
+  color: var(--cor-branco-intenso);
+  text-decoration: none;
+  /* para remover a linha que aparece debaixo dos links */
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+  /* padding na esquerda e direita */
+}
+
+header #logotipo {
+  float: left;
+}
+
+header #logotipo h1 {
+  margin: 0px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a {
+  color: var(--cor-azul);
+  font-weight: bold;
+}
+
+header a:hover {
+  color: var(--cor-cinzento);
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: var(--cor-branco-intenso);
+  background-color: var(--cor-azul);
+  text-align: center;
+}
+
+/* DESTAQUE !! */
+#destaque {
+  background: url("../imagens/index_background.jpg") no-repeat 50% 62%;
+  color: #ffffff;
+}
+
+#destaque h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#destaque p {
+  font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter {
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* BOXES */
+#boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.container2 {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#boxes .box {
+  display: block;
+  float: left;
+  text-align: center;
+  max-width: 360px;
+  margin: 0em 3em;
+}
+
+#boxes .box img {
+  border-radius: 20px;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#boxes .box img:hover {
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.small_img {
+  position: relative;
+  float: left;
+  max-width: 100px;
+  height: 100px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* GALLERY ATEMPT 3 */
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Serviços */
+ul#serviços li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #1d86e8;
+  text-align: center;
+}
+
+/* SIDEBAR */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/* MAIN COL */
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+.container {
+  width: 80%;
+  /* para ser dinâmico */
+  margin: auto;
+  /* para alinhar no meio*/
+  overflow: hidden;
+  /* quando a window for resized e sair de uma div evita aparecer a barrinha de scroll*/
+}
+
+ul {
+  /* por predefinição o ul tem margin e padding || ul = lista objetos*/
+  margin: 0;
+  padding: 0;
+}
+
+.button_1 {
+  height: 38px;
+  background: var(--cor-azul);
+  border: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.dark {
+  /* CLASSE PARA DEFINIR O FUNDO DOS PARAGRAFOS A PRETO*/
+  padding: 15px;
+  background: var(--cor-cinza);
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* APLICA-SE A TODOS*/
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,123 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1.5px solid black;
+    background-color: var(--color-background-2);
+    width: 85vw;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 2em;
+}
+.c{
+    justify-content: center;
+    display: flex;
+}
+.first{
+    margin-right: auto;
+    width: auto;
+}
+.menu{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    background-color: var(--color-background-2);
+}
+.center_pad{
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2rem;
+}
+.wide_img{
+    max-width: 100%;
+    height: 42vh;
+    width: 100vw;
+}
+.center{
+    width: 40vw;
+    margin-left: 12vw;
+    font-size: 1.3em;
+    background-color: var(--color-background-2);
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.pad{
+    padding: 1.2em;
+}
+.pad05{
+    padding: 0.5em;
+}
+.margin{
+    margin: 1.2em;
+}
+
+.gallery-header{
+    color: var(--color-item-2);
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: var(--color-background-2);
+    border-radius: 20px;
+    width: 10em;
+}
+section>div>img{
+    margin: 0.8em;
+    transition: 300ms;
+    border-radius: 20px;
+    box-shadow: 2px 2px 0 0;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 4px 4px 0 0;
+    }
+}
+.info_sec{
+    background-color: var(--color-background-2);
+    width: 80vw;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    padding: 1em;
+    border-radius: 10px;
+}
+.footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.margin_r{
+    margin-right: 2.5em;
+}
+.margin_l{
+    margin-left: 2.5em;
+}
+.inputbox{
+    height: 5em;
+    width: 30em;
+    margin: 0.5em;
+    transition-duration: 300ms;
+    &:active{
+        height: 7em;
+    }
+}
+.inputboxes{
+    display: flex;
+    flex-direction: column;
+}
+.contactsect{
+    display: flex;
+    justify-content: center;
+}
+.bgcolor{
+    background-color: var(--color-background-2);
+    margin-top: 2em;
+    padding-bottom: 2em;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
