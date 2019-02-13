@@ -17,4 +17,5 @@ Em termos técnicos, pretende-se que sejam concretizados os seguintes items:
 
 
 
-*Neste projeto não poderão ser usadas frameworks de CSS (como por exemplo o Bootstrap)
+* Neste projeto não poderão ser usadas frameworks de CSS (como por exemplo o Bootstrap)
+** A avaliação está disponível no moodle - disciplina de Design Hipermédia
