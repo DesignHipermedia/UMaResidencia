@@ -93,6 +93,7 @@ a:hover, a:active, a:focus {
 #about, 
 #gallery,
 #contact,
+#interest,
 #blog, 
 #blog-single-post {
   padding-top: 60px;
@@ -103,6 +104,7 @@ a:hover, a:active, a:focus {
 .main-single-post,
 .main-gallery,
 .main-contact,
+.main-interest,
 .main-promotions {
   height: 65vh;
 }
@@ -287,6 +289,10 @@ a:hover, a:active, a:focus {
 
 .main-contact {
   background: url('../images/blog-image2.jpg') no-repeat;
+}
+
+.main-interest {
+  background: url('../images/menuinteresse.jpg') no-repeat;
 }
 
 .main-promotions {
@@ -545,7 +551,8 @@ footer .footer-copyright {
 
   .main-about, 
   .main-gallery,
-  .main-contact {
+  .main-contact,
+  .main-interest {
     height: 35vh;
   }
 
@@ -579,9 +586,11 @@ footer .footer-copyright {
     font-size: 42px;
   }
 
-  #about, #gallery,
+  #about, 
+  #gallery,
   #contact,
-  #blog, {
+  #interest,
+  #blog {
     padding-top: 60px;
     padding-bottom: 60px;
   }
