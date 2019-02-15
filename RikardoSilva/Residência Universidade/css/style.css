@@ -102,7 +102,8 @@ a:hover, a:active, a:focus {
 .main-about,
 .main-single-post,
 .main-gallery,
-.main-contact {
+.main-contact,
+.main-promotions {
   height: 65vh;
 }
 
@@ -288,6 +289,11 @@ a:hover, a:active, a:focus {
   background: url('../images/blog-image2.jpg') no-repeat;
 }
 
+.main-promotions {
+  background: url('../images/promoçoes-bg.jpg') no-repeat;
+  height: 50vh;
+}
+
 #particles-js {
   position: absolute;
   width: 100%;
@@ -430,6 +436,9 @@ a:hover, a:active, a:focus {
 #contact input[type="submit"]:hover {
   background: #333;
 }
+
+
+/*
 
 
 
