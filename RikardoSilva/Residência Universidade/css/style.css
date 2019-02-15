@@ -544,7 +544,7 @@ footer .footer-copyright {
   .main-about, 
   .main-gallery,
   .main-contact,
-  .main-interest {
+  .main-interest, {
     height: 35vh;
   }
 
