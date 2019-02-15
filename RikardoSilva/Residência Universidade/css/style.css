@@ -93,8 +93,7 @@ a:hover, a:active, a:focus {
 #about, 
 #gallery,
 #contact,
-#blog, 
-#blog-single-post {
+#promotions {
   padding-top: 60px;
   padding-bottom: 80px;
 }
