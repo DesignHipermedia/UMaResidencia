@@ -99,9 +99,9 @@ a:hover, a:active, a:focus {
 }
 
 .main-about,
-.main-single-post,
 .main-gallery,
 .main-contact,
+.main-interest,
 .main-promotions {
   height: 65vh;
 }
@@ -288,6 +288,10 @@ a:hover, a:active, a:focus {
   background: url('../images/blog-image2.jpg') no-repeat;
 }
 
+.main-interest {
+  background: url('../images/menuinteresse.jpg') no-repeat;
+}
+
 .main-promotions {
   background: url('../images/promoçoes-bg.jpg') no-repeat;
   height: 50vh;
@@ -436,11 +440,6 @@ a:hover, a:active, a:focus {
   background: #333;
 }
 
-
-/*
-
-
-
 /*---------------------------------------
    Footer section              
 -----------------------------------------*/
@@ -544,7 +543,8 @@ footer .footer-copyright {
 
   .main-about, 
   .main-gallery,
-  .main-contact {
+  .main-contact,
+  .main-interest {
     height: 35vh;
   }
 
@@ -578,9 +578,10 @@ footer .footer-copyright {
     font-size: 42px;
   }
 
-  #about, #gallery,
+  #about, 
+  #gallery,
   #contact,
-  #blog, {
+  #interest {
     padding-top: 60px;
     padding-bottom: 60px;
   }
