@@ -94,14 +94,12 @@ a:hover, a:active, a:focus {
 #gallery,
 #contact,
 #interest,
-#blog, 
-#blog-single-post {
+#promotions {
   padding-top: 60px;
   padding-bottom: 80px;
 }
 
 .main-about,
-.main-single-post,
 .main-gallery,
 .main-contact,
 .main-interest,
@@ -443,11 +441,6 @@ a:hover, a:active, a:focus {
   background: #333;
 }
 
-
-/*
-
-
-
 /*---------------------------------------
    Footer section              
 -----------------------------------------*/
@@ -589,8 +582,7 @@ footer .footer-copyright {
   #about, 
   #gallery,
   #contact,
-  #interest,
-  #blog {
+  #interest {
     padding-top: 60px;
     padding-bottom: 60px;
   }
